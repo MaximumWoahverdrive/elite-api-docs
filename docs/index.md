@@ -175,23 +175,23 @@ bugs fixed:
 
 **Version 21 – for v3.3 (beta 2)**
 
-**Version 20 – for v3.3 (beta 1) **_(released 30th Oct 2018)_
+**Version 20 – for v3.3 (beta 1)** _(released 30th Oct 2018)_
 
-**Version 19 – for v3.3 **_(preview released 20th Sept 2018)_
+**Version 19 – for v3.3** _(preview released 20th Sept 2018)_
 
 **Version 18 – for v3.0.4** (27th March 2018)
 
-**Version 17 – for v3.0.3 **(19th March 2018)
+**Version 17 – for v3.0.3** (19th March 2018)
 
-**Version 16 – for v3.0.2 **(5th March 2018)
+**Version 16 – for v3.0.2** (5th March 2018)
 
-**Version 15 – for v3.0 – beta3 **(6th Feb 2018)
+**Version 15 – for v3.0 – beta3** (6th Feb 2018)
 
 **Version 14 – for v3.0 – beta1** (25/Jan/2018)
 
-**Version 13 - In 2.4 Open beta **_(24th Aug 2017)_
+**Version 13 - In 2.4 Open beta** _(24th Aug 2017)_
 
-**Version 12 - In 2.4 beta1 **_(17th Aug 2017)_
+**Version 12 - In 2.4 beta1** _(17th Aug 2017)_
 
 **Version 11**_published 26/Jun/2017_
 

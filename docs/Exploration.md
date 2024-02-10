@@ -236,7 +236,7 @@ Example:
 }
 ```
 
-###  FSSAllBodiesFound
+### FSSAllBodiesFound
 
 When written: after having identified all bodies in the system
 

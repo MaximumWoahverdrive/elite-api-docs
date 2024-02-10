@@ -718,7 +718,7 @@ Optional parameters (depending on mission type)
 
 _TrendValue_ can be UpGood, UpBad, DownGood, or DownBad
 
-_Reputation_ and _Influence _are a set of + indicators (eg "+++")
+_Reputation_ and _Influence_ are a set of + indicators (eg "+++")
 
 Example:
 
@@ -1323,7 +1323,7 @@ Example:
 }
 ```
 
-###  Shipyard
+### Shipyard
 
 When written: when accessing shipyard in a station
 
