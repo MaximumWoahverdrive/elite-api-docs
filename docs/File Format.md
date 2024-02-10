@@ -38,12 +38,12 @@ Example:
 
 ```
 {
-	"timestamp": "2016-07-22T10:20:01Z",
-	"event": "fileheader",
-	"part": 1,
-	"language": "French/FR",
-	"gameversion": "4.0.0.100",
-	"build": "r114123 "
+    "timestamp": "2016-07-22T10:20:01Z",
+    "event": "fileheader",
+    "part": 1,
+    "language": "French/FR",
+    "gameversion": "4.0.0.100",
+    "build": "r114123 "
 }
 ```
 

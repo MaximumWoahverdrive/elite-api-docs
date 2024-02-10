@@ -57,11 +57,11 @@ Parameters:
 
 ```
 {
-	"timestamp": "2020-10-05T11:17:50Z",
-	"event": "BookTaxi",
-	"Cost": 23200,
-	"DestinationSystem": "Opala",
-	"DestinationLocation": "Onizuka's Hold"
+    "timestamp": "2020-10-05T11:17:50Z",
+    "event": "BookTaxi",
+    "Cost": 23200,
+    "DestinationSystem": "Opala",
+    "DestinationLocation": "Onizuka's Hold"
 }
 ```
 
@@ -88,9 +88,9 @@ Parameters:
 - Price 
 - MarketID 
 - MicroResources: array of objects 
-	- Name 
-	- Category 
-	- Count 
+    - Name 
+    - Category 
+    - Count 
 
 
 Category can be one of:
@@ -105,13 +105,13 @@ Category can be one of:
 
 ```
 {
-	"timestamp": "2020-10-07T14:01:08Z",
-	"event": "BuyMicroResource",
-	"Name": "healthpack",
-	"Name_Localised": "Medkit",
-	"Count": 4,
-	"Price": 2000,
-	"MarketID": 3228964864
+    "timestamp": "2020-10-07T14:01:08Z",
+    "event": "BuyMicroResource",
+    "Name": "healthpack",
+    "Name_Localised": "Medkit",
+    "Count": 4,
+    "Price": 2000,
+    "MarketID": 3228964864
 }
 ```
 
@@ -129,11 +129,11 @@ Parameters:
 
 ```
 {
-	"timestamp": "2020-10-07T09:10:55Z",
-	"event": "BuySuit",
-	"Name": "TacticalSuit_Class1",
-	"Name_Localised": "Tactician Suit",
-	"Price": 1000
+    "timestamp": "2020-10-07T09:10:55Z",
+    "event": "BuySuit",
+    "Name": "TacticalSuit_Class1",
+    "Name_Localised": "Tactician Suit",
+    "Price": 1000
 }
 ```
 
@@ -152,11 +152,11 @@ Parameters:
 
 ```
 {
-	"timestamp": "2020-10-07T09:11:49Z",
-	"event": "BuyWeapon",
-	"Name": "Wpn_S_Pistol_Kinetic_SAuto",
-	"Name_Localised": "KA15",
-	"Price": 1000
+    "timestamp": "2020-10-07T09:11:49Z",
+    "event": "BuyWeapon",
+    "Name": "Wpn_S_Pistol_Kinetic_SAuto",
+    "Name_Localised": "KA15",
+    "Price": 1000
 }
 ```
 
@@ -177,9 +177,9 @@ Parameters:
 
 ```
 {
-	"timestamp": "2020-10-05T11:17:34Z",
-	"event": "CancelTaxi",
-	"Refund": 27000
+    "timestamp": "2020-10-05T11:17:34Z",
+    "event": "CancelTaxi",
+    "Refund": 27000
 }
 ```
 
@@ -208,19 +208,19 @@ Parameters:
 - LoadoutID 
 - LoadoutName 
 - Modules: [ ] 
-	- SlotName 
-	- ModuleName 
-	- SuitModuleID 
-	- Class 
-	- WeaponMods 
+    - SlotName 
+    - ModuleName 
+    - SuitModuleID 
+    - Class 
+    - WeaponMods 
 
 
 ```
 {
-	"timestamp": "2020-10-07T09:23:59Z",
-	"event": "CreateSuitLoadout",
-	"LoadoutID": 4293000001,
-	"LoadoutName": "exp001"
+    "timestamp": "2020-10-07T09:23:59Z",
+    "event": "CreateSuitLoadout",
+    "LoadoutID": 4293000001,
+    "LoadoutName": "exp001"
 }
 ```
 
@@ -257,12 +257,12 @@ Parameters:
 
 ```
 {
-	"timestamp": "2020-10-12T09:09:55Z",
-	"event": "Disembark",
-	"SRV": false,
-	"Taxi": false,
-	"Multicrew": false,
-	"ID": 36
+    "timestamp": "2020-10-12T09:09:55Z",
+    "event": "Disembark",
+    "SRV": false,
+    "Taxi": false,
+    "Multicrew": false,
+    "ID": 36
 }
 ```
 
@@ -314,12 +314,12 @@ Parameters:
 
 ```
 {
-	"timestamp": "2020-10-12T09:06:17Z",
-	"event": "Embark",
-	"SRV": false,
-	"Taxi": false,
-	"Multicrew": false,
-	"ID": 36
+    "timestamp": "2020-10-12T09:06:17Z",
+    "event": "Embark",
+    "SRV": false,
+    "Taxi": false,
+    "Multicrew": false,
+    "ID": 36
 }
 ```
 
@@ -339,11 +339,11 @@ Parameters:
 The full list is included in the file **FCMaterials.json**
 
 - Items: array of objects 
-	- Id 
-	- Name 
-	- Price 
-	- Stock 
-	- Demand 
+    - Id 
+    - Name 
+    - Price 
+    - Stock 
+    - Demand 
 
 
 Example of FCMaterials.json:
@@ -355,7 +355,7 @@ Example of FCMaterials.json:
 { "id":128972334, "Name":"$meetingminutes_name;", "Name_Localised":"Meeting Minutes", "Price":1000, "Stock":0, "Demand":1 },
 { "id":128962572, "Name":"$rdx_name;", "Name_Localised":"RDX", "Price":387, "Stock":0, "Demand":9 },
 { "id":128972304, "Name":"$culinaryrecipes_name;", "Name_Localised":"Culinary Recipes", "Price":1000, "Stock":20, "Demand":0 },
-{ "id": 128961527, "Name": "$chemicalcatalyst_name;", "Name_Localised": "Chemical Catalyst", "Price": 400, "Stock": 18,	"Demand": 0 }
+{ "id": 128961527, "Name": "$chemicalcatalyst_name;", "Name_Localised": "Chemical Catalyst", "Price": 400, "Stock": 18,    "Demand": 0 }
 ] }
 ```
 
@@ -423,17 +423,17 @@ Example:
 
 ```
 {
-	"timestamp":"2022-12-07T14:27:55Z",
-	"event":"ScanOrganic", 
-	"ScanType":"Analyse",
-	"Genus":"$Codex_Ent_Tubus_Genus_Name;", 
-	"Genus_Localised":"Tubus",
-	"Species":"$Codex_Ent_Tubus_01_Name;",
-	"Species_Localised":"Tubus Conifer",
-	"Variant":"$Codex_Ent_Tubus_01_A_Name;",
-	"Variant_Localised":"Tubus Conifer - Indigo",
-	"SystemAddress":316174882163, 
-	"Body":44
+    "timestamp":"2022-12-07T14:27:55Z",
+    "event":"ScanOrganic", 
+    "ScanType":"Analyse",
+    "Genus":"$Codex_Ent_Tubus_Genus_Name;", 
+    "Genus_Localised":"Tubus",
+    "Species":"$Codex_Ent_Tubus_01_Name;",
+    "Species_Localised":"Tubus Conifer",
+    "Variant":"$Codex_Ent_Tubus_01_A_Name;",
+    "Variant_Localised":"Tubus Conifer - Indigo",
+    "SystemAddress":316174882163, 
+    "Body":44
 }
 ```
 
@@ -444,26 +444,26 @@ This event is logged when a player sells Microresources for cash
 Parameters:
 
 - MicroResources: array of objects 
-	- Name 
-	- Category 
-	- Count 
+    - Name 
+    - Category 
+    - Count 
 - Price 
 - MarketID 
 
 
 ```
 {
-	"timestamp": "2020-10-07T14:08:28Z",
-	"event": "SellMicroResources",
-	"MicroResources": [
-		{
-			"Name": "healthmonitor",
-			"Name_Localised": "Health Monitor",
-			"Count": 3
-		}
-	],
-	"Price": 1500,
-	"MarketID": 3228964864
+    "timestamp": "2020-10-07T14:08:28Z",
+    "event": "SellMicroResources",
+    "MicroResources": [
+        {
+            "Name": "healthmonitor",
+            "Name_Localised": "Health Monitor",
+            "Count": 3
+        }
+    ],
+    "Price": 1500,
+    "MarketID": 3228964864
 }
 ```
 
@@ -475,11 +475,11 @@ Parameters:
 
 - MarketID 
 - BioData: Array 
-	- Genus 
-	- Species 
-	- Variant
-	- Value 
-	- Bonus 
+    - Genus 
+    - Species 
+    - Variant
+    - Value 
+    - Bonus 
 
 
 ```
@@ -516,11 +516,11 @@ Parameters:
 
 ```
 {
-	"timestamp": "2020-10-05T14:34:04Z",
-	"event": "SellSuit",
-	"Name": "tacticalsuit_class1",
-	"Name_Localised": "Tactician Suit",
-	"Price": 70000
+    "timestamp": "2020-10-05T14:34:04Z",
+    "event": "SellSuit",
+    "Name": "tacticalsuit_class1",
+    "Name_Localised": "Tactician Suit",
+    "Price": 70000
 }
 ```
 
@@ -575,11 +575,11 @@ Parameters:
 - LoadoutID 
 - LoadoutName 
 - Modules: array of objects 
-	- SlotName 
-	- SuitModuleID 
-	- ModuleName 
-	- Class 
-	- WeaponMods 
+    - SlotName 
+    - SuitModuleID 
+    - ModuleName 
+    - Class 
+    - WeaponMods 
 
 
 ### TransferMicroResources
@@ -589,32 +589,32 @@ Written when transferreing items between backpack and ship locker
 Parameters:
 
 - Transfers: array of objects 
-	- Name 
-	- Category 
-	- Count 
-	- Direction 
+    - Name 
+    - Category 
+    - Count 
+    - Direction 
 
 
 ```
 {
-	"timestamp": "2021-04-14T15:07:54Z",
-	"event": "TransferMicroResources",
-	"Transfers": [
-		{
-			"Name": "healthpack",
-			"Name_Localised": "Medkit",
-			"Category": "Consumable",
-			"Count": 1,
-			"Direction": "ToBackpack"
-		},
-		{
-			"Name": "energycell",
-			"Name_Localised": "Energy Cell",
-			"Category": "Consumable",
-			"Count": 1,
-			"Direction": "ToBackpack"
-		}
-	]
+    "timestamp": "2021-04-14T15:07:54Z",
+    "event": "TransferMicroResources",
+    "Transfers": [
+        {
+            "Name": "healthpack",
+            "Name_Localised": "Medkit",
+            "Category": "Consumable",
+            "Count": 1,
+            "Direction": "ToBackpack"
+        },
+        {
+            "Name": "energycell",
+            "Name_Localised": "Energy Cell",
+            "Category": "Consumable",
+            "Count": 1,
+            "Direction": "ToBackpack"
+        }
+    ]
 }
 ```
 
@@ -625,9 +625,9 @@ This event is logged when the player exchanges owned microresources to receive s
 Parameters:
 
 - Offered: array of objects 
-	- Name 
-	- Category 
-	- Count 
+    - Name 
+    - Category 
+    - Count 
 - Received: name of resource received 
 - Category 
 - Count: number received 
@@ -636,18 +636,18 @@ Parameters:
 
 ```
 {
-	"timestamp": "2020-10-07T14:55:09Z",
-	"event": "TradeMicroResources",
-	"Offered": [
-		{
-			"Name": "mutageniccatalyst",
-			"Name_Localised": "Mutagenic Catalyst",
-			"Count": 5
-		}
-	],
-	"Received": "californium",
-	"Count": 3,
-	"MarketID": 3228964864
+    "timestamp": "2020-10-07T14:55:09Z",
+    "event": "TradeMicroResources",
+    "Offered": [
+        {
+            "Name": "mutageniccatalyst",
+            "Name_Localised": "Mutagenic Catalyst",
+            "Count": 5
+        }
+    ],
+    "Received": "californium",
+    "Count": 3,
+    "MarketID": 3228964864
 }
 ```
 
@@ -666,44 +666,44 @@ Parameters:
 
 ```
 {
-	"timestamp": "2022-08-19T16:41:33Z",
-	"event": "UpgradeSuit",
-	"Name": "utilitysuit_class1",
-	"Name_Localised": "Maverick Suit",
-	"SuitID": 1702914472756487,
-	"Class": 2,
-	"Cost": 600000,
-	"Resources": [
-		{
-			"Name": "suitschematic",
-			"Name_Localised": "Suit Schematic",
-			"Count": 1
-		},
-		{
-			"Name": "healthmonitor",
-			"Name_Localised": "Health Monitor",
-			"Count": 1
-		},
-		{
-			"Name": "largecapacitypowerregulator",
-			"Name_Localised": "Power Regulator",
-			"Count": 1
-		},
-		{
-			"Name": "manufacturinginstructions",
-			"Name_Localised": "Manufacturing Instructions",
-			"Count": 1
-		},
-		{
-			"Name": "carbonfibreplating",
-			"Name_Localised": "Carbon Fibre Plating",
-			"Count": 5
-		},
-		{
-			"Name": "graphene",
-			"Count": 5
-		}
-	]
+    "timestamp": "2022-08-19T16:41:33Z",
+    "event": "UpgradeSuit",
+    "Name": "utilitysuit_class1",
+    "Name_Localised": "Maverick Suit",
+    "SuitID": 1702914472756487,
+    "Class": 2,
+    "Cost": 600000,
+    "Resources": [
+        {
+            "Name": "suitschematic",
+            "Name_Localised": "Suit Schematic",
+            "Count": 1
+        },
+        {
+            "Name": "healthmonitor",
+            "Name_Localised": "Health Monitor",
+            "Count": 1
+        },
+        {
+            "Name": "largecapacitypowerregulator",
+            "Name_Localised": "Power Regulator",
+            "Count": 1
+        },
+        {
+            "Name": "manufacturinginstructions",
+            "Name_Localised": "Manufacturing Instructions",
+            "Count": 1
+        },
+        {
+            "Name": "carbonfibreplating",
+            "Name_Localised": "Carbon Fibre Plating",
+            "Count": 5
+        },
+        {
+            "Name": "graphene",
+            "Count": 5
+        }
+    ]
 }
 ```
 
@@ -722,39 +722,39 @@ Parameters:
 
 ```
 {
-	"timestamp": "2022-08-19T16:58:18Z",
-	"event": "UpgradeWeapon",
-	"Name": "wpn_m_assaultrifle_laser_fauto",
-	"Name_Localised": "TK Aphelion",
-	"Class": 2,
-	"SuitModuleID": 1681611765701131,
-	"Cost": 0,
-	"Resources": [
-		{
-			"Name": "weaponschematic",
-			"Name_Localised": "Weapon Schematic",
-			"Count": 1
-		},
-		{
-			"Name": "ionisedgas",
-			"Name_Localised": "Ionised Gas",
-			"Count": 1
-		},
-		{
-			"Name": "manufacturinginstructions",
-			"Name_Localised": "Manufacturing Instructions",
-			"Count": 1
-		},
-		{
-			"Name": "microelectrode",
-			"Count": 5
-		},
-		{
-			"Name": "opticalfibre",
-			"Name_Localised": "Optical Fibre",
-			"Count": 5
-		}
-	]
+    "timestamp": "2022-08-19T16:58:18Z",
+    "event": "UpgradeWeapon",
+    "Name": "wpn_m_assaultrifle_laser_fauto",
+    "Name_Localised": "TK Aphelion",
+    "Class": 2,
+    "SuitModuleID": 1681611765701131,
+    "Cost": 0,
+    "Resources": [
+        {
+            "Name": "weaponschematic",
+            "Name_Localised": "Weapon Schematic",
+            "Count": 1
+        },
+        {
+            "Name": "ionisedgas",
+            "Name_Localised": "Ionised Gas",
+            "Count": 1
+        },
+        {
+            "Name": "manufacturinginstructions",
+            "Name_Localised": "Manufacturing Instructions",
+            "Count": 1
+        },
+        {
+            "Name": "microelectrode",
+            "Count": 5
+        },
+        {
+            "Name": "opticalfibre",
+            "Name_Localised": "Optical Fibre",
+            "Count": 5
+        }
+    ]
 }
 ```
 

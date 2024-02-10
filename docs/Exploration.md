@@ -30,23 +30,23 @@ Example:
 
 ```
 {
-	"timestamp": "2019-05-13T13:28:51Z",
-	"event": "CodexEntry",
-	"EntryID": 1400159,
-	"Name": "$Codex_Ent_IceFumarole_CarbonDioxideGeysers_Name;",
-	"Name_Localised": "Carbon Dioxide Ice Fumarole",
-	"SubCategory": "$Codex_SubCategory_Geology_and_Anomalies;",
-	"SubCategory_Localised": "Geology and anomalies",
-	"Category": "$Codex_Category_Biology;",
-	"Category_Localised": "Biological and Geological",
-	"Region": "$Codex_RegionName_18;",
-	"Region_Localised": "Inner Orion Spur",
-	"System": "Hermitage",
-	"SystemAddress": 5363877956440,
-	"NearestDestination": "$SAA_Unknown_Signal:#type=$SAA_SignalType_Geological;:#index=9;",
-	"NearestDestination_Localised": "Surface signal: Geological (9)",
-	"IsNewEntry": true,
-	"VoucherAmount": 50000
+    "timestamp": "2019-05-13T13:28:51Z",
+    "event": "CodexEntry",
+    "EntryID": 1400159,
+    "Name": "$Codex_Ent_IceFumarole_CarbonDioxideGeysers_Name;",
+    "Name_Localised": "Carbon Dioxide Ice Fumarole",
+    "SubCategory": "$Codex_SubCategory_Geology_and_Anomalies;",
+    "SubCategory_Localised": "Geology and anomalies",
+    "Category": "$Codex_Category_Biology;",
+    "Category_Localised": "Biological and Geological",
+    "Region": "$Codex_RegionName_18;",
+    "Region_Localised": "Inner Orion Spur",
+    "System": "Hermitage",
+    "SystemAddress": 5363877956440,
+    "NearestDestination": "$SAA_Unknown_Signal:#type=$SAA_SignalType_Geological;:#index=9;",
+    "NearestDestination_Localised": "Surface signal: Geological (9)",
+    "IsNewEntry": true,
+    "VoucherAmount": 50000
 }
 ```
 
@@ -108,9 +108,9 @@ Parameters(Planet/Moon)
 - Landable: true (if landable)
 - Materials: JSON array with objects with material names and percentage occurrence
 - Composition: structure containing info on solid composition
-	- Ice 
-	- Rock 
-	- Metal  
+    - Ice 
+    - Rock 
+    - Metal  
 - Rings: [ array of info ] – if rings present
 - ReserveLevel: (Pristine/Major/Common/Low/Depleted) – if rings present
 
@@ -153,93 +153,93 @@ Example:
 
 ```
 {
-	"timestamp": "2018-02-02T10:43:05Z",
-	"event": "Scan",
-	"ScanType": "NavBeaconDetail",
-	"BodyName": "Procyon B 3 a",
-	"BodyID": 12,
-	"Parents": [
-		{
-			"Planet": 11
-		},
-		{
-			"Star": 2
-		},
-		{
-			"Null": 0
-		}
-	],
-	"DistanceFromArrivalLS": 10048.152344,
-	"TidalLock": true,
-	"TerraformState": "",
-	"PlanetClass": "Rocky body",
-	"Atmosphere": "",
-	"AtmosphereType": "None",
-	"Volcanism": "",
-	"MassEM": 0.025342,
-	"Radius": 2011975.25,
-	"SurfaceGravity": 2.495225,
-	"SurfaceTemperature": 318.448792,
-	"SurfacePressure": 0,
-	"Landable": true,
-	"Materials": [
-		{
-			"Name": "iron",
-			"Percent": 19.315084
-		},
-		{
-			"Name": "sulphur",
-			"Percent": 17.321133
-		},
-		{
-			"Name": "nickel",
-			"Percent": 14.60912
-		},
-		{
-			"Name": "carbon",
-			"Percent": 14.565277
-		},
-		{
-			"Name": "phosphorus",
-			"Percent": 9.324941
-		},
-		{
-			"Name": "chromium",
-			"Percent": 8.686635
-		},
-		{
-			"Name": "manganese",
-			"Percent": 7.976933
-		},
-		{
-			"Name": "zinc",
-			"Percent": 5.249117
-		},
-		{
-			"Name": "tin",
-			"Percent": 1.200338
-		},
-		{
-			"Name": "tungsten",
-			"Percent": 1.060592
-		},
-		{
-			"Name": "technetium",
-			"Percent": 0.690823
-		}
-	],
-	"Composition": {
-		"Ice": 0,
-		"Rock": 0.861282,
-		"Metal": 0.138718
-	},
-	"SemiMajorAxis": 89655728,
-	"Eccentricity": 0,
-	"OrbitalInclination": 4.566576,
-	"Periapsis": 309.656799,
-	"OrbitalPeriod": 344902.9375,
-	"RotationPeriod": 352425.46875,
-	"AxialTilt": 0.479157
+    "timestamp": "2018-02-02T10:43:05Z",
+    "event": "Scan",
+    "ScanType": "NavBeaconDetail",
+    "BodyName": "Procyon B 3 a",
+    "BodyID": 12,
+    "Parents": [
+        {
+            "Planet": 11
+        },
+        {
+            "Star": 2
+        },
+        {
+            "Null": 0
+        }
+    ],
+    "DistanceFromArrivalLS": 10048.152344,
+    "TidalLock": true,
+    "TerraformState": "",
+    "PlanetClass": "Rocky body",
+    "Atmosphere": "",
+    "AtmosphereType": "None",
+    "Volcanism": "",
+    "MassEM": 0.025342,
+    "Radius": 2011975.25,
+    "SurfaceGravity": 2.495225,
+    "SurfaceTemperature": 318.448792,
+    "SurfacePressure": 0,
+    "Landable": true,
+    "Materials": [
+        {
+            "Name": "iron",
+            "Percent": 19.315084
+        },
+        {
+            "Name": "sulphur",
+            "Percent": 17.321133
+        },
+        {
+            "Name": "nickel",
+            "Percent": 14.60912
+        },
+        {
+            "Name": "carbon",
+            "Percent": 14.565277
+        },
+        {
+            "Name": "phosphorus",
+            "Percent": 9.324941
+        },
+        {
+            "Name": "chromium",
+            "Percent": 8.686635
+        },
+        {
+            "Name": "manganese",
+            "Percent": 7.976933
+        },
+        {
+            "Name": "zinc",
+            "Percent": 5.249117
+        },
+        {
+            "Name": "tin",
+            "Percent": 1.200338
+        },
+        {
+            "Name": "tungsten",
+            "Percent": 1.060592
+        },
+        {
+            "Name": "technetium",
+            "Percent": 0.690823
+        }
+    ],
+    "Composition": {
+        "Ice": 0,
+        "Rock": 0.861282,
+        "Metal": 0.138718
+    },
+    "SemiMajorAxis": 89655728,
+    "Eccentricity": 0,
+    "OrbitalInclination": 4.566576,
+    "Periapsis": 309.656799,
+    "OrbitalPeriod": 344902.9375,
+    "RotationPeriod": 352425.46875,
+    "AxialTilt": 0.479157
 }
 ```
 
@@ -264,26 +264,26 @@ Parameters:
 - BodyID 
 - SystemAddress 
 - Signals: Array 
-	- Type 
-	- Count 
+    - Type 
+    - Count 
 
 
 Example:
 
 ```
 {
-	"timestamp": "2022-03-17T18:20:53Z",
-	"event": "FSSBodySignals",
-	"BodyName": "Phroi Blou EW-W d1-1056 2 a",
-	"BodyID": 18,
-	"SystemAddress": 36293555558035,
-	"Signals": [
-		{
-			"Type": "$SAA_SignalType_Geological;",
-			"Type_Localised": "Geological",
-			"Count": 3
-		}
-	]
+    "timestamp": "2022-03-17T18:20:53Z",
+    "event": "FSSBodySignals",
+    "BodyName": "Phroi Blou EW-W d1-1056 2 a",
+    "BodyID": 18,
+    "SystemAddress": 36293555558035,
+    "Signals": [
+        {
+            "Type": "$SAA_SignalType_Geological;",
+            "Type_Localised": "Geological",
+            "Count": 3
+        }
+    ]
 }
 ```
 
@@ -329,21 +329,21 @@ Examples:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "MaterialCollected",
-	"Category": "Raw",
-	"Name": "sulphur",
-	"Count": 2
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "MaterialCollected",
+    "Category": "Raw",
+    "Name": "sulphur",
+    "Count": 2
 }
 ```
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "MaterialCollected",
-	"Category": "Encoded",
-	"Name": "disruptedwakeechoes",
-	"Count": 1
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "MaterialCollected",
+    "Category": "Encoded",
+    "Name": "disruptedwakeechoes",
+    "Count": 1
 }
 ```
 
@@ -362,11 +362,11 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "MaterialDiscarded",
-	"Category": "Raw",
-	"Name": "sulphur",
-	"Count": 5
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "MaterialDiscarded",
+    "Category": "Raw",
+    "Name": "sulphur",
+    "Count": 5
 }
 ```
 
@@ -385,11 +385,11 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "MaterialDiscovered",
-	"Category": "Manufactured",
-	"Name": "focuscrystals",
-	"DiscoveryNumber": 3
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "MaterialDiscovered",
+    "Category": "Manufactured",
+    "Name": "focuscrystals",
+    "DiscoveryNumber": 3
 }
 ```
 
@@ -400,8 +400,8 @@ When written: when selling exploration data in Cartographics, a page at a time
 Parameters:
 
 - Discovered: (array of records, as follows) 
-	- SystemName 
-	- NumBodies 
+    - SystemName 
+    - NumBodies 
 - BaseValue 
 - Bonus 
 - TotalEarnings 
@@ -411,21 +411,21 @@ Example
 
 ```
 {
-	"timestamp": "2018-11-14T10:35:35Z",
-	"event": "MultiSellExplorationData",
-	"Discovered": [
-		{
-			"SystemName": "HIP 84742",
-			"NumBodies": 23
-		},
-		{
-			"SystemName": "Col 359 Sector NY-S b20-1",
-			"NumBodies": 9
-		}
-	],
-	"BaseValue": 2938186,
-	"Bonus": 291000,
-	"TotalEarnings": 3229186
+    "timestamp": "2018-11-14T10:35:35Z",
+    "event": "MultiSellExplorationData",
+    "Discovered": [
+        {
+            "SystemName": "HIP 84742",
+            "NumBodies": 23
+        },
+        {
+            "SystemName": "Col 359 Sector NY-S b20-1",
+            "NumBodies": 9
+        }
+    ],
+    "BaseValue": 2938186,
+    "Bonus": 291000,
+    "TotalEarnings": 3229186
 }
 ```
 
@@ -453,10 +453,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "BuyExplorationData",
-	"System": "Styx",
-	"Cost": 352
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "BuyExplorationData",
+    "System": "Styx",
+    "Cost": 352
 }
 ```
 
@@ -479,12 +479,12 @@ Example:
 
 ```
 {
-	"timestamp": "2018-10-05T15:06:12Z",
-	"event": "SAAScanComplete",
-	"BodyName": "Eranin 5",
-	"BodyID": 5,
-	"ProbesUsed": 6,
-	"EfficiencyTarget": 9
+    "timestamp": "2018-10-05T15:06:12Z",
+    "event": "SAAScanComplete",
+    "BodyName": "Eranin 5",
+    "BodyID": 5,
+    "ProbesUsed": 6,
+    "EfficiencyTarget": 9
 }
 ```
 
@@ -498,86 +498,86 @@ Parameters:
 - BodyName 
 - BodyID 
 - Signals: (array) 
-	- Type 
-	- Count 
+    - Type 
+    - Count 
 - Genuses: (array) 
-	- Genus 
+    - Genus 
 
 
 Examples:
 
 ```
 {
-	"timestamp": "2019-04-17T13:38:18Z",
-	"event": "SAASignalsFound",
-	"BodyName": "Hermitage 4 A Ring",
-	"SystemAddress": 5363877956440,
-	"BodyID": 11,
-	"Signals": [
-		{
-			"Type": "LowTemperatureDiamond",
-			"Type_Localised": "Low Temperature Diamonds",
-			"Count": 1
-		},
-		{
-			"Type": "Alexandrite",
-			"Count": 1
-		}
-	]
+    "timestamp": "2019-04-17T13:38:18Z",
+    "event": "SAASignalsFound",
+    "BodyName": "Hermitage 4 A Ring",
+    "SystemAddress": 5363877956440,
+    "BodyID": 11,
+    "Signals": [
+        {
+            "Type": "LowTemperatureDiamond",
+            "Type_Localised": "Low Temperature Diamonds",
+            "Count": 1
+        },
+        {
+            "Type": "Alexandrite",
+            "Count": 1
+        }
+    ]
 }
 ```
 
 ```
 {
-	"timestamp": "2019-04-17T13:40:39Z",
-	"event": "SAASignalsFound",
-	"BodyName": "Hermitage 4 b",
-	"SystemAddress": 5363877956440,
-	"BodyID": 13,
-	"Signals": [
-		{
-			"Type": "$SAA_SignalType_Geological;",
-			"Type_Localised": "Geological",
-			"Count": 14
-		}
-	]
+    "timestamp": "2019-04-17T13:40:39Z",
+    "event": "SAASignalsFound",
+    "BodyName": "Hermitage 4 b",
+    "SystemAddress": 5363877956440,
+    "BodyID": 13,
+    "Signals": [
+        {
+            "Type": "$SAA_SignalType_Geological;",
+            "Type_Localised": "Geological",
+            "Count": 14
+        }
+    ]
 }
 ```
 
 ```
 {
-	"timestamp": "2022-07-01T09:14:32Z",
-	"event": "SAASignalsFound",
-	"BodyName": "Asellus 3a",
-	"SystemAddress": 1144348739947,
-	"BodyID": 10,
-	"Signals": [
-		{
-			"Type": "$SAA_SignalType_Biological;",
-			"Type_Localised": "Biological",
-			"Count": 2
-		},
-		{
-			"Type": "$SAA_SignalType_Geological;",
-			"Type_Localised": "Geological",
-			"Count": 3
-		},
-		{
-			"Type": "$SAA_SignalType_Human;",
-			"Type_Localised": "Human",
-			"Count": 8
-		}
-	],
-	"Genuses": [
-		{
-			"Genus": "$Codex_Ent_Bacterial_Genus_Name;",
-			"Genus_Localised": "Bacterium"
-		},
-		{
-			"Genus": "$Codex_Ent_Stratum_Genus_Name;",
-			"Genus_Localised": "Stratum"
-		}
-	]
+    "timestamp": "2022-07-01T09:14:32Z",
+    "event": "SAASignalsFound",
+    "BodyName": "Asellus 3a",
+    "SystemAddress": 1144348739947,
+    "BodyID": 10,
+    "Signals": [
+        {
+            "Type": "$SAA_SignalType_Biological;",
+            "Type_Localised": "Biological",
+            "Count": 2
+        },
+        {
+            "Type": "$SAA_SignalType_Geological;",
+            "Type_Localised": "Geological",
+            "Count": 3
+        },
+        {
+            "Type": "$SAA_SignalType_Human;",
+            "Type_Localised": "Human",
+            "Count": 8
+        }
+    ],
+    "Genuses": [
+        {
+            "Genus": "$Codex_Ent_Bacterial_Genus_Name;",
+            "Genus_Localised": "Bacterium"
+        },
+        {
+            "Genus": "$Codex_Ent_Stratum_Genus_Name;",
+            "Genus_Localised": "Stratum"
+        }
+    ]
 }
 ```
 
@@ -603,18 +603,18 @@ Example
 
 ```
 {
-	"timestamp": "2021-07-27T13:52:20Z",
-	"event": "ScanBaryCentre",
-	"StarSystem": "Col 285 Sector YX-N b21-1",
-	"SystemAddress": 2867561768401,
-	"BodyID": 10,
-	"SemiMajorAxis": 2107998251914.978,
-	"Eccentricity": 0.033074,
-	"OrbitalInclination": 0.019013,
-	"Periapsis": 342.187341,
-	"OrbitalPeriod": 3739380657.672882,
-	"AscendingNode": -31.477241,
-	"MeanAnomaly": 64.03028
+    "timestamp": "2021-07-27T13:52:20Z",
+    "event": "ScanBaryCentre",
+    "StarSystem": "Col 285 Sector YX-N b21-1",
+    "SystemAddress": 2867561768401,
+    "BodyID": 10,
+    "SemiMajorAxis": 2107998251914.978,
+    "Eccentricity": 0.033074,
+    "OrbitalInclination": 0.019013,
+    "Periapsis": 342.187341,
+    "OrbitalPeriod": 3739380657.672882,
+    "AscendingNode": -31.477241,
+    "MeanAnomaly": 64.03028
 }
 ```
 
@@ -635,21 +635,21 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "SellExplorationData",
-	"Systems": [
-		"HIP 78085",
-		"Praea Euq NW-W b1-3"
-	],
-	"Discovered": [
-		"HIP 78085 A",
-		"Praea Euq NW-W b1-3",
-		"Praea Euq NW-W b1-3 3 a",
-		"Praea Euq NW-W b1-3 3"
-	],
-	"BaseValue": 10822,
-	"Bonus": 3959,
-	"TotalEarnings": 44343
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "SellExplorationData",
+    "Systems": [
+        "HIP 78085",
+        "Praea Euq NW-W b1-3"
+    ],
+    "Discovered": [
+        "HIP 78085 A",
+        "Praea Euq NW-W b1-3",
+        "Praea Euq NW-W b1-3 3 a",
+        "Praea Euq NW-W b1-3 3"
+    ],
+    "BaseValue": 10822,
+    "Bonus": 3959,
+    "TotalEarnings": 44343
 }
 ```
 
@@ -676,16 +676,16 @@ Example:
 
 ```
 {
-	"timestamp": "2018-01-17T09:48:26Z",
-	"event": "Screenshot",
-	"Filename": "_Screenshots/Screenshot_0024.bmp",
-	"Width": 1440,
-	"Height": 900,
-	"System": "Nuenets",
-	"Body": "Nuenets C 2",
-	"Latitude": -60.7999,
-	"Longitude": -74.059799,
-	"Heading": 39,
-	"Altitude": 27502.876953
+    "timestamp": "2018-01-17T09:48:26Z",
+    "event": "Screenshot",
+    "Filename": "_Screenshots/Screenshot_0024.bmp",
+    "Width": 1440,
+    "Height": 900,
+    "System": "Nuenets",
+    "Body": "Nuenets C 2",
+    "Latitude": -60.7999,
+    "Longitude": -74.059799,
+    "Heading": 39,
+    "Altitude": 27502.876953
 }
 ```

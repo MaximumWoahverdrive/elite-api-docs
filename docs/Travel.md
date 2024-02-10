@@ -14,10 +14,10 @@ Parameters:
 
 ```
 {
-	"timestamp": "2017-09-27T15:21:05Z",
-	"event": "ApproachBody",
-	"StarSystem": "Eranin",
-	"Body": "Eranin 2"
+    "timestamp": "2017-09-27T15:21:05Z",
+    "event": "ApproachBody",
+    "StarSystem": "Eranin",
+    "Body": "Eranin 2"
 }
 ```
 
@@ -34,8 +34,8 @@ Parameters:
 - StarSystem: name of system 
 - CockpitBreach:true (only if landing with breached cockpit) 
 - StationFaction: station's controlling faction 
-	- Name 
-	- FactionState 
+    - Name 
+    - FactionState 
 - StationAllegiance 
 - StationEconomy : (station's primary economy) 
 - StationEconomies: (array of name and proportion values) 
@@ -45,9 +45,9 @@ Parameters:
 - Wanted: (only if docking when wanted locally) 
 - ActiveFine: true (if any fine is active) 
 - LandingPads: 
-	- Small 
-	- Medium 
-	- Large 
+    - Small 
+    - Medium 
+    - Large 
 - StationState
 
 The 'anonymous docking' protocol comes into effect if you're either Wanted (ie have a local bounty) or have an ActiveFine
@@ -56,54 +56,54 @@ Example:
 
 ```
 {
-	"timestamp": "2018-03-07T12:22:25Z",
-	"event": "Docked",
-	"StationName": "Jenner Orbital",
-	"StationType": "Outpost",
-	"StarSystem": "Luhman 16",
-	"SystemAddress": 22960358574928,
-	"MarketID": 3228883456,
-	"StationFaction": {
-		"Name": "Union of Luhman 16 Values Party",
-		"FactionState": "CivilWar"
-	},
-	"StationGovernment": "$government_Democracy;",
-	"StationGovernment_Localised": "Democracy",
-	"StationAllegiance": "Federation",
-	"StationServices": [
-		"Dock",
-		"Autodock",
-		"BlackMarket",
-		"Commodities",
-		"Contacts",
-		"Exploration",
-		"Missions",
-		"Outfitting",
-		"CrewLounge",
-		"Rearm",
-		"Refuel",
-		"Workshop",
-		"MissionsGenerated",
-		"FlightController",
-		"StationOperations",
-		"Powerplay",
-		"SearchAndRescue"
-	],
-	"StationEconomy": "$economy_Refinery;",
-	"StationEconomy_Localised": "Refinery",
-	"StationEconomies": [
-		{
-			"Name": "$economy_Refinery;",
-			"Name_Localised": "Refinery",
-			"Proportion": 0.76
-		},
-		{
-			"Name": "$economy_Extraction;",
-			"Name_Localised": "Extraction",
-			"Proportion": 0.24
-		}
-	],
-	"DistFromStarLS": 10.061876
+    "timestamp": "2018-03-07T12:22:25Z",
+    "event": "Docked",
+    "StationName": "Jenner Orbital",
+    "StationType": "Outpost",
+    "StarSystem": "Luhman 16",
+    "SystemAddress": 22960358574928,
+    "MarketID": 3228883456,
+    "StationFaction": {
+        "Name": "Union of Luhman 16 Values Party",
+        "FactionState": "CivilWar"
+    },
+    "StationGovernment": "$government_Democracy;",
+    "StationGovernment_Localised": "Democracy",
+    "StationAllegiance": "Federation",
+    "StationServices": [
+        "Dock",
+        "Autodock",
+        "BlackMarket",
+        "Commodities",
+        "Contacts",
+        "Exploration",
+        "Missions",
+        "Outfitting",
+        "CrewLounge",
+        "Rearm",
+        "Refuel",
+        "Workshop",
+        "MissionsGenerated",
+        "FlightController",
+        "StationOperations",
+        "Powerplay",
+        "SearchAndRescue"
+    ],
+    "StationEconomy": "$economy_Refinery;",
+    "StationEconomy_Localised": "Refinery",
+    "StationEconomies": [
+        {
+            "Name": "$economy_Refinery;",
+            "Name_Localised": "Refinery",
+            "Proportion": 0.76
+        },
+        {
+            "Name": "$economy_Extraction;",
+            "Name_Localised": "Extraction",
+            "Proportion": 0.24
+        }
+    ],
+    "DistFromStarLS": 10.061876
 }
 ```
 
@@ -160,9 +160,9 @@ Parameters:
 - StationType 
 - MarketID 
 - LandingPads: 
-	- Small 
-	- Medium 
-	- Large 
+    - Small 
+    - Medium 
+    - Large 
 
 
 ### DockingTimeout
@@ -191,8 +191,8 @@ Parameters:
 - FuelLevel 
 - BoostUsed: whether FSD boost was used 
 - SystemFaction: system controlling faction 
-	- Name 
-	- FactionState 
+    - Name 
+    - FactionState 
 - SystemAllegiance 
 - SystemEconomy 
 - SystemSecondEconomy 
@@ -201,23 +201,23 @@ Parameters:
 - Population 
 - Wanted 
 - Factions: an array of info for the local minor factions 
-	- Name 
-	- FactionState 
-	- Government 
-	- Influence 
-	- Happiness 
-	- MyReputation 
-	- PendingStates: array (if any) with State name and Trend value 
-	- RecovingStates: array (if any)with State name and Trend value 
-	- ActiveStates: array with State names (Note active states do not have a Trend value) 
-	- SquadronFaction:true (if player is in squadron aligned to this faction) 
-	- HappiestSystem:true (if player squadron faction, and this is happiest system) 
-	- HomeSystem:true(if player squadron faction, and this is home system) 
+    - Name 
+    - FactionState 
+    - Government 
+    - Influence 
+    - Happiness 
+    - MyReputation 
+    - PendingStates: array (if any) with State name and Trend value 
+    - RecovingStates: array (if any)with State name and Trend value 
+    - ActiveStates: array with State names (Note active states do not have a Trend value) 
+    - SquadronFaction:true (if player is in squadron aligned to this faction) 
+    - HappiestSystem:true (if player squadron faction, and this is happiest system) 
+    - HomeSystem:true(if player squadron faction, and this is home system) 
 - Conflicts: an array of info about local conflicts (if any) 
-	- WarType 
-	- Status 
-	- Faction1: { Name, Stake, WonDays } 
-	- Faction2: { Name, Stake, WonDays } 
+    - WarType 
+    - Status 
+    - Faction1: { Name, Stake, WonDays } 
+    - Faction2: { Name, Stake, WonDays } 
 
 
 If the player is pledged to a Power in Powerplay, and the star system is involved in powerplay,
@@ -228,13 +228,13 @@ If the player is pledged to a Power in Powerplay, and the star system is involve
 If starting in a system affected by the thargoid war:
 
 - ThargoidWar
-	- CurrentState
-	- NextStateSuccess
-	- NextStateFailure
-	- SuccessStateReached
-	- WarProgress:0-1 values
-	- RemainingPorts
-	- EstimatedRemainingTime
+    - CurrentState
+    - NextStateSuccess
+    - NextStateFailure
+    - SuccessStateReached
+    - WarProgress:0-1 values
+    - RemainingPorts
+    - EstimatedRemainingTime
 
 
 Example:
@@ -245,141 +245,141 @@ Example:
 
 ```
 {
-	"timestamp": "2018-10-29T10:05:21Z",
-	"event": "FSDJump",
-	"StarSystem": "Eranin",
-	"SystemAddress": 2832631632594,
-	"StarPos": [
-		-22.84375,
-		36.53125,
-		-1.1875
-	],
-	"SystemAllegiance": "Independent",
-	"SystemEconomy": "$economy_Agri;",
-	"SystemEconomy_Localised": "Agriculture",
-	"SystemSecondEconomy": "$economy_Refinery;",
-	"SystemSecondEconomy_Localised": "Refinery",
-	"SystemGovernment": "$government_Anarchy;",
-	"SystemGovernment_Localised": "Anarchy",
-	"SystemSecurity": "$GAlAXY_MAP_INFO_state_anarchy;",
-	"SystemSecurity_Localised": "Anarchy",
-	"Population": 450000,
-	"JumpDist": 13.334,
-	"FuelUsed": 0,
-	"FuelLevel": 25.630281,
-	"Factions": [
-		{
-			"Name": "Eranin Expeditionary Institute",
-			"FactionState": "None",
-			"Government": "Cooperative",
-			"Influence": 0.17,
-			"Allegiance": "Independent",
-			"Happiness": "$Faction_HappinessBand2;",
-			"Happiness_Localised": "Happy",
-			"MyReputation": 0
-		},
-		{
-			"Name": "Eranin Peoples Party",
-			"FactionState": "CivilWar",
-			"Government": "Communism",
-			"Influence": 0.226,
-			"Allegiance": "Independent",
-			"Happiness": "$Faction_HappinessBand2;",
-			"Happiness_Localised": "Happy",
-			"MyReputation": 29.9743,
-			"ActiveStates": [
-				{
-					"State": "CivilWar"
-				}
-			]
-		},
-		{
-			"Name": "Pilots Federation Local Branch",
-			"FactionState": "None",
-			"Government": "Democracy",
-			"Influence": 0,
-			"Allegiance": "PilotsFederation",
-			"Happiness": "$Faction_HappinessBand2;",
-			"Happiness_Localised": "Happy",
-			"MyReputation": 82.918297
-		},
-		{
-			"Name": "Eranin Industry",
-			"FactionState": "Outbreak",
-			"Government": "Corporate",
-			"Influence": 0.209,
-			"Allegiance": "Independent",
-			"Happiness": "$Faction_HappinessBand3;",
-			"Happiness_Localised": "Discontented",
-			"MyReputation": 0,
-			"ActiveStates": [
-				{
-					"State": "Famine"
-				},
-				{
-					"State": "Lockdown"
-				},
-				{
-					"State": "Outbreak"
-				}
-			]
-		},
-		{
-			"Name": "Eranin Federal Bridge",
-			"FactionState": "CivilWar",
-			"Government": "Dictatorship",
-			"Influence": 0.226,
-			"Allegiance": "Independent",
-			"Happiness": "$Faction_HappinessBand2;",
-			"Happiness_Localised": "Happy",
-			"MyReputation": 0,
-			"ActiveStates": [
-				{
-					"State": "CivilWar"
-				}
-			]
-		},
-		{
-			"Name": "Mob of Eranin",
-			"FactionState": "CivilLiberty",
-			"Government": "Anarchy",
-			"Influence": 0.134,
-			"Allegiance": "Independent",
-			"Happiness": "$Faction_HappinessBand1;",
-			"Happiness_Localised": "Elated",
-			"MyReputation": 0,
-			"ActiveStates": [
-				{
-					"State": "Boom"
-				},
-				{
-					"State": "CivilLiberty"
-				}
-			]
-		},
-		{
-			"Name": "Terran Colonial Forces",
-			"FactionState": "CivilUnrest",
-			"Government": "Confederacy",
-			"Influence": 0.035,
-			"Allegiance": "Alliance",
-			"Happiness": "$Faction_HappinessBand2;",
-			"Happiness_Localised": "Happy",
-			"MyReputation": 0,
-			"ActiveStates": [
-				{
-					"State": "Boom"
-				},
-				{
-					"State": "CivilUnrest"
-				}
-			]
-		}
-	],
-	"SystemFaction": {
-		"Name": "Mob of Eranin",
-		"FactionState": "CivilLiberty"
-	}
+    "timestamp": "2018-10-29T10:05:21Z",
+    "event": "FSDJump",
+    "StarSystem": "Eranin",
+    "SystemAddress": 2832631632594,
+    "StarPos": [
+        -22.84375,
+        36.53125,
+        -1.1875
+    ],
+    "SystemAllegiance": "Independent",
+    "SystemEconomy": "$economy_Agri;",
+    "SystemEconomy_Localised": "Agriculture",
+    "SystemSecondEconomy": "$economy_Refinery;",
+    "SystemSecondEconomy_Localised": "Refinery",
+    "SystemGovernment": "$government_Anarchy;",
+    "SystemGovernment_Localised": "Anarchy",
+    "SystemSecurity": "$GAlAXY_MAP_INFO_state_anarchy;",
+    "SystemSecurity_Localised": "Anarchy",
+    "Population": 450000,
+    "JumpDist": 13.334,
+    "FuelUsed": 0,
+    "FuelLevel": 25.630281,
+    "Factions": [
+        {
+            "Name": "Eranin Expeditionary Institute",
+            "FactionState": "None",
+            "Government": "Cooperative",
+            "Influence": 0.17,
+            "Allegiance": "Independent",
+            "Happiness": "$Faction_HappinessBand2;",
+            "Happiness_Localised": "Happy",
+            "MyReputation": 0
+        },
+        {
+            "Name": "Eranin Peoples Party",
+            "FactionState": "CivilWar",
+            "Government": "Communism",
+            "Influence": 0.226,
+            "Allegiance": "Independent",
+            "Happiness": "$Faction_HappinessBand2;",
+            "Happiness_Localised": "Happy",
+            "MyReputation": 29.9743,
+            "ActiveStates": [
+                {
+                    "State": "CivilWar"
+                }
+            ]
+        },
+        {
+            "Name": "Pilots Federation Local Branch",
+            "FactionState": "None",
+            "Government": "Democracy",
+            "Influence": 0,
+            "Allegiance": "PilotsFederation",
+            "Happiness": "$Faction_HappinessBand2;",
+            "Happiness_Localised": "Happy",
+            "MyReputation": 82.918297
+        },
+        {
+            "Name": "Eranin Industry",
+            "FactionState": "Outbreak",
+            "Government": "Corporate",
+            "Influence": 0.209,
+            "Allegiance": "Independent",
+            "Happiness": "$Faction_HappinessBand3;",
+            "Happiness_Localised": "Discontented",
+            "MyReputation": 0,
+            "ActiveStates": [
+                {
+                    "State": "Famine"
+                },
+                {
+                    "State": "Lockdown"
+                },
+                {
+                    "State": "Outbreak"
+                }
+            ]
+        },
+        {
+            "Name": "Eranin Federal Bridge",
+            "FactionState": "CivilWar",
+            "Government": "Dictatorship",
+            "Influence": 0.226,
+            "Allegiance": "Independent",
+            "Happiness": "$Faction_HappinessBand2;",
+            "Happiness_Localised": "Happy",
+            "MyReputation": 0,
+            "ActiveStates": [
+                {
+                    "State": "CivilWar"
+                }
+            ]
+        },
+        {
+            "Name": "Mob of Eranin",
+            "FactionState": "CivilLiberty",
+            "Government": "Anarchy",
+            "Influence": 0.134,
+            "Allegiance": "Independent",
+            "Happiness": "$Faction_HappinessBand1;",
+            "Happiness_Localised": "Elated",
+            "MyReputation": 0,
+            "ActiveStates": [
+                {
+                    "State": "Boom"
+                },
+                {
+                    "State": "CivilLiberty"
+                }
+            ]
+        },
+        {
+            "Name": "Terran Colonial Forces",
+            "FactionState": "CivilUnrest",
+            "Government": "Confederacy",
+            "Influence": 0.035,
+            "Allegiance": "Alliance",
+            "Happiness": "$Faction_HappinessBand2;",
+            "Happiness_Localised": "Happy",
+            "MyReputation": 0,
+            "ActiveStates": [
+                {
+                    "State": "Boom"
+                },
+                {
+                    "State": "CivilUnrest"
+                }
+            ]
+        }
+    ],
+    "SystemFaction": {
+        "Name": "Mob of Eranin",
+        "FactionState": "CivilLiberty"
+    }
 }
 ```
 
@@ -387,12 +387,12 @@ Example Conflict data:
 
 ```
 "Conflicts": [
-	{
-		"WarType": "war",
-		"Status": "active",
-		"Faction1": {"Name": "Movement for LHS 3163 League","Stake": "","WonDays": 0},
-		"Faction2": {"Name": "Official i Bootis Liberty Party","Stake": "Red Bronco Farms","WonDays": 1}
-	}
+    {
+        "WarType": "war",
+        "Status": "active",
+        "Faction1": {"Name": "Movement for LHS 3163 League","Stake": "","WonDays": 0},
+        "Faction2": {"Name": "Official i Bootis Liberty Party","Stake": "Red Bronco Farms","WonDays": 1}
+    }
 ]
 ```
 
@@ -444,11 +444,11 @@ Example:
 
 ```
 {
-	"timestamp": "2016-07-22T10:53:19Z",
-	"event": "Liftoff",
-	"Latitude": 63.468872,
-	"Longitude": 157.59938,
-	"PlayerControlled": true
+    "timestamp": "2016-07-22T10:53:19Z",
+    "event": "Liftoff",
+    "Latitude": 63.468872,
+    "Longitude": 157.59938,
+    "PlayerControlled": true
 }
 ```
 
@@ -472,8 +472,8 @@ Parameters:
 - StationType: (if docked) 
 - MarketID: (if docked) 
 - SystemFaction: star system controlling faction 
-	- Name 
-	- FactionState 
+    - Name 
+    - FactionState 
 - SystemAllegiance 
 - SystemEconomy 
 - SystemSecondEconomy 
@@ -495,8 +495,8 @@ The faction data includes happiness info, and can include multiple active states
 If starting docked in a station, also include:
 
 - StationFaction 
-	- Name 
-	- FactionState 
+    - Name 
+    - FactionState 
 - StationGovernment 
 - StationAllegiance 
 - StationServices 
@@ -505,13 +505,13 @@ If starting docked in a station, also include:
 If starting in a system affected by the thargoid war:
 
 - ThargoidWar
-	- CurrentState
-	- NextStateSuccess
-	- NextStateFailure
-	- SuccessStateReached
-	- WarProgress:0-1 values
-	- RemainingPorts
-	- EstimatedRemainingTime
+    - CurrentState
+    - NextStateSuccess
+    - NextStateFailure
+    - SuccessStateReached
+    - WarProgress:0-1 values
+    - RemainingPorts
+    - EstimatedRemainingTime
 
 
 New in Odyssey:
@@ -548,9 +548,9 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "SupercruiseEntry",
-	"StarSystem": "Yuetu"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "SupercruiseEntry",
+    "StarSystem": "Yuetu"
 }
 ```
 
@@ -570,10 +570,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "SupercruiseExit",
-	"StarSystem": "Yuetu",
-	"Body": "Yuetu B"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "SupercruiseExit",
+    "StarSystem": "Yuetu",
+    "Body": "Yuetu B"
 }
 ```
 
@@ -601,13 +601,13 @@ Example:
 
 ```
 {
-	"timestamp": "2019-05-13T13:20:18Z",
-	"event": "Touchdown",
-	"PlayerControlled": true,
-	"Latitude": 10.503607,
-	"Longitude": 102.78981,
-	"NearestDestination": "$SAA_Unknown_Signal:#type=$SAA_SignalType_Geological;:#index=9;",
-	"NearestDestination_Localised": "Surface signal: Geological (9)"
+    "timestamp": "2019-05-13T13:20:18Z",
+    "event": "Touchdown",
+    "PlayerControlled": true,
+    "Latitude": 10.503607,
+    "Longitude": 102.78981,
+    "NearestDestination": "$SAA_Unknown_Signal:#type=$SAA_SignalType_Geological;:#index=9;",
+    "NearestDestination_Localised": "Surface signal: Geological (9)"
 }
 ```
 
@@ -625,9 +625,9 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "Undocked",
-	"StationName": "Long Sight Base"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "Undocked",
+    "StationName": "Long Sight Base"
 }
 ```
 
@@ -638,25 +638,25 @@ When plotting a multi-star route, the file "NavRoute.json" is written in the sam
 Parameters:
 
 - Route 
-	- StarSystem: (name) 
-	- SystemAddress: (number) 
-	- Starpos: [ x, y, z ] 
-	- StarClass 
+    - StarSystem: (name) 
+    - SystemAddress: (number) 
+    - Starpos: [ x, y, z ] 
+    - StarClass 
 
 
 Example:
 
 ```
 {
-	"timestamp": "2020-04-27T08:02:52Z",
-	"event": "Route",
-	"Route": [
-		{ "StarSystem": "i Bootis", "SystemAddress": 1281787693419, "StarPos": [-22.37500,34.84375,4.00000], "StarClass": "G" },
-		{ "StarSystem": "Acihaut", "SystemAddress": 11665802405289, "StarPos": [-18.50000,25.28125,-4.00000], "StarClass": "M" },
-		{ "StarSystem": "LHS 455", "SystemAddress": 3686969379179, "StarPos": [-16.90625,10.21875,-3.43750], "StarClass": "DQ" },
-		{ "StarSystem": "SPF-LF 1", "SystemAddress": 22661187052961, "StarPos": [2.90625,6.31250,-9.56250], "StarClass": "M" },
-		{ "StarSystem": "Luyten's Star", "SystemAddress":7 268024264097, "StarPos": [6.56250,2.34375,-10.25000], "StarClass": "M" }] }
-	]
+    "timestamp": "2020-04-27T08:02:52Z",
+    "event": "Route",
+    "Route": [
+        { "StarSystem": "i Bootis", "SystemAddress": 1281787693419, "StarPos": [-22.37500,34.84375,4.00000], "StarClass": "G" },
+        { "StarSystem": "Acihaut", "SystemAddress": 11665802405289, "StarPos": [-18.50000,25.28125,-4.00000], "StarClass": "M" },
+        { "StarSystem": "LHS 455", "SystemAddress": 3686969379179, "StarPos": [-16.90625,10.21875,-3.43750], "StarClass": "DQ" },
+        { "StarSystem": "SPF-LF 1", "SystemAddress": 22661187052961, "StarPos": [2.90625,6.31250,-9.56250], "StarClass": "M" },
+        { "StarSystem": "Luyten's Star", "SystemAddress":7 268024264097, "StarPos": [6.56250,2.34375,-10.25000], "StarClass": "M" }] }
+    ]
 }
 ```
 
@@ -670,7 +670,7 @@ Example:
 
 ```
 {
-	"timestamp": "2022-06-17T16:04:02Z",
-	"event": "NavRouteClear"
+    "timestamp": "2022-06-17T16:04:02Z",
+    "event": "NavRouteClear"
 }
 ```

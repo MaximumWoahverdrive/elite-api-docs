@@ -22,9 +22,9 @@ Parameters:
 - PlanetRadius 
 - Balance 
 - Destination: 
-	- System 
-	- Body 
-	- Name 
+    - System 
+    - Body 
+    - Name 
 
 
 LegalState: one of:
@@ -112,43 +112,43 @@ Examples:
 
 ```
 {
-	"timestamp": "2017-12-07T10:31:37Z",
-	"event": "Status",
-	"Flags": 16842765,
-	"Pips": [
-		2,
-		8,
-		2
-	],
-	"FireGroup": 0,
-	"Fuel": {
-		"FuelMain": 15.146626,
-		"FuelReservoir": 0.382796
-	},
-	"GuiFocus": 5
+    "timestamp": "2017-12-07T10:31:37Z",
+    "event": "Status",
+    "Flags": 16842765,
+    "Pips": [
+        2,
+        8,
+        2
+    ],
+    "FireGroup": 0,
+    "Fuel": {
+        "FuelMain": 15.146626,
+        "FuelReservoir": 0.382796
+    },
+    "GuiFocus": 5
 }
 ```
 
 ```
 {
-	"timestamp": "2017-12-07T12:03:14Z",
-	"event": "Status",
-	"Flags": 18874376,
-	"Pips": [
-		4,
-		8,
-		0
-	],
-	"FireGroup": 0,
-	"Fuel": {
-		"FuelMain": 15.146626,
-		"FuelReservoir": 0.382796
-	},
-	"GuiFocus": 0,
-	"Latitude": -28.584963,
-	"Longitude": 6.826313,
-	"Heading": 109,
-	"Altitude": 404
+    "timestamp": "2017-12-07T12:03:14Z",
+    "event": "Status",
+    "Flags": 18874376,
+    "Pips": [
+        4,
+        8,
+        0
+    ],
+    "FireGroup": 0,
+    "Fuel": {
+        "FuelMain": 15.146626,
+        "FuelReservoir": 0.382796
+    },
+    "GuiFocus": 0,
+    "Latitude": -28.584963,
+    "Longitude": 6.826313,
+    "Heading": 109,
+    "Altitude": 404
 }
 ```
 

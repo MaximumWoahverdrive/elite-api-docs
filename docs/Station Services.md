@@ -13,9 +13,9 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "BuyAmmo",
-	"Cost": 80
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "BuyAmmo",
+    "Cost": 80
 }
 ```
 
@@ -35,12 +35,12 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "BuyDrones",
-	"Type": "Drones",
-	"Count": 2,
-	"SellPrice": 101,
-	"TotalCost": 202
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "BuyDrones",
+    "Type": "Drones",
+    "Count": 2,
+    "SellPrice": 101,
+    "TotalCost": 202
 }
 ```
 
@@ -70,18 +70,18 @@ Example:
 
 ```
 {
-	"timestamp": "2018-03-07T15:47:03Z",
-	"event": "CargoDepot",
-	"MissionID": 65394170,
-	"UpdateType": "Deliver",
-	"CargoType": "BasicMedicines",
-	"Count": 8,
-	"StartMarketID": 3228867072,
-	"EndMarketID": 3534964736,
-	"ItemsCollected": 16,
-	"ItemsDelivered": 16,
-	"TotalItemsToDeliver": 3020,
-	"Progress": 0
+    "timestamp": "2018-03-07T15:47:03Z",
+    "event": "CargoDepot",
+    "MissionID": 65394170,
+    "UpdateType": "Deliver",
+    "CargoType": "BasicMedicines",
+    "Count": 8,
+    "StartMarketID": 3228867072,
+    "EndMarketID": 3534964736,
+    "ItemsCollected": 16,
+    "ItemsDelivered": 16,
+    "TotalItemsToDeliver": 3020,
+    "Progress": 0
 }
 ```
 
@@ -94,57 +94,57 @@ This event contains the current status of all community goals the player is curr
 Parameters:
 
 - CurrentGoals: an array with an entry for each CG, containing: 
-	- CGID: a unique ID number for this CG 
-	- Title: the description of the CG 
-	- SystemName 
-	- MarketName 
-	- Expiry: time and date 
-	- IsComplete: Boolean 
-	- CurrentTotal 
-	- PlayerContribution 
-	- NumContributors 
-	- PlayerPercentileBand 
-	- TopTier:  
-		- Name: string 
-		- Bonus: string 
+    - CGID: a unique ID number for this CG 
+    - Title: the description of the CG 
+    - SystemName 
+    - MarketName 
+    - Expiry: time and date 
+    - IsComplete: Boolean 
+    - CurrentTotal 
+    - PlayerContribution 
+    - NumContributors 
+    - PlayerPercentileBand 
+    - TopTier:  
+        - Name: string 
+        - Bonus: string 
 
 
 - If the community goal is constructed with a fixed-size top rank (ie max reward for top 10 players)
 
-	- TopRankSize: (integer) 
-	- PlayerInTopRank: (Boolean) 
+    - TopRankSize: (integer) 
+    - PlayerInTopRank: (Boolean) 
 
 
 - If the community goal has reached the first success tier:
 
-	- TierReached 
-	- Bonus 
+    - TierReached 
+    - Bonus 
 
 
 Example:
 
 ```
 {
-	"timestamp": "2017-08-14T13:20:28Z",
-	"event": "CommunityGoal",
-	"CurrentGoals": [
-		{
-			"CGID": 726,
-			"Title": "Alliance Research Initiative – Trade",
-			"SystemName": "Kaushpoos",
-			"MarketName": "Neville Horizons",
-			"Expiry": "2017-08-17T14:58:14Z",
-			"IsComplete": false,
-			"CurrentTotal": 10062,
-			"PlayerContribution": 562,
-			"NumContributors": 101,
-			"TopRankSize": 10,
-			"PlayerInTopRank": false,
-			"TierReached": "Tier 1",
-			"PlayerPercentileBand": 50,
-			"Bonus": 200000
-		}
-	]
+    "timestamp": "2017-08-14T13:20:28Z",
+    "event": "CommunityGoal",
+    "CurrentGoals": [
+        {
+            "CGID": 726,
+            "Title": "Alliance Research Initiative – Trade",
+            "SystemName": "Kaushpoos",
+            "MarketName": "Neville Horizons",
+            "Expiry": "2017-08-17T14:58:14Z",
+            "IsComplete": false,
+            "CurrentTotal": 10062,
+            "PlayerContribution": 562,
+            "NumContributors": 101,
+            "TopRankSize": 10,
+            "PlayerInTopRank": false,
+            "TierReached": "Tier 1",
+            "PlayerPercentileBand": 50,
+            "Bonus": 200000
+        }
+    ]
 }
 ```
 
@@ -199,10 +199,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-08-09T08:45:31Z",
-	"event": "CrewAssign",
-	"Name": "Dannie Koller",
-	"Role": "Active"
+    "timestamp": "2016-08-09T08:45:31Z",
+    "event": "CrewAssign",
+    "Name": "Dannie Koller",
+    "Role": "Active"
 }
 ```
 
@@ -220,9 +220,9 @@ Example:
 
 ```
 {
-	"timestamp": "2016-08-09T08:46:11Z",
-	"event": "CrewFire",
-	"Name": "Whitney Pruitt-Munoz"
+    "timestamp": "2016-08-09T08:46:11Z",
+    "event": "CrewFire",
+    "Name": "Whitney Pruitt-Munoz"
 }
 ```
 
@@ -243,12 +243,12 @@ Example:
 
 ```
 {
-	"timestamp": "2016-08-09T08:46:29Z",
-	"event": "CrewHire",
-	"Name": "Margaret Parrish",
-	"Faction": "The Dark Wheel",
-	"Cost": 15000,
-	"CombatRank": 1
+    "timestamp": "2016-08-09T08:46:29Z",
+    "event": "CrewHire",
+    "Name": "Margaret Parrish",
+    "Faction": "The Dark Wheel",
+    "Cost": 15000,
+    "CombatRank": 1
 }
 ```
 
@@ -276,14 +276,14 @@ Example:
 
 ```
 {
-	"timestamp": "2017-05-24T10:41:51Z",
-	"event": "EngineerContribution",
-	"Engineer": "Elvira Martuuk",
-	"EngineerID": 300160,
-	"Type": "Commodity",
-	"Commodity": "soontillrelics",
-	"Quantity": 2,
-	"TotalQuantity": 3
+    "timestamp": "2017-05-24T10:41:51Z",
+    "event": "EngineerContribution",
+    "Engineer": "Elvira Martuuk",
+    "EngineerID": 300160,
+    "Type": "Commodity",
+    "Commodity": "soontillrelics",
+    "Quantity": 2,
+    "TotalQuantity": 3
 }
 ```
 
@@ -302,13 +302,13 @@ Parameters:
 - ApplyExperimentalEffect: (when applying a new effect) 
 - Ingredients: JSON array of objects with names and quantities of materials required 
 - Modifiers: JSON array of modification data 
-	- Label: string – (see §15.11 below) 
-	- Value: float 
-	- OriginalValue: float 
-	- LessIsGood: bool 
+    - Label: string – (see §15.11 below) 
+    - Value: float 
+    - OriginalValue: float 
+    - LessIsGood: bool 
 - Some modifications have string values: 
-	- Label: string 
-	- ValueStr: string 
+    - Label: string 
+    - ValueStr: string 
 
 
 The new "quality" value represents the quality or progress of the blueprint. The quality should increase from 0 to 1 as the blueprint is refined through further crafting, and once it reaches a certain value, the player will have the option to upgrade the blueprint to the next level of recipe.
@@ -319,36 +319,36 @@ Example:
 
 ```
 {
-	"timestamp": "2018-03-04T07:08:27Z",
-	"event": "EngineerCraft",
-	"Slot": "Slot03_Size3",
-	"Module": "int_dronecontrol_collection_size3_class5",
-	"Ingredients": [
-		{
-			"Name": "phosphorus",
-			"Count": 1
-		}
-	],
-	"Engineer": "Ram Tah",
-	"EngineerID": 300110,
-	"BlueprintID": 128731526,
-	"BlueprintName": "Misc_LightWeight",
-	"Level": 1,
-	"Quality": 0.955,
-	"Modifiers": [
-		{
-			"Label": "Mass",
-			"Value": 4.436,
-			"OriginalValue": 8,
-			"LessIsGood": 1
-		},
-		{
-			"Label": "Integrity",
-			"Value": 81,
-			"OriginalValue": 90,
-			"LessIsGood": 0
-		}
-	]
+    "timestamp": "2018-03-04T07:08:27Z",
+    "event": "EngineerCraft",
+    "Slot": "Slot03_Size3",
+    "Module": "int_dronecontrol_collection_size3_class5",
+    "Ingredients": [
+        {
+            "Name": "phosphorus",
+            "Count": 1
+        }
+    ],
+    "Engineer": "Ram Tah",
+    "EngineerID": 300110,
+    "BlueprintID": 128731526,
+    "BlueprintName": "Misc_LightWeight",
+    "Level": 1,
+    "Quality": 0.955,
+    "Modifiers": [
+        {
+            "Label": "Mass",
+            "Value": 4.436,
+            "OriginalValue": 8,
+            "LessIsGood": 1
+        },
+        {
+            "Label": "Integrity",
+            "Value": 81,
+            "OriginalValue": 90,
+            "LessIsGood": 0
+        }
+    ]
 }
 ```
 
@@ -371,11 +371,11 @@ Also a summary of progress for all engineers at startup
 Parameters (summary at startup)
 
 - Engineers: array 
-	- Engineer: name 
-	- EngineerID 
-	- Rank: rank reached (when unlocked) 
-	- Progress: progress stage (Invited/Acquainted/Unlocked/Barred) 
-	- RankProgress: percentage towards next rank 
+    - Engineer: name 
+    - EngineerID 
+    - Rank: rank reached (when unlocked) 
+    - Progress: progress stage (Invited/Acquainted/Unlocked/Barred) 
+    - RankProgress: percentage towards next rank 
 
 
 Parameters (update for one engineer)
@@ -391,12 +391,12 @@ Example (update)
 
 ```
 {
-	"timestamp": "2018-01-16T09:34:36Z",
-	"event": "EngineerProgress",
-	"Engineer": "Zacariah Nemo",
-	"EngineerID": 300050,
-	"Rank": 4,
-	"RankProgress": 0
+    "timestamp": "2018-01-16T09:34:36Z",
+    "event": "EngineerProgress",
+    "Engineer": "Zacariah Nemo",
+    "EngineerID": 300050,
+    "Rank": 4,
+    "RankProgress": 0
 }
 ```
 
@@ -404,98 +404,98 @@ Example (startup):
 
 ```
 {
-	"timestamp": "2018-05-04T13:58:22Z",
-	"event": "EngineerProgress",
-	"Engineers": [
-		{
-			"Engineer": "Zacariah Nemo",
-			"EngineerID": 300050,
-			"Progress": "Unlocked",
-			"RankProgress": 0,
-			"Rank": 5
-		},
-		{
-			"Engineer": "Marco Qwent",
-			"EngineerID": 300200,
-			"Progress": "Unlocked",
-			"RankProgress": 37,
-			"Rank": 4
-		},
-		{
-			"Engineer": "Hera Tani",
-			"EngineerID": 300090,
-			"Progress": "Unlocked",
-			"RankProgress": 0,
-			"Rank": 3
-		},
-		{
-			"Engineer": "Tod 'The Blaster' McQuinn",
-			"EngineerID": 300260,
-			"Progress": "Unlocked",
-			"RankProgress": 97,
-			"Rank": 3
-		},
-		{
-			"Engineer": "Selene Jean",
-			"EngineerID": 300210,
-			"Progress": "Known"
-		},
-		{
-			"Engineer": "Lei Cheung",
-			"EngineerID": 300120,
-			"Progress": "Known"
-		},
-		{
-			"Engineer": "Juri Ishmaak",
-			"EngineerID": 300250,
-			"Progress": "Known"
-		},
-		{
-			"Engineer": "Felicity Farseer",
-			"EngineerID": 300100,
-			"Progress": "Unlocked",
-			"RankProgress": 0,
-			"Rank": 5
-		},
-		{
-			"Engineer": "Professor Palin",
-			"EngineerID": 300220,
-			"Progress": "Invited"
-		},
-		{
-			"Engineer": "Elvira Martuuk",
-			"EngineerID": 300160,
-			"Progress": "Unlocked",
-			"RankProgress": 0,
-			"Rank": 5
-		},
-		{
-			"Engineer": "Lori Jameson",
-			"EngineerID": 300230,
-			"Progress": "Known"
-		},
-		{
-			"Engineer": "The Dweller",
-			"EngineerID": 300180,
-			"Progress": "Unlocked",
-			"RankProgress": 0,
-			"Rank": 5
-		},
-		{
-			"Engineer": "Liz Ryder",
-			"EngineerID": 300080,
-			"Progress": "Unlocked",
-			"RankProgress": 93,
-			"Rank": 3
-		},
-		{
-			"Engineer": "Ram Tah",
-			"EngineerID": 300110,
-			"Progress": "Unlocked",
-			"RankProgress": 31,
-			"Rank": 3
-		}
-	]
+    "timestamp": "2018-05-04T13:58:22Z",
+    "event": "EngineerProgress",
+    "Engineers": [
+        {
+            "Engineer": "Zacariah Nemo",
+            "EngineerID": 300050,
+            "Progress": "Unlocked",
+            "RankProgress": 0,
+            "Rank": 5
+        },
+        {
+            "Engineer": "Marco Qwent",
+            "EngineerID": 300200,
+            "Progress": "Unlocked",
+            "RankProgress": 37,
+            "Rank": 4
+        },
+        {
+            "Engineer": "Hera Tani",
+            "EngineerID": 300090,
+            "Progress": "Unlocked",
+            "RankProgress": 0,
+            "Rank": 3
+        },
+        {
+            "Engineer": "Tod 'The Blaster' McQuinn",
+            "EngineerID": 300260,
+            "Progress": "Unlocked",
+            "RankProgress": 97,
+            "Rank": 3
+        },
+        {
+            "Engineer": "Selene Jean",
+            "EngineerID": 300210,
+            "Progress": "Known"
+        },
+        {
+            "Engineer": "Lei Cheung",
+            "EngineerID": 300120,
+            "Progress": "Known"
+        },
+        {
+            "Engineer": "Juri Ishmaak",
+            "EngineerID": 300250,
+            "Progress": "Known"
+        },
+        {
+            "Engineer": "Felicity Farseer",
+            "EngineerID": 300100,
+            "Progress": "Unlocked",
+            "RankProgress": 0,
+            "Rank": 5
+        },
+        {
+            "Engineer": "Professor Palin",
+            "EngineerID": 300220,
+            "Progress": "Invited"
+        },
+        {
+            "Engineer": "Elvira Martuuk",
+            "EngineerID": 300160,
+            "Progress": "Unlocked",
+            "RankProgress": 0,
+            "Rank": 5
+        },
+        {
+            "Engineer": "Lori Jameson",
+            "EngineerID": 300230,
+            "Progress": "Known"
+        },
+        {
+            "Engineer": "The Dweller",
+            "EngineerID": 300180,
+            "Progress": "Unlocked",
+            "RankProgress": 0,
+            "Rank": 5
+        },
+        {
+            "Engineer": "Liz Ryder",
+            "EngineerID": 300080,
+            "Progress": "Unlocked",
+            "RankProgress": 93,
+            "Rank": 3
+        },
+        {
+            "Engineer": "Ram Tah",
+            "EngineerID": 300110,
+            "Progress": "Unlocked",
+            "RankProgress": 31,
+            "Rank": 3
+        }
+    ]
 }
 ```
 
@@ -530,30 +530,30 @@ Parameters:
 The separate file also contains:
 
 - Items: array of objects 
-	- id 
-	- Name 
-	- Category 
-	- BuyPrice 
-	- SellPrice 
-	- MeanPrice 
-	- StockBracket 
-	- DemandBracket 
-	- Stock 
-	- Demand 
-	- Consumer: bool 
-	- Producer: bool 
-	- Rare: bool 
+    - id 
+    - Name 
+    - Category 
+    - BuyPrice 
+    - SellPrice 
+    - MeanPrice 
+    - StockBracket 
+    - DemandBracket 
+    - Stock 
+    - Demand 
+    - Consumer: bool 
+    - Producer: bool 
+    - Rare: bool 
 
 
 Example: in the journal:
 
 ```
 {
-	"timestamp": "2017-10-05T10:11:38Z",
-	"event": "Outfitting",
-	"MarketID": 128678535,
-	"StationName": "Black Hide",
-	"StarSystem": "Wyrd"
+    "timestamp": "2017-10-05T10:11:38Z",
+    "event": "Outfitting",
+    "MarketID": 128678535,
+    "StationName": "Black Hide",
+    "StarSystem": "Wyrd"
 }
 ```
 
@@ -561,10 +561,10 @@ Separate file:
 
 ```
 { "timestamp":"2017-10-05T10:10:34Z", "event":"Market", "MarketID":128678535, "StationName":"Black Hide", "StarSystem":"Wyrd", "Items":[
-	{ "id":128049152, "Name":"$platinum_name;", "Name_Localised":"Platinum", "Category":"$MARKET_category_metals;", "Category_Localised":"Metals", "BuyPrice":0, "SellPrice":42220, "MeanPrice":19756, "StockBracket":0, "DemandBracket":3, "Stock":0, "Demand":9182, "Consumer":true, "Producer":false, "Rare":false },
-	{ "id":128049153, "Name":"$palladium_name;", "Name_Localised":"Palladium", "Category":"$MARKET_category_metals;", "Category_Localised":"Metals", "BuyPrice":0, "SellPrice":13999, "MeanPrice":13244, "StockBracket":0, "DemandBracket":3, "Stock":0, "Demand":123183, "Consumer":true, "Producer":false, "Rare":false },
-	{ "id":128049154, "Name":"$gold_name;", "Name_Localised":"Gold", "Category":"$MARKET_category_metals;", "Category_Localised":"Metals", "BuyPrice":0, "SellPrice":10831, "MeanPrice":9373, "StockBracket":0, "DemandBracket":3, "Stock":0, "Demand":151492, "Consumer":true, "Producer":false, "Rare":false },
-	{ "id":128049155, "Name":"$silver_name;", "Name_Localised":"Silver", "Category":"$MARKET_category_metals;", "Category_Localised":"Metals", "BuyPrice":0, "SellPrice":5512, "MeanPrice":4759, "StockBracket":0, "DemandBracket":3, "Stock":0, "Demand":266258, "Consumer":true, "Producer":false, "Rare":false },   :
+    { "id":128049152, "Name":"$platinum_name;", "Name_Localised":"Platinum", "Category":"$MARKET_category_metals;", "Category_Localised":"Metals", "BuyPrice":0, "SellPrice":42220, "MeanPrice":19756, "StockBracket":0, "DemandBracket":3, "Stock":0, "Demand":9182, "Consumer":true, "Producer":false, "Rare":false },
+    { "id":128049153, "Name":"$palladium_name;", "Name_Localised":"Palladium", "Category":"$MARKET_category_metals;", "Category_Localised":"Metals", "BuyPrice":0, "SellPrice":13999, "MeanPrice":13244, "StockBracket":0, "DemandBracket":3, "Stock":0, "Demand":123183, "Consumer":true, "Producer":false, "Rare":false },
+    { "id":128049154, "Name":"$gold_name;", "Name_Localised":"Gold", "Category":"$MARKET_category_metals;", "Category_Localised":"Metals", "BuyPrice":0, "SellPrice":10831, "MeanPrice":9373, "StockBracket":0, "DemandBracket":3, "Stock":0, "Demand":151492, "Consumer":true, "Producer":false, "Rare":false },
+    { "id":128049155, "Name":"$silver_name;", "Name_Localised":"Silver", "Category":"$MARKET_category_metals;", "Category_Localised":"Metals", "BuyPrice":0, "SellPrice":5512, "MeanPrice":4759, "StockBracket":0, "DemandBracket":3, "Stock":0, "Demand":266258, "Consumer":true, "Producer":false, "Rare":false },   :
 ] }
 ```
 
@@ -578,12 +578,12 @@ Parameters:
 - Ship 
 - ShipId 
 - Items: Array of records 
-	- Slot 
-	- Name 
-	- Hot 
-	- EngineerModifications (only present if modified) 
-	- Level 
-	- Quality 
+    - Slot 
+    - Name 
+    - Hot 
+    - EngineerModifications (only present if modified) 
+    - Level 
+    - Quality 
 
 
 ### MaterialTrade
@@ -595,34 +595,34 @@ Parameters:
 - MarketID 
 - TraderType 
 - Paid 
-	- Material 
-	- Category 
-	- Quantity 
+    - Material 
+    - Category 
+    - Quantity 
 - Received 
-	- Material 
-	- Category 
-	- Quantity 
+    - Material 
+    - Category 
+    - Quantity 
 
 
 Example: (note categories simplified)
 
 ```
 {
-	"timestamp": "2018-02-21T15:23:49Z",
-	"event": "MaterialTrade",
-	"MarketID": 3221397760,
-	"TraderType": "encoded",
-	"Paid": {
-		"Material": "scandatabanks",
-		"Material_Localised": "Classified Scan Databanks",
-		"Category": "Encoded",
-		"Quantity": 6
-	},
-	"Received": {
-		"Material": "encodedscandata",
-		"Material_Localised": "Divergent Scan Data",
-		"Quantity": 1
-	}
+    "timestamp": "2018-02-21T15:23:49Z",
+    "event": "MaterialTrade",
+    "MarketID": 3221397760,
+    "TraderType": "encoded",
+    "Paid": {
+        "Material": "scandatabanks",
+        "Material_Localised": "Classified Scan Databanks",
+        "Category": "Encoded",
+        "Quantity": 6
+    },
+    "Received": {
+        "Material": "encodedscandata",
+        "Material_Localised": "Divergent Scan Data",
+        "Quantity": 1
+    }
 }
 ```
 
@@ -641,10 +641,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "MissionAbandoned",
-	"Name": "Mission_Collect_name",
-	"MissionID": 65343025
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "MissionAbandoned",
+    "Name": "Mission_Collect_name",
+    "MissionID": 65343025
 }
 ```
 
@@ -690,23 +690,23 @@ Examples:
 
 ```
 {
-	"timestamp": "2018-02-28T12:06:37Z",
-	"event": "MissionAccepted",
-	"Faction": "Official i Bootis Liberty Party",
-	"Name": "Mission_DeliveryWing_Agriculture",
-	"LocalisedName": "Agricultural supply run: 2280 units of Tea",
-	"Commodity": "$Tea_Name;",
-	"Commodity_Localised": "Tea",
-	"Count": 2280,
-	"TargetFaction": "Ovid Vision &amp; Co",
-	"DestinationSystem": "Ovid",
-	"DestinationStation": "Shriver Platform",
-	"Expiry": "2018-03-01T12:05:53Z",
-	"Wing": true,
-	"Influence": "Med",
-	"Reputation": "Med",
-	"Reward": 2686155,
-	"MissionID": 65393626
+    "timestamp": "2018-02-28T12:06:37Z",
+    "event": "MissionAccepted",
+    "Faction": "Official i Bootis Liberty Party",
+    "Name": "Mission_DeliveryWing_Agriculture",
+    "LocalisedName": "Agricultural supply run: 2280 units of Tea",
+    "Commodity": "$Tea_Name;",
+    "Commodity_Localised": "Tea",
+    "Count": 2280,
+    "TargetFaction": "Ovid Vision &amp; Co",
+    "DestinationSystem": "Ovid",
+    "DestinationStation": "Shriver Platform",
+    "Expiry": "2018-03-01T12:05:53Z",
+    "Wing": true,
+    "Influence": "Med",
+    "Reputation": "Med",
+    "Reward": 2686155,
+    "MissionID": 65393626
 }
 ```
 
@@ -738,11 +738,11 @@ Optional parameters (depending on mission type)
 - CommodityReward:[] (names and counts of any commodity rewards) 
 - MaterialsReward:[] ( name, category and count) 
 - FactionEffects: array of records 
-	- Faction 
-	- Effects: array of Effect, Effect_Localised and Trend value pairs 
-	- Influence: array of SystemAddress, Trend and Influence values 
-	- Reputation 
-	- ReputationTrend 
+    - Faction 
+    - Effects: array of Effect, Effect_Localised and Trend value pairs 
+    - Influence: array of SystemAddress, Trend and Influence values 
+    - Reputation 
+    - ReputationTrend 
 
 
 _TrendValue_ can be UpGood, UpBad, DownGood, or DownBad
@@ -826,13 +826,13 @@ Example:
 
 ```
 {
-	"timestamp": "2017-08-01T09:04:07Z",
-	"event": "MissionRedirected",
-	"MissionID": 65367315,
-	"NewDestinationStation": "Metcalf Orbital",
-	"OldDestinationStation": "Cuffey Orbital",
-	"NewDestinationSystem": "Cemiess",
-	"OldDestinationSystem": "Vequess"
+    "timestamp": "2017-08-01T09:04:07Z",
+    "event": "MissionRedirected",
+    "MissionID": 65367315,
+    "NewDestinationStation": "Metcalf Orbital",
+    "OldDestinationStation": "Cuffey Orbital",
+    "NewDestinationSystem": "Cemiess",
+    "OldDestinationSystem": "Vequess"
 }
 ```
 
@@ -865,15 +865,15 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "ModuleBuy",
-	"Slot": "MediumHardpoint2",
-	"SellItem": "hpt_pulselaser_fixed_medium",
-	"SellPrice": 0,
-	"BuyItem": "hpt_multicannon_gimbal_medium",
-	"BuyPrice": 50018,
-	"Ship": "cobramkiii",
-	"ShipID": 1
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "ModuleBuy",
+    "Slot": "MediumHardpoint2",
+    "SellItem": "hpt_pulselaser_fixed_medium",
+    "SellPrice": 0,
+    "BuyItem": "hpt_multicannon_gimbal_medium",
+    "BuyPrice": 50018,
+    "Ship": "cobramkiii",
+    "ShipID": 1
 }
 ```
 
@@ -914,13 +914,13 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "ModuleSell",
-	"Slot": "Slot06_Size2",
-	"SellItem": "int_cargorack_size1_class1",
-	"SellPrice": 877,
-	"Ship": "asp",
-	"ShipID": 1
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "ModuleSell",
+    "Slot": "Slot06_Size2",
+    "SellItem": "int_cargorack_size1_class1",
+    "SellPrice": 877,
+    "Ship": "asp",
+    "ShipID": 1
 }
 ```
 
@@ -961,18 +961,18 @@ Example:
 
 ```
 {
-	"timestamp": "2018-01-31T10:55:15Z",
-	"event": "ModuleStore",
-	"MarketID": 128676487,
-	"Slot": "TinyHardpoint1",
-	"StoredItem": "$hpt_shieldbooster_size0_class3_name;",
-	"StoredItem_Localised": "Shield Booster",
-	"Ship": "empire_courier",
-	"ShipID": 11,
-	"Hot": false,
-	"EngineerModifications": "ShieldBooster_Explosive",
-	"Level": 1,
-	"Quality": 0.5271
+    "timestamp": "2018-01-31T10:55:15Z",
+    "event": "ModuleStore",
+    "MarketID": 128676487,
+    "Slot": "TinyHardpoint1",
+    "StoredItem": "$hpt_shieldbooster_size0_class3_name;",
+    "StoredItem_Localised": "Shield Booster",
+    "Ship": "empire_courier",
+    "ShipID": 11,
+    "Hot": false,
+    "EngineerModifications": "ShieldBooster_Explosive",
+    "Level": 1,
+    "Quality": 0.5271
 }
 ```
 
@@ -995,27 +995,27 @@ Examples:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "ModuleSwap",
-	"FromSlot": "MediumHardpoint1",
-	"ToSlot": "MediumHardpoint2",
-	"FromItem": "hpt_pulselaser_fixed_medium",
-	"ToItem": "hpt_multicannon_gimbal_medium",
-	"Ship": "cobramkiii",
-	"ShipID": 1
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "ModuleSwap",
+    "FromSlot": "MediumHardpoint1",
+    "ToSlot": "MediumHardpoint2",
+    "FromItem": "hpt_pulselaser_fixed_medium",
+    "ToItem": "hpt_multicannon_gimbal_medium",
+    "Ship": "cobramkiii",
+    "ShipID": 1
 }
 ```
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "ModuleSwap",
-	"FromSlot": "SmallHardpoint2",
-	"ToSlot": "SmallHardpoint1",
-	"FromItem": "hpt_pulselaserburst_fixed_small_scatter",
-	"ToItem": "Null",
-	"Ship": "cobramkiii",
-	"ShipID": 1
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "ModuleSwap",
+    "FromSlot": "SmallHardpoint2",
+    "ToSlot": "SmallHardpoint1",
+    "FromItem": "hpt_pulselaserburst_fixed_small_scatter",
+    "ToItem": "Null",
+    "Ship": "cobramkiii",
+    "ShipID": 1
 }
 ```
 
@@ -1036,20 +1036,20 @@ The separate file also contains
 
 - Horizons: bool 
 - Items: array of objects 
-	- id 
-	- Name 
-	- BuyPrice 
+    - id 
+    - Name 
+    - BuyPrice 
 
 
 Example: (in journal)
 
 ```
 {
-	"timestamp": "2017-10-05T10:11:38Z",
-	"event": "Outfitting",
-	"MarketID": 128678535,
-	"StationName": "Black Hide",
-	"StarSystem": "Wyrd"
+    "timestamp": "2017-10-05T10:11:38Z",
+    "event": "Outfitting",
+    "MarketID": 128678535,
+    "StationName": "Black Hide",
+    "StarSystem": "Wyrd"
 }
 ```
 
@@ -1057,12 +1057,12 @@ Example: (in journal)
 
 ```
 { "timestamp":"2017-10-05T10:11:38Z", "event":"Outfitting", "MarketID":128678535, "StationName":"Black Hide", "StarSystem":"Wyrd", "Horizons":true, "Items":[
-	{ "id":128049382, "Name":"hpt_pulselaser_fixed_medium", "BuyPrice":16731 },
-	{ "id":128049383, "Name":"hpt_pulselaser_fixed_large", "BuyPrice":66924 },
-	{ "id":128049385, "Name":"hpt_pulselaser_gimbal_small", "BuyPrice":6275 },
-	{ "id":128049386, "Name":"hpt_pulselaser_gimbal_medium", "BuyPrice":33653 },
-	{ "id":128049388, "Name":"hpt_pulselaser_turret_small", "BuyPrice":24717 },
-	{ "id":128681995, "Name":"hpt_pulselaser_gimbal_huge", "BuyPrice":834269 },
+    { "id":128049382, "Name":"hpt_pulselaser_fixed_medium", "BuyPrice":16731 },
+    { "id":128049383, "Name":"hpt_pulselaser_fixed_large", "BuyPrice":66924 },
+    { "id":128049385, "Name":"hpt_pulselaser_gimbal_small", "BuyPrice":6275 },
+    { "id":128049386, "Name":"hpt_pulselaser_gimbal_medium", "BuyPrice":33653 },
+    { "id":128049388, "Name":"hpt_pulselaser_turret_small", "BuyPrice":24717 },
+    { "id":128681995, "Name":"hpt_pulselaser_gimbal_huge", "BuyPrice":834269 },
 ] }
 ```
 
@@ -1083,13 +1083,13 @@ Example:
 
 ```
 {
-	"timestamp": "2018-03-19T10:25:10Z",
-	"event": "PayBounties",
-	"Amount": 400,
-	"Faction": "$faction_Federation;",
-	"Faction_Localised": "Federation",
-	"ShipID": 9,
-	"BrokerPercentage": 25
+    "timestamp": "2018-03-19T10:25:10Z",
+    "event": "PayBounties",
+    "Amount": 400,
+    "Faction": "$faction_Federation;",
+    "Faction_Localised": "Federation",
+    "ShipID": 9,
+    "BrokerPercentage": 25
 }
 ```
 
@@ -1110,12 +1110,12 @@ Example:
 
 ```
 {
-	"timestamp": "2018-03-19T10:24:21Z",
-	"event": "PayFines",
-	"Amount": 250,
-	"AllFines": false,
-	"Faction": "Batz Transport Commodities",
-	"ShipID": 9
+    "timestamp": "2018-03-19T10:24:21Z",
+    "event": "PayFines",
+    "Amount": 250,
+    "AllFines": false,
+    "Faction": "Batz Transport Commodities",
+    "ShipID": 9
 }
 ```
 
@@ -1148,19 +1148,19 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "RedeemVoucher",
-	"Type": "bounty",
-	"Factions": [
-		{
-			"Faction": "Ed's 38",
-			"Amount": 1000
-		},
-		{
-			"Faction": "Zac's Lads",
-			"Amount": 2000
-		}
-	]
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "RedeemVoucher",
+    "Type": "bounty",
+    "Factions": [
+        {
+            "Faction": "Ed's 38",
+            "Amount": 1000
+        },
+        {
+            "Faction": "Zac's Lads",
+            "Amount": 2000
+        }
+    ]
 }
 ```
 
@@ -1178,10 +1178,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "RefuelAll",
-	"Cost": 317,
-	"Amount": 6.322901
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "RefuelAll",
+    "Cost": 317,
+    "Amount": 6.322901
 }
 ```
 
@@ -1199,10 +1199,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "RefuelPartial",
-	"Cost": 83,
-	"Amount": 1.649
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "RefuelPartial",
+    "Cost": 83,
+    "Amount": 1.649
 }
 ```
 
@@ -1220,10 +1220,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "Repair",
-	"Item": "int_powerplant_size3_class5",
-	"Cost": 1100
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "Repair",
+    "Item": "int_powerplant_size3_class5",
+    "Cost": 1100
 }
 ```
 
@@ -1231,16 +1231,16 @@ Note when repairing on a FleetCarrier, you can now get a list of the modules rep
 
 ```
 {
-	"timestamp": "2020-03-31T13:39:42Z",
-	"event": "Repair",
-	"Items": [
-		"$hpt_dumbfiremissilerack_fixed_large_name;",
-		"$hpt_beamlaser_gimbal_medium_name;",
-		"$hpt_railgun_fixed_medium_name;",
-		"$hpt_beamlaser_gimbal_medium_name;",
-		"$hpt_dumbfiremissilerack_fixed_large_name;"
-	],
-	"Cost": 34590
+    "timestamp": "2020-03-31T13:39:42Z",
+    "event": "Repair",
+    "Items": [
+        "$hpt_dumbfiremissilerack_fixed_large_name;",
+        "$hpt_beamlaser_gimbal_medium_name;",
+        "$hpt_railgun_fixed_medium_name;",
+        "$hpt_beamlaser_gimbal_medium_name;",
+        "$hpt_dumbfiremissilerack_fixed_large_name;"
+    ],
+    "Cost": 34590
 }
 ```
 
@@ -1269,12 +1269,12 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "RestockVehicle",
-	"Type": "SRV",
-	"Loadout": "starter",
-	"Cost": 1030,
-	"Count": 1
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "RestockVehicle",
+    "Type": "SRV",
+    "Loadout": "starter",
+    "Cost": 1030,
+    "Count": 1
 }
 ```
 
@@ -1319,12 +1319,12 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "SellDrones",
-	"Type": "Drones",
-	"Count": 1,
-	"SellPrice": 91,
-	"TotalSale": 91
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "SellDrones",
+    "Type": "Drones",
+    "Count": 1,
+    "SellPrice": 91,
+    "TotalSale": 91
 }
 ```
 
@@ -1344,12 +1344,12 @@ Example:
 
 ```
 {
-	"timestamp": "2017-07-20T08:56:39Z",
-	"event": "SellShipOnRebuy",
-	"ShipType": "Dolphin",
-	"System": "Shinrarta Dezhra",
-	"SellShipId": 4,
-	"ShipPrice": 4110183
+    "timestamp": "2017-07-20T08:56:39Z",
+    "event": "SellShipOnRebuy",
+    "ShipType": "Dolphin",
+    "System": "Shinrarta Dezhra",
+    "SellShipId": 4,
+    "ShipPrice": 4110183
 }
 ```
 
@@ -1369,12 +1369,12 @@ Example:
 
 ```
 {
-	"timestamp": "2017-01-24T10:42:38Z",
-	"event": "SetUserShipName",
-	"Ship": "cobramkiii",
-	"ShipID": 2,
-	"UserShipName": "Enterprise",
-	"UserShipId": "NCC 1701"
+    "timestamp": "2017-01-24T10:42:38Z",
+    "event": "SetUserShipName",
+    "Ship": "cobramkiii",
+    "ShipID": 2,
+    "UserShipName": "Enterprise",
+    "UserShipId": "NCC 1701"
 }
 ```
 
@@ -1394,30 +1394,30 @@ The full price list is written to a separate file, in the same folder as the jou
 - Horizons: bool 
 - AllowCobraMkIV: bool 
 - Pricelist: array of objects 
-	- ShipType 
-	- ShipPrice 
+    - ShipType 
+    - ShipPrice 
 
 
 Example: in the Journal:
 
 ```
 {
-	"timestamp": "2017-10-04T10:01:38Z",
-	"event": "Shipyard",
-	"MarketID": 128122104,
-	"StationName": "Seven Holm",
-	"StarSystem": "Tamor"
+    "timestamp": "2017-10-04T10:01:38Z",
+    "event": "Shipyard",
+    "MarketID": 128122104,
+    "StationName": "Seven Holm",
+    "StarSystem": "Tamor"
 }
 ```
 
 In the separate shipyard.json file:
 ```
 { "timestamp":"2017-10-04T10:01:38Z", "event":"Shipyard", "MarketID": 128122104, "StationName":"Seven Holm", "StarSystem":"Tamor", "Horizons":true, "AllowCobraMkIV":true, "PriceList":[
-	{ "id":128049249, "ShipType":"sidewinder", "ShipPrice":24336 },
-	{ "id":128049255, "ShipType":"eagle", "ShipPrice":34071 },
-	{ "id":128049261, "ShipType":"hauler", "ShipPrice":40094 },
-	{ "id":128049267, "ShipType":"adder", "ShipPrice":66779 },
-	{ "id":128672138, "ShipType":"empire_eagle", "ShipType_Localised":"Imperial Eagle", "ShipPrice":84283 },
+    { "id":128049249, "ShipType":"sidewinder", "ShipPrice":24336 },
+    { "id":128049255, "ShipType":"eagle", "ShipPrice":34071 },
+    { "id":128049261, "ShipType":"hauler", "ShipPrice":40094 },
+    { "id":128049267, "ShipType":"adder", "ShipPrice":66779 },
+    { "id":128672138, "ShipType":"empire_eagle", "ShipType_Localised":"Imperial Eagle", "ShipPrice":84283 },
 ] }
 ```
 
@@ -1443,12 +1443,12 @@ Example:
 
 ```
 {
-	"timestamp": "2016-07-21T14:36:38Z",
-	"event": "ShipyardBuy",
-	"ShipType": "hauler",
-	"ShipPrice": 46262,
-	"StoreOldShip": "SideWinder",
-	"StoreShipID": 2
+    "timestamp": "2016-07-21T14:36:38Z",
+    "event": "ShipyardBuy",
+    "ShipType": "hauler",
+    "ShipPrice": 46262,
+    "StoreOldShip": "SideWinder",
+    "StoreShipID": 2
 }
 ```
 
@@ -1466,10 +1466,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-07-21T14:36:38Z",
-	"event": "ShipyardNew",
-	"ShipType": "hauler",
-	"NewShipID": 4
+    "timestamp": "2016-07-21T14:36:38Z",
+    "event": "ShipyardNew",
+    "ShipType": "hauler",
+    "NewShipID": 4
 }
 ```
 
@@ -1490,12 +1490,12 @@ Example:
 
 ```
 {
-	"timestamp": "2016-07-21T15:12:19Z",
-	"event": "ShipyardSell",
-	"ShipType": "Adder",
-	"SellShipID": 6,
-	"ShipPrice": 79027,
-	"System": "Eranin"
+    "timestamp": "2016-07-21T15:12:19Z",
+    "event": "ShipyardSell",
+    "ShipType": "Adder",
+    "SellShipID": 6,
+    "ShipPrice": 79027,
+    "System": "Eranin"
 }
 ```
 
@@ -1519,13 +1519,13 @@ Example:
 
 ```
 {
-	"timestamp": "2016-07-21T15:19:49Z",
-	"event": "ShipyardTransfer",
-	"ShipType": "SideWinder",
-	"ShipID": 7,
-	"System": "Eranin",
-	"Distance": 85.639145,
-	"TransferPrice": 580
+    "timestamp": "2016-07-21T15:19:49Z",
+    "event": "ShipyardTransfer",
+    "ShipType": "SideWinder",
+    "ShipID": 7,
+    "System": "Eranin",
+    "Distance": 85.639145,
+    "TransferPrice": 580
 }
 ```
 
@@ -1548,12 +1548,12 @@ Example
 
 ```
 {
-	"timestamp": "2016-07-21T14:36:06Z",
-	"event": "ShipyardSwap",
-	"ShipType": "sidewinder",
-	"ShipID": 10,
-	"StoreOldShip": "Asp",
-	"StoreShipID": 2
+    "timestamp": "2016-07-21T14:36:06Z",
+    "event": "ShipyardSwap",
+    "ShipType": "sidewinder",
+    "ShipID": 10,
+    "StoreOldShip": "Asp",
+    "StoreShipID": 2
 }
 ```
 
@@ -1565,17 +1565,17 @@ Parameters:
 
 - MarketID: current market 
 - Items: (array of objects) 
-	- Name 
-	- StarSystem 
-	- MarketID: where the module is stored 
-	- StorageSlot 
-	- TransferCost 
-	- TransferTime 
-	- Hot 
-	- EngineerModifications: (recipe name) 
-	- Level 
-	- Quality 
-	- InTransit:bool 
+    - Name 
+    - StarSystem 
+    - MarketID: where the module is stored 
+    - StorageSlot 
+    - TransferCost 
+    - TransferTime 
+    - Hot 
+    - EngineerModifications: (recipe name) 
+    - Level 
+    - Quality 
+    - InTransit:bool 
 
 
 "EngineerModifications", "Level" and "Quality" only appear for an engineered module
@@ -1598,17 +1598,17 @@ Parameters:
 - StationName 
 - StarSystem 
 - ShipsHere: (array of objects) 
-	- ShipID 
-	- ShipType 
-	- Name (if named) 
-	- Value 
-	- Hot 
+    - ShipID 
+    - ShipType 
+    - Name (if named) 
+    - Value 
+    - Hot 
 - ShipsRemote: (array of objects) 
-	- ShipID 
-	- ShipType 
-	- Name (if named) 
-	- Value 
-	- Hot 
+    - ShipID 
+    - ShipType 
+    - Name (if named) 
+    - Value 
+    - Hot 
 
 
 - If the ship is in transit:
@@ -1618,42 +1618,42 @@ Parameters:
 
 - If the ship is not in transit:
 
-	- StarSystem 
-	- ShipMarketID 
-	- TransferPrice 
-	- TransferType 
+    - StarSystem 
+    - ShipMarketID 
+    - TransferPrice 
+    - TransferType 
 
 
 Example:
 
 ```
 {
-	"timestamp": "2017-10-04T10:07:21Z",
-	"event": "StoredShips",
-	"StationName": "Jameson Memorial",
-	"StarSystem": "Shinrarta Dezhra",
-	"ShipsHere": [
-		{
-			"ShipID": 64,
-			"ShipType": "sidewinder",
-			"Value": 567962
-		},
-		{
-			"ShipID": 20,
-			"ShipType": "empire_eagle",
-			"Value": 6373956
-		}
-	],
-	"ShipsRemote": [
-		{
-			"ShipID": 0,
-			"ShipType": "CobraMkIII",
-			"StarSystem": "Beta-1 Tucanae",
-			"TransferPrice": 3777,
-			"TransferTime": 1590,
-			"Value": 9464239
-		}
-	]
+    "timestamp": "2017-10-04T10:07:21Z",
+    "event": "StoredShips",
+    "StationName": "Jameson Memorial",
+    "StarSystem": "Shinrarta Dezhra",
+    "ShipsHere": [
+        {
+            "ShipID": 64,
+            "ShipType": "sidewinder",
+            "Value": 567962
+        },
+        {
+            "ShipID": 20,
+            "ShipType": "empire_eagle",
+            "Value": 6373956
+        }
+    ],
+    "ShipsRemote": [
+        {
+            "ShipID": 0,
+            "ShipType": "CobraMkIII",
+            "StarSystem": "Beta-1 Tucanae",
+            "TransferPrice": 3777,
+            "TransferTime": 1590,
+            "Value": 9464239
+        }
+    ]
 }
 ```
 
@@ -1667,57 +1667,57 @@ Parameters:
 - MarketID 
 - ItemsUnlocked: the name(s) of the new item unlocked (available in Outfitting) 
 - Commodities: 
-	- Name: name of item 
-	- Count: number of items used 
+    - Name: name of item 
+    - Count: number of items used 
 - Materials: 
-	- Name 
-	- Count 
-	- Category 
+    - Name 
+    - Count 
+    - Category 
 
 
 Example:
 
 ```
 {
-	"timestamp": "2018-03-02T11:28:44Z",
-	"event": "TechnologyBroker",
-	"BrokerType": "Human",
-	"MarketID": 128151032,
-	"ItemsUnlocked": [
-		{
-			"Name": "Hpt_PlasmaShockCannon_Fixed_Medium",
-			"Name_Localised": "Shock Cannon"
-		}
-	],
-	"Commodities": [
-		{
-			"Name": "iondistributor",
-			"Name_Localised": "Ion Distributor",
-			"Count": 6
-		}
-	],
-	"Materials": [
-		{
-			"Name": "vanadium",
-			"Count": 30,
-			"Category": "Raw"
-		},
-		{
-			"Name": "tungsten",
-			"Count": 30,
-			"Category": "Raw"
-		},
-		{
-			"Name": "rhenium",
-			"Count": 36,
-			"Category": "Raw"
-		},
-		{
-			"Name": "technetium",
-			"Count": 30,
-			"Category": "Raw"
-		}
-	]
+    "timestamp": "2018-03-02T11:28:44Z",
+    "event": "TechnologyBroker",
+    "BrokerType": "Human",
+    "MarketID": 128151032,
+    "ItemsUnlocked": [
+        {
+            "Name": "Hpt_PlasmaShockCannon_Fixed_Medium",
+            "Name_Localised": "Shock Cannon"
+        }
+    ],
+    "Commodities": [
+        {
+            "Name": "iondistributor",
+            "Name_Localised": "Ion Distributor",
+            "Count": 6
+        }
+    ],
+    "Materials": [
+        {
+            "Name": "vanadium",
+            "Count": 30,
+            "Category": "Raw"
+        },
+        {
+            "Name": "tungsten",
+            "Count": 30,
+            "Category": "Raw"
+        },
+        {
+            "Name": "rhenium",
+            "Count": 36,
+            "Category": "Raw"
+        },
+        {
+            "Name": "technetium",
+            "Count": 30,
+            "Category": "Raw"
+        }
+    ]
 }
 ```
 
@@ -1737,12 +1737,12 @@ Example:
 
 ```
 {
-	"timestamp":"2022-11-18T16:19:48Z",
-	"event":"ClearImpound", 
-	"ShipType":"asp",
-	"ShipType_Localised":"Asp Explorer",
-	"ShipID":10,
-	"ShipMarketID":128833431,
-	"MarketID":128833431 
+    "timestamp":"2022-11-18T16:19:48Z",
+    "event":"ClearImpound", 
+    "ShipType":"asp",
+    "ShipType_Localised":"Asp Explorer",
+    "ShipID":10,
+    "ShipMarketID":128833431,
+    "MarketID":128833431 
 }
 ```

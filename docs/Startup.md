@@ -14,38 +14,38 @@ Parameters:
 
 - Vessel: "Ship" or "SRV" 
 - Inventory: array of cargo, 
-	- Name 
-	- Count 
-	- Stolen 
-	- MissionID (if relevant) 
+    - Name 
+    - Count 
+    - Stolen 
+    - MissionID (if relevant) 
 
 
 Example:
 
 ```
 {
-	"timestamp": "2018-06-26T08:21:17Z",
-	"event": "Cargo",
-	"Vessel": "Ship",
-	"Inventory": [
-		{
-			"Name": "gold",
-			"Count": 2,
-			"Stolen": 0
-		},
-		{
-			"Name": "gold",
-			"MissionID": 65397935,
-			"Count": 14,
-			"Stolen": 0
-		},
-		{
-			"Name": "iondistributor",
-			"Name_Localised": "Ion Distributor",
-			"Count": 2,
-			"Stolen": 0
-		}
-	]
+    "timestamp": "2018-06-26T08:21:17Z",
+    "event": "Cargo",
+    "Vessel": "Ship",
+    "Inventory": [
+        {
+            "Name": "gold",
+            "Count": 2,
+            "Stolen": 0
+        },
+        {
+            "Name": "gold",
+            "MissionID": 65397935,
+            "Count": 14,
+            "Stolen": 0
+        },
+        {
+            "Name": "iondistributor",
+            "Name_Localised": "Ion Distributor",
+            "Count": 2,
+            "Stolen": 0
+        }
+    ]
 }
 ```
 
@@ -63,10 +63,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "ClearSavedGame",
-	"Name": "HRC1",
-	"FID": "F44396"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "ClearSavedGame",
+    "Name": "HRC1",
+    "FID": "F44396"
 }
 ```
 
@@ -104,27 +104,27 @@ Parameters:
 
 
 - Modules: array of installed items, each with: 
-	- Slot: slot name 
-	- Item: module name - lowercase 
-	- On: bool, indicates on or off 
-	- Priority: power priority 
-	- Health 
-	- Value 
-	- AmmoInClip: (if relevant) 
-	- AmmoInHopper: (if relevant) 
-	- Engineering: (if engineered) 
-		- EngineerID 
-		- Engineer: name 
-		- BlueprintID 
-		- BlueprintName: blueprint name   
-		- Level 
-		- Quality 
-		- ExperimentalEffect: (name, if applied) 
-		- Modifications: Json array of objects 
-			- Label – (see §15.11 below) 
-			- Value – may not always be present 
-			- OriginalValue 
-			- LessIsGood: bool 
+    - Slot: slot name 
+    - Item: module name - lowercase 
+    - On: bool, indicates on or off 
+    - Priority: power priority 
+    - Health 
+    - Value 
+    - AmmoInClip: (if relevant) 
+    - AmmoInHopper: (if relevant) 
+    - Engineering: (if engineered) 
+        - EngineerID 
+        - Engineer: name 
+        - BlueprintID 
+        - BlueprintName: blueprint name   
+        - Level 
+        - Quality 
+        - ExperimentalEffect: (name, if applied) 
+        - Modifications: Json array of objects 
+            - Label – (see §15.11 below) 
+            - Value – may not always be present 
+            - OriginalValue 
+            - LessIsGood: bool 
 
 
 _(For a passenger cabin, AmmoInClip holds the number of places in the cabin)_
@@ -144,50 +144,50 @@ Example:
 
 ```
 {
-	"timestamp": "2017-02-10T14:25:51Z",
-	"event": "Materials",
-	"Raw": [
-		{
-			"Name": "chromium",
-			"Count": 28
-		},
-		{
-			"Name": "zinc",
-			"Count": 18
-		},
-		{
-			"Name": "iron",
-			"Count": 23
-		},
-		{
-			"Name": "sulphur",
-			"Count": 19
-		}
-	],
-	"Manufactured": [
-		{
-			"Name": "refinedfocuscrystals",
-			"Count": 10
-		},
-		{
-			"Name": "highdensitycomposites",
-			"Count": 3
-		},
-		{
-			"Name": "mechanicalcomponents",
-			"Count": 3
-		}
-	],
-	"Encoded": [
-		{
-			"Name": "emissiondata",
-			"Count": 32
-		},
-		{
-			"Name": "shielddensityreports",
-			"Count": 23
-		}
-	]
+    "timestamp": "2017-02-10T14:25:51Z",
+    "event": "Materials",
+    "Raw": [
+        {
+            "Name": "chromium",
+            "Count": 28
+        },
+        {
+            "Name": "zinc",
+            "Count": 18
+        },
+        {
+            "Name": "iron",
+            "Count": 23
+        },
+        {
+            "Name": "sulphur",
+            "Count": 19
+        }
+    ],
+    "Manufactured": [
+        {
+            "Name": "refinedfocuscrystals",
+            "Count": 10
+        },
+        {
+            "Name": "highdensitycomposites",
+            "Count": 3
+        },
+        {
+            "Name": "mechanicalcomponents",
+            "Count": 3
+        }
+    ],
+    "Encoded": [
+        {
+            "Name": "emissiondata",
+            "Count": 32
+        },
+        {
+            "Name": "shielddensityreports",
+            "Count": 23
+        }
+    ]
 }
 ```
 
@@ -212,18 +212,18 @@ Each object contains:
 
 ```
 {
-	"timestamp": "2017-10-02T10:37:58Z",
-	"event": "Missions",
-	"Active": [
-		{
-			"MissionID": 65380900,
-			"Name": "Mission_Courier_name",
-			"PassengerMission": false,
-			"Expires": 82751
-		}
-	],
-	"Failed": [],
-	"Complete": []
+    "timestamp": "2017-10-02T10:37:58Z",
+    "event": "Missions",
+    "Active": [
+        {
+            "MissionID": 65380900,
+            "Name": "Mission_Courier_name",
+            "PassengerMission": false,
+            "Expires": 82751
+        }
+    ],
+    "Failed": [],
+    "Complete": []
 }
 ```
 
@@ -242,11 +242,11 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "NewCommander",
-	"Name": "HRC1",
-	"FID": "F44396",
-	"Package": "ImperialBountyHunter"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "NewCommander",
+    "Name": "HRC1",
+    "FID": "F44396",
+    "Package": "ImperialBountyHunter"
 }
 ```
 
@@ -281,20 +281,20 @@ Example:
 
 ```
 {
-	"timestamp": "2017-02-10T14:25:51Z",
-	"event": "LoadGame",
-	"Commander": "HRC-2",
-	"FID": "F44396",
-	"Horizons": true,
-	"Ship": "FerDeLance",
-	"ShipID": 19,
-	"ShipName": "jewel of parhoon",
-	"ShipIdent": "hr-17f",
-	"FuelLevel": 3.964024,
-	"FuelCapacity": 8,
-	"GameMode": "Open",
-	"Credits": 2890718739,
-	"Loan": 0
+    "timestamp": "2017-02-10T14:25:51Z",
+    "event": "LoadGame",
+    "Commander": "HRC-2",
+    "FID": "F44396",
+    "Horizons": true,
+    "Ship": "FerDeLance",
+    "ShipID": 19,
+    "ShipName": "jewel of parhoon",
+    "ShipIdent": "hr-17f",
+    "FuelLevel": 3.964024,
+    "FuelCapacity": 8,
+    "GameMode": "Open",
+    "Credits": 2890718739,
+    "Loan": 0
 }
 ```
 
@@ -305,11 +305,11 @@ When written: at startup, when loading the saved game file
 Parameters:
 
 - Manifest: array of passenger records, each containing: 
-	- MissionID 
-	- Type 
-	- VIP (bool) 
-	- Wanted (bool) 
-	- Count 
+    - MissionID 
+    - Type 
+    - VIP (bool) 
+    - Wanted (bool) 
+    - Count 
 
 
 ### Powerplay
@@ -329,13 +329,13 @@ Example:
 
 ```
 {
-	"timestamp": "2018-01-31T10:53:04Z",
-	"event": "Powerplay",
-	"Power": "Edmund Mahon",
-	"Rank": 0,
-	"Merits": 10,
-	"Votes": 0,
-	"TimePledged": 433024
+    "timestamp": "2018-01-31T10:53:04Z",
+    "event": "Powerplay",
+    "Power": "Edmund Mahon",
+    "Rank": 0,
+    "Merits": 10,
+    "Votes": 0,
+    "TimePledged": 433024
 }
 ```
 
@@ -357,14 +357,14 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "Progress",
-	"Combat": 77,
-	"Trade": 9,
-	"Explore": 93,
-	"Empire": 0,
-	"Federation": 0,
-	"CQC": 0
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "Progress",
+    "Combat": 77,
+    "Trade": 9,
+    "Explore": 93,
+    "Empire": 0,
+    "Federation": 0,
+    "CQC": 0
 }
 ```
 
@@ -386,14 +386,14 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "Rank",
-	"Combat": 2,
-	"Trade": 2,
-	"Explore": 5,
-	"Empire": 1,
-	"Federation": 3,
-	"CQC": 0
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "Rank",
+    "Combat": 2,
+    "Trade": 2,
+    "Explore": 5,
+    "Empire": 1,
+    "Federation": 3,
+    "CQC": 0
 }
 ```
 
@@ -434,91 +434,91 @@ This line contains the information displayed in the statistics panel on the righ
 Parameters:
 
 - Bank_Account 
-	- Current_Wealth Spent_On_Ships 
-	- Spent_On_Outfitting Spent_On_Repairs 
-	- Spent_On_Fuel 
-	- Spent_On_Ammo_Consumables 
-	- Insurance_Claims 
-	- Spent_On_Insurance 
+    - Current_Wealth Spent_On_Ships 
+    - Spent_On_Outfitting Spent_On_Repairs 
+    - Spent_On_Fuel 
+    - Spent_On_Ammo_Consumables 
+    - Insurance_Claims 
+    - Spent_On_Insurance 
 - Combat 
-	- Bounties_Claimed 
-	- Bounty_Hunting_Profit 
-	- Combat_Bonds 
-	- Combat_Bond_Profits 
-	- Assassinations 
-	- Assassination_Profits 
-	- Highest_Single_Reward 
-	- Skimmers_Killed   
+    - Bounties_Claimed 
+    - Bounty_Hunting_Profit 
+    - Combat_Bonds 
+    - Combat_Bond_Profits 
+    - Assassinations 
+    - Assassination_Profits 
+    - Highest_Single_Reward 
+    - Skimmers_Killed   
 - Crime 
-	- Fines 
-	- Total_Fines 
-	- Bounties_Received 
-	- Total_Bounties 
-	- Highest_Bounty 
+    - Fines 
+    - Total_Fines 
+    - Bounties_Received 
+    - Total_Bounties 
+    - Highest_Bounty 
 - Smuggling 
-	- Black_Markets_Traded_With 
-	- Black_Markets_Profits 
-	- Resources_Smuggled 
-	- Average_Profit 
-	- Highest_Single_Transaction   
+    - Black_Markets_Traded_With 
+    - Black_Markets_Profits 
+    - Resources_Smuggled 
+    - Average_Profit 
+    - Highest_Single_Transaction   
 - Trading 
-	- Markets_Traded_With 
-	- Market_Profits 
-	- Resources_Traded 
-	- Average_Profit 
-	- Highest_Single_Transaction   
+    - Markets_Traded_With 
+    - Market_Profits 
+    - Resources_Traded 
+    - Average_Profit 
+    - Highest_Single_Transaction   
 - Mining 
-	- Mining_Profits 
-	- Quantity_Mined 
-	- Materials_Collected   
+    - Mining_Profits 
+    - Quantity_Mined 
+    - Materials_Collected   
 - Exploration 
-	- Systems_Visited 
-	- Fuel_Scooped 
-	- Fuel_Purchased 
-	- Exploration_Profits 
-	- Planets_Scanned_To_Level_2 
-	- Planets_Scanned_To_Level_3 
-	- Highest_Payout 
-	- Total_Hyperspace_Distance 
-	- Total_Hyperspace_Jumps 
-	- Greatest_Distance_From_Start 
-	- Time_Played   
+    - Systems_Visited 
+    - Fuel_Scooped 
+    - Fuel_Purchased 
+    - Exploration_Profits 
+    - Planets_Scanned_To_Level_2 
+    - Planets_Scanned_To_Level_3 
+    - Highest_Payout 
+    - Total_Hyperspace_Distance 
+    - Total_Hyperspace_Jumps 
+    - Greatest_Distance_From_Start 
+    - Time_Played   
 - Passengers 
-	- Passengers_Missions_Bulk 
-	- Passengers_Missions_VIP 
-	- Passengers_Missions_Delivered 
-	- Passengers_Missions_Ejected   
+    - Passengers_Missions_Bulk 
+    - Passengers_Missions_VIP 
+    - Passengers_Missions_Delivered 
+    - Passengers_Missions_Ejected   
 - Search_And_Rescue 
-	- SearchRescue_Traded 
-	- SearchRescue_Profit 
-	- SearchRescue_Count   
+    - SearchRescue_Traded 
+    - SearchRescue_Profit 
+    - SearchRescue_Count   
 - Crafting 
-	- Spent_On_Crafting 
-	- Count_Of_Used_Engineers 
-	- Recipes_Generated 
-	- Recipes_Generated_Rank_1 
-	- Recipes_Generated_Rank_2 
-	- Recipes_Generated_Rank_3 
-	- Recipes_Generated_Rank_4   
-	- Recipes_Generated_Rank_5   
-	- Recipes_Applied   
-	- Recipes_Applied_Rank_1   
-	- Recipes_Applied_Rank_2   
-	- Recipes_Applied_Rank_3   
-	- Recipes_Applied_Rank_4   
-	- Recipes_Applied_Rank_5   
-	- Recipes_Applied_On_Previously_Modified_Modules   
+    - Spent_On_Crafting 
+    - Count_Of_Used_Engineers 
+    - Recipes_Generated 
+    - Recipes_Generated_Rank_1 
+    - Recipes_Generated_Rank_2 
+    - Recipes_Generated_Rank_3 
+    - Recipes_Generated_Rank_4   
+    - Recipes_Generated_Rank_5   
+    - Recipes_Applied   
+    - Recipes_Applied_Rank_1   
+    - Recipes_Applied_Rank_2   
+    - Recipes_Applied_Rank_3   
+    - Recipes_Applied_Rank_4   
+    - Recipes_Applied_Rank_5   
+    - Recipes_Applied_On_Previously_Modified_Modules   
 - Crew 
-	- NpcCrew_TotalWages 
-	- NpcCrew_Hired 
-	- NpcCrew_Fired 
-	- NpcCrew_Died 
+    - NpcCrew_TotalWages 
+    - NpcCrew_Hired 
+    - NpcCrew_Fired 
+    - NpcCrew_Died 
 - Multicrew 
-	- Multicrew_Time_Total 
-	- Multicrew_Gunner_Time_Total 
-	- Multicrew_Fighter_Time_Total 
-	- Multicrew_Credits_Total 
-	- Multicrew_Fines_Total 
+    - Multicrew_Time_Total 
+    - Multicrew_Gunner_Time_Total 
+    - Multicrew_Fighter_Time_Total 
+    - Multicrew_Credits_Total 
+    - Multicrew_Fines_Total 
 
 
 Note times are in seconds
@@ -527,107 +527,107 @@ Example:
 
 ```
 {
-	"timestamp": "2017-09-25T15:18:31Z",
-	"event": "Statistics",
-	"Bank_Account": {
-		"Current_Wealth": 148827050,
-		"Spent_On_Ships": 14499177,
-		"Spent_On_Outfitting": 30785093,
-		"Spent_On_Repairs": 17716,
-		"Spent_On_Fuel": 1647,
-		"Spent_On_Ammo_Consumables": 0,
-		"Insurance_Claims": 4,
-		"Spent_On_Insurance": 1397620
-	},
-	"Combat": {
-		"Bounties_Claimed": 0,
-		"Bounty_Hunting_Profit": 0,
-		"Combat_Bonds": 0,
-		"Combat_Bond_Profits": 0,
-		"Assassinations": 0,
-		"Assassination_Profits": 0,
-		"Highest_Single_Reward": 0,
-		"Skimmers_Killed": 0
-	},
-	"Crime": {
-		"Fines": 0,
-		"Total_Fines": 0,
-		"Bounties_Received": 0,
-		"Total_Bounties": 0,
-		"Highest_Bounty": 0
-	},
-	"Smuggling": {
-		"Black_Markets_Traded_With": 0,
-		"Black_Markets_Profits": 0,
-		"Resources_Smuggled": 0,
-		"Average_Profit": 0,
-		"Highest_Single_Transaction": 0
-	},
-	"Trading": {
-		"Markets_Traded_With": 3,
-		"Market_Profits": 40700,
-		"Resources_Traded": 23,
-		"Average_Profit": 4070,
-		"Highest_Single_Transaction": 17961
-	},
-	"Mining": {
-		"Mining_Profits": 0,
-		"Quantity_Mined": 0,
-		"Materials_Collected": 100
-	},
-	"Exploration": {
-		"Systems_Visited": 228,
-		"Fuel_Scooped": 111,
-		"Fuel_Purchased": 0,
-		"Exploration_Profits": 304469,
-		"Planets_Scanned_To_Level_2": 39,
-		"Planets_Scanned_To_Level_3": 15,
-		"Highest_Payout": 52503,
-		"Total_Hyperspace_Distance": 844927,
-		"Total_Hyperspace_Jumps": 295,
-		"Greatest_Distance_From_Start": 65222.47204614,
-		"Time_Played": 651060
-	},
-	"Passengers": {
-		"Passengers_Missions_Bulk": 0,
-		"Passengers_Missions_VIP": 0,
-		"Passengers_Missions_Delivered": 0,
-		"Passengers_Missions_Ejected": 0
-	},
-	"Search_And_Rescue": {
-		"SearchRescue_Traded": 12,
-		"SearchRescue_Profit": 19467,
-		"SearchRescue_Count": 8
-	},
-	"Crafting": {
-		"Spent_On_Crafting": 0,
-		"Count_Of_Used_Engineers": 2,
-		"Recipes_Generated": 28,
-		"Recipes_Generated_Rank_1": 9,
-		"Recipes_Generated_Rank_2": 6,
-		"Recipes_Generated_Rank_3": 9,
-		"Recipes_Generated_Rank_4": 4,
-		"Recipes_Generated_Rank_5": 0,
-		"Recipes_Applied": 21,
-		"Recipes_Applied_Rank_1": 8,
-		"Recipes_Applied_Rank_2": 5,
-		"Recipes_Applied_Rank_3": 7,
-		"Recipes_Applied_Rank_4": 1,
-		"Recipes_Applied_Rank_5": 0,
-		"Recipes_Applied_On_Previously_Modified_Modules": 0
-	},
-	"Crew": {
-		"NpcCrew_TotalWages": 0,
-		"NpcCrew_Hired": 0,
-		"NpcCrew_Fired": 0,
-		"NpcCrew_Died": 0
-	},
-	"Multicrew": {
-		"Multicrew_Time_Total": 23327,
-		"Multicrew_Gunner_Time_Total": 14241,
-		"Multicrew_Fighter_Time_Total": 6070,
-		"Multicrew_Credits_Total": 0,
-		"Multicrew_Fines_Total": 0
-	}
+    "timestamp": "2017-09-25T15:18:31Z",
+    "event": "Statistics",
+    "Bank_Account": {
+        "Current_Wealth": 148827050,
+        "Spent_On_Ships": 14499177,
+        "Spent_On_Outfitting": 30785093,
+        "Spent_On_Repairs": 17716,
+        "Spent_On_Fuel": 1647,
+        "Spent_On_Ammo_Consumables": 0,
+        "Insurance_Claims": 4,
+        "Spent_On_Insurance": 1397620
+    },
+    "Combat": {
+        "Bounties_Claimed": 0,
+        "Bounty_Hunting_Profit": 0,
+        "Combat_Bonds": 0,
+        "Combat_Bond_Profits": 0,
+        "Assassinations": 0,
+        "Assassination_Profits": 0,
+        "Highest_Single_Reward": 0,
+        "Skimmers_Killed": 0
+    },
+    "Crime": {
+        "Fines": 0,
+        "Total_Fines": 0,
+        "Bounties_Received": 0,
+        "Total_Bounties": 0,
+        "Highest_Bounty": 0
+    },
+    "Smuggling": {
+        "Black_Markets_Traded_With": 0,
+        "Black_Markets_Profits": 0,
+        "Resources_Smuggled": 0,
+        "Average_Profit": 0,
+        "Highest_Single_Transaction": 0
+    },
+    "Trading": {
+        "Markets_Traded_With": 3,
+        "Market_Profits": 40700,
+        "Resources_Traded": 23,
+        "Average_Profit": 4070,
+        "Highest_Single_Transaction": 17961
+    },
+    "Mining": {
+        "Mining_Profits": 0,
+        "Quantity_Mined": 0,
+        "Materials_Collected": 100
+    },
+    "Exploration": {
+        "Systems_Visited": 228,
+        "Fuel_Scooped": 111,
+        "Fuel_Purchased": 0,
+        "Exploration_Profits": 304469,
+        "Planets_Scanned_To_Level_2": 39,
+        "Planets_Scanned_To_Level_3": 15,
+        "Highest_Payout": 52503,
+        "Total_Hyperspace_Distance": 844927,
+        "Total_Hyperspace_Jumps": 295,
+        "Greatest_Distance_From_Start": 65222.47204614,
+        "Time_Played": 651060
+    },
+    "Passengers": {
+        "Passengers_Missions_Bulk": 0,
+        "Passengers_Missions_VIP": 0,
+        "Passengers_Missions_Delivered": 0,
+        "Passengers_Missions_Ejected": 0
+    },
+    "Search_And_Rescue": {
+        "SearchRescue_Traded": 12,
+        "SearchRescue_Profit": 19467,
+        "SearchRescue_Count": 8
+    },
+    "Crafting": {
+        "Spent_On_Crafting": 0,
+        "Count_Of_Used_Engineers": 2,
+        "Recipes_Generated": 28,
+        "Recipes_Generated_Rank_1": 9,
+        "Recipes_Generated_Rank_2": 6,
+        "Recipes_Generated_Rank_3": 9,
+        "Recipes_Generated_Rank_4": 4,
+        "Recipes_Generated_Rank_5": 0,
+        "Recipes_Applied": 21,
+        "Recipes_Applied_Rank_1": 8,
+        "Recipes_Applied_Rank_2": 5,
+        "Recipes_Applied_Rank_3": 7,
+        "Recipes_Applied_Rank_4": 1,
+        "Recipes_Applied_Rank_5": 0,
+        "Recipes_Applied_On_Previously_Modified_Modules": 0
+    },
+    "Crew": {
+        "NpcCrew_TotalWages": 0,
+        "NpcCrew_Hired": 0,
+        "NpcCrew_Fired": 0,
+        "NpcCrew_Died": 0
+    },
+    "Multicrew": {
+        "Multicrew_Time_Total": 23327,
+        "Multicrew_Gunner_Time_Total": 14241,
+        "Multicrew_Fighter_Time_Total": 6070,
+        "Multicrew_Credits_Total": 0,
+        "Multicrew_Fines_Total": 0
+    }
 }
 ```

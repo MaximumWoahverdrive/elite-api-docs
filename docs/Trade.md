@@ -23,10 +23,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "BuyTradeData",
-	"System": "i Bootis",
-	"Cost": 100
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "BuyTradeData",
+    "System": "i Bootis",
+    "Cost": 100
 }
 ```
 
@@ -45,10 +45,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "CollectCargo",
-	"Type": "agriculturalmedicines",
-	"Stolen": false
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "CollectCargo",
+    "Type": "agriculturalmedicines",
+    "Stolen": false
 }
 ```
 
@@ -72,22 +72,22 @@ If the cargo is related to powerplay delivery _from outlying systems back to the
 Examples:
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "EjectCargo",
-	"Type": "tobacco",
-	"Count": 1,
-	"Abandoned": true
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "EjectCargo",
+    "Type": "tobacco",
+    "Count": 1,
+    "Abandoned": true
 }
 ```
 
 ```
 {
-	"timestamp": "2016-09-21T14:18:23Z",
-	"event": "EjectCargo",
-	"Type": "alliancelegaslativerecords",
-	"Count": 2,
-	"Abandoned": true,
-	"PowerplayOrigin": "Tau Bootis"
+    "timestamp": "2016-09-21T14:18:23Z",
+    "event": "EjectCargo",
+    "Type": "alliancelegaslativerecords",
+    "Count": 2,
+    "Abandoned": true,
+    "PowerplayOrigin": "Tau Bootis"
 }
 ```
 
@@ -108,12 +108,12 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "MarketBuy",
-	"Type": "foodcartridges",
-	"Count": 10,
-	"BuyPrice": 39,
-	"TotalCost": 390
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "MarketBuy",
+    "Type": "foodcartridges",
+    "Count": 10,
+    "BuyPrice": 39,
+    "TotalCost": 390
 }
 ```
 
@@ -138,26 +138,26 @@ Examples:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "MarketSell",
-	"Type": "agriculturalmedicines",
-	"Count": 3,
-	"SellPrice": 1360,
-	"TotalSale": 4080,
-	"AvgPricePaid": 304
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "MarketSell",
+    "Type": "agriculturalmedicines",
+    "Count": 3,
+    "SellPrice": 1360,
+    "TotalSale": 4080,
+    "AvgPricePaid": 304
 }
 ```
 
 ```
 {
-	"event": "MarketSell",
-	"Type": "mineraloil",
-	"Count": 9,
-	"SellPrice": 72,
-	"TotalSale": 648,
-	"AvgPricePaid": 0,
-	"StolenGoods": true,
-	"BlackMarket": true
+    "event": "MarketSell",
+    "Type": "mineraloil",
+    "Count": 9,
+    "SellPrice": 72,
+    "TotalSale": 648,
+    "AvgPricePaid": 0,
+    "StolenGoods": true,
+    "BlackMarket": true
 }
 ```
 
@@ -174,8 +174,8 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "MiningRefined",
-	"Type": "Gold"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "MiningRefined",
+    "Type": "Gold"
 }
 ```

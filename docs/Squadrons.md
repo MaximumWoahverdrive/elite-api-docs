@@ -4,9 +4,9 @@
 
 ```
 {
-	"timestamp": "2018-10-17T16:17:55Z",
-	"event": "AppliedToSquadron",
-	"SquadronName": "TestSquadron"
+    "timestamp": "2018-10-17T16:17:55Z",
+    "event": "AppliedToSquadron",
+    "SquadronName": "TestSquadron"
 }
 ```
 
@@ -14,9 +14,9 @@
 
 ```
 {
-	"timestamp": "2018-10-17T16:17:55Z",
-	"event": "DisbandedSquadron",
-	"SquadronName": "TestSquadron"
+    "timestamp": "2018-10-17T16:17:55Z",
+    "event": "DisbandedSquadron",
+    "SquadronName": "TestSquadron"
 }
 ```
 
@@ -24,9 +24,9 @@
 
 ```
 {
-	"timestamp": "2018-10-17T16:17:55Z",
-	"event": "InvitedToSquadron",
-	"SquadronName": "TestSquadron"
+    "timestamp": "2018-10-17T16:17:55Z",
+    "event": "InvitedToSquadron",
+    "SquadronName": "TestSquadron"
 }
 ```
 
@@ -34,9 +34,9 @@
 
 ```
 {
-	"timestamp": "2018-10-17T16:17:55Z",
-	"event": "JoinedSquadron",
-	"SquadronName": "TestSquadron"
+    "timestamp": "2018-10-17T16:17:55Z",
+    "event": "JoinedSquadron",
+    "SquadronName": "TestSquadron"
 }
 ```
 
@@ -44,9 +44,9 @@
 
 ```
 {
-	"timestamp": "2018-10-17T16:17:55Z",
-	"event": "KickedFromSquadron",
-	"SquadronName": "TestSquadron"
+    "timestamp": "2018-10-17T16:17:55Z",
+    "event": "KickedFromSquadron",
+    "SquadronName": "TestSquadron"
 }
 ```
 
@@ -54,9 +54,9 @@
 
 ```
 {
-	"timestamp": "2018-10-17T16:17:55Z",
-	"event": "LeftSquadron",
-	"SquadronName": "TestSquadron"
+    "timestamp": "2018-10-17T16:17:55Z",
+    "event": "LeftSquadron",
+    "SquadronName": "TestSquadron"
 }
 ```
 
@@ -64,9 +64,9 @@
 
 ```
 {
-	"timestamp": "2018-10-17T16:17:55Z",
-	"event": "SharedBookmarkToSquadron",
-	"SquadronName": "TestSquadron"
+    "timestamp": "2018-10-17T16:17:55Z",
+    "event": "SharedBookmarkToSquadron",
+    "SquadronName": "TestSquadron"
 }
 ```
 
@@ -74,9 +74,9 @@
 
 ```
 {
-	"timestamp": "2018-10-17T16:17:55Z",
-	"event": "SquadronCreated",
-	"SquadronName": "TestSquadron"
+    "timestamp": "2018-10-17T16:17:55Z",
+    "event": "SquadronCreated",
+    "SquadronName": "TestSquadron"
 }
 ```
 
@@ -84,11 +84,11 @@
 
 ```
 {
-	"timestamp": "2018-10-17T16:17:55Z",
-	"event": "SquadronDemotion",
-	"SquadronName": "TestSquadron",
-	"OldRank": 3,
-	"NewRank": 2
+    "timestamp": "2018-10-17T16:17:55Z",
+    "event": "SquadronDemotion",
+    "SquadronName": "TestSquadron",
+    "OldRank": 3,
+    "NewRank": 2
 }
 ```
 
@@ -96,11 +96,11 @@
 
 ```
 {
-	"timestamp": "2018-10-17T16:17:55Z",
-	"event": "SquadronPromotion",
-	"SquadronName": "TestSquadron",
-	"OldRank": 2,
-	"NewRank": 3
+    "timestamp": "2018-10-17T16:17:55Z",
+    "event": "SquadronPromotion",
+    "SquadronName": "TestSquadron",
+    "OldRank": 2,
+    "NewRank": 3
 }
 ```
 
@@ -118,8 +118,8 @@ Parameters:
 
 ```
 {
-	"timestamp": "2018-10-17T16:17:55Z",
-	"event": "WonATrophyForSquadron",
-	"SquadronName": "TestSquadron"
+    "timestamp": "2018-10-17T16:17:55Z",
+    "event": "WonATrophyForSquadron",
+    "SquadronName": "TestSquadron"
 }
 ```

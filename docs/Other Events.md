@@ -17,12 +17,12 @@ Example:
 
 ```
 {
-	"timestamp": "2017-08-14T15:41:50Z",
-	"event": "AfmuRepairs",
-	"Module": "$modularcargobaydoor_name;",
-	"Module_Localised": "Cargo Hatch",
-	"FullyRepaired": true,
-	"Health": 1
+    "timestamp": "2017-08-14T15:41:50Z",
+    "event": "AfmuRepairs",
+    "Module": "$modularcargobaydoor_name;",
+    "Module_Localised": "Cargo Hatch",
+    "FullyRepaired": true,
+    "Health": 1
 }
 ```
 
@@ -61,8 +61,8 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "CockpitBreached"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "CockpitBreached"
 }
 ```
 
@@ -87,22 +87,22 @@ Examples:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "CommitCrime",
-	"CrimeType": "assault",
-	"Faction": "The Pilots Federation",
-	"Victim": "Potapinski",
-	"Bounty": 210
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "CommitCrime",
+    "CrimeType": "assault",
+    "Faction": "The Pilots Federation",
+    "Victim": "Potapinski",
+    "Bounty": 210
 }
 ```
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "CommitCrime",
-	"CrimeType": "fireInNoFireZone",
-	"Faction": "Jarildekald Public Industry",
-	"Fine": 100
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "CommitCrime",
+    "CrimeType": "fireInNoFireZone",
+    "Faction": "Jarildekald Public Industry",
+    "Fine": 100
 }
 ```
 
@@ -161,10 +161,10 @@ Example:
 
 ```
 {
-	"timestamp": "2017-02-22T14:56:54Z",
-	"event": "CrewMemberRoleChange",
-	"Crew": "HRC1",
-	"Role": "FireCon"
+    "timestamp": "2017-02-22T14:56:54Z",
+    "event": "CrewMemberRoleChange",
+    "Crew": "HRC1",
+    "Role": "FireCon"
 }
 ```
 
@@ -223,8 +223,8 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "DockFighter"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "DockFighter"
 }
 ```
 
@@ -272,10 +272,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "FuelScoop",
-	"Scooped": 0.4987,
-	"Total": 16
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "FuelScoop",
+    "Scooped": 0.4987,
+    "Total": 16
 }
 ```
 
@@ -354,10 +354,10 @@ Parameters:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "LaunchFighter",
-	"Loadout": "starter",
-	"PlayerControlled": true
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "LaunchFighter",
+    "Loadout": "starter",
+    "PlayerControlled": true
 }
 ```
 
@@ -458,9 +458,9 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "Promotion",
-	"Explore": 2
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "Promotion",
+    "Explore": 2
 }
 ```
 
@@ -499,12 +499,12 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "RebootRepair",
-	"Modules": [
-		"MainEngines",
-		"TinyHardpoint1"
-	]
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "RebootRepair",
+    "Modules": [
+        "MainEngines",
+        "TinyHardpoint1"
+    ]
 }
 ```
 
@@ -568,9 +568,9 @@ Example:
 
 ```
 {
-	"timestamp": "2017-02-13T12:30:09Z",
-	"event": "Scanned",
-	"ScanType": "Cargo"
+    "timestamp": "2017-02-13T12:30:09Z",
+    "event": "Scanned",
+    "ScanType": "Cargo"
 }
 ```
 
@@ -594,10 +594,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "SendText",
-	"To": "HRC-2",
-	"Message": "zoom"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "SendText",
+    "To": "HRC-2",
+    "Message": "zoom"
 }
 ```
 
@@ -621,19 +621,19 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "Synthesis",
-	"Name": "Repair Basic",
-	"Materials": [
-		{
-			"Name": "iron",
-			"Count": 2
-		},
-		{
-			"Name": "nickel",
-			"Count": 1
-		}
-	]
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "Synthesis",
+    "Name": "Repair Basic",
+    "Materials": [
+        {
+            "Name": "iron",
+            "Count": 2
+        },
+        {
+            "Name": "nickel",
+            "Count": 1
+        }
+    ]
 }
 ```
 
@@ -657,10 +657,10 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "USSDrop",
-	"USSType": "Disrupted wake echoes",
-	"USSThreat": 0
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "USSDrop",
+    "USSType": "Disrupted wake echoes",
+    "USSThreat": 0
 }
 ```
 
@@ -677,17 +677,17 @@ Examples:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "VehicleSwitch",
-	"To": "Fighter"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "VehicleSwitch",
+    "To": "Fighter"
 }
 ```
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "VehicleSwitch",
-	"To": "Mothership"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "VehicleSwitch",
+    "To": "Mothership"
 }
 ```
 
@@ -704,9 +704,9 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "WingAdd",
-	"Name": "HRC-2"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "WingAdd",
+    "Name": "HRC-2"
 }
 ```
 
@@ -732,11 +732,11 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "WingJoin",
-	"Others": [
-		"HRC1"
-	]
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "WingJoin",
+    "Others": [
+        "HRC1"
+    ]
 }
 ```
 
@@ -750,8 +750,8 @@ Example:
 
 ```
 {
-	"timestamp": "2016-06-10T14:32:03Z",
-	"event": "WingLeave"
+    "timestamp": "2016-06-10T14:32:03Z",
+    "event": "WingLeave"
 }
 ```
 
@@ -764,34 +764,34 @@ When transferring cargo between ship and fleet carrier, or between ship and SRV
 
 ```
 {
-	"timestamp": "2020-03-12T12:49:54Z",
-	"event": "CargoTransfer",
-	"Transfers": [
-		{
-			"Type": "tea",
-			"Count": 1,
-			"Direction": "tocarrier"
-		},
-		{
-			"Type": "gold",
-			"Count": 1,
-			"Direction": "toship"
-		}
-	]
+    "timestamp": "2020-03-12T12:49:54Z",
+    "event": "CargoTransfer",
+    "Transfers": [
+        {
+            "Type": "tea",
+            "Count": 1,
+            "Direction": "tocarrier"
+        },
+        {
+            "Type": "gold",
+            "Count": 1,
+            "Direction": "toship"
+        }
+    ]
 }
 ```
 
 ```
 {
-	"timestamp": "2020-03-12T13:34:22Z",
-	"event": "CargoTransfer",
-	"Transfers": [
-		{
-			"Type": "grain",
-			"Count": 2,
-			"Direction": "tosrv"
-		}
-	]
+    "timestamp": "2020-03-12T13:34:22Z",
+    "event": "CargoTransfer",
+    "Transfers": [
+        {
+            "Type": "grain",
+            "Count": 2,
+            "Direction": "tosrv"
+        }
+    ]
 }
 ```
 
@@ -806,10 +806,10 @@ When dropping out of supercruise at a targeted destination.
 
 ```
 {
-	"timestamp":"2020-03-12T12:49:54Z",
-	"event":"SupercruiseDestinationDrop",
-	"Type":”Azeban City”,
-	“Threat”:0,
-	“MarketID”:128001536 
+    "timestamp":"2020-03-12T12:49:54Z",
+    "event":"SupercruiseDestinationDrop",
+    "Type":”Azeban City”,
+    “Threat”:0,
+    “MarketID”:128001536 
 }
 ```
