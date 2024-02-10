@@ -31,11 +31,11 @@ A short example of a player journal file (_**out of date, some events may have a
 {"timestamp":"2016-06-10T14:41:58Z", "event":"SellExplorationData", "Systems":[ "HIP 78085", "Praea Euq NW-W b1-3" ], "Discovered":[ "HIP 78085 A", "Praea Euq NW-W b1-3", "Praea Euq NW-W b1-3 3 a", "Praea Euq NW-W b1-3 3" ], "BaseValue":10822, "Bonus":3959 }
 ```
 
-### ChangeLog
+## ChangeLog
 
-**Version 37**
+### Version 37
 
-**Changes for Odyssey up to update14 (May 2023)**
+**Changes for Odyssey up to update14** (May 2023)
 
 - The “CarrierJump” event is now written to the journal again on a carrier hyperspace jump instead of it writing a “Location” event.
 - ‘MissionFailed’ event is now written when the mission enters the failed state instead of when the mission is abandoned in the transactions panel.
@@ -48,18 +48,18 @@ A short example of a player journal file (_**out of date, some events may have a
 - Added organic variant to the “ScanOrganic” and “SellOrganicData” events
 - Fixed the “FactionKillBond” event sometimes not getting written
 
-**Version 36**
+### Version 36
 
-**Changes for Odyssey up to update14 (November 2022)**
+**Changes for Odyssey up to update14** (November 2022)
 
 - Updated the "MissionCompleted" documentation to include the optional params "DestinationSystem", "DestinationStation" and "DestinationSettlement". No functional change, these params where already present.
 - Added a new flag to Status.json to indicate if a charging fsd is charging a hyperspace jump
 - Extended the UpgradeSuit/UpgradeWeapon events to include the resources used for the upgrade
 - Added "DepartureTime" to the "CarrierJumpRequest" event
 
-**Version 35**
+### Version 35
 
-**Changes for Odyssey up to update13 (July 2022)**
+**Changes for Odyssey up to update13** (July 2022)
 
 - A negotiated mission now writes event "MissionAccepted" only when the mission is accepted, not when the negotiation happens.
 - Handing in a mission to a mission giver while on foot will now write the "MissionCompleted" event
@@ -68,9 +68,9 @@ A short example of a player journal file (_**out of date, some events may have a
 - Extended the SAASignalsFound event to include the genuses on the scanned planet
 - Fixed the "PayFines" event being written instead of "PayBounties" when paying off a bounty
 
-**Version 34**
+### Version 34
 
-**Changes for Odyssey up to update12 (May 2022)**
+**Changes for Odyssey up to update12** (May 2022)
 
 - BookTaxi: add "retreat" flag
 - CodexEntry: add BodyID
@@ -79,18 +79,18 @@ A short example of a player journal file (_**out of date, some events may have a
 - FSSBodySignals: extra info during a scan (actually from Update 6 last year)
 - Bugfix: Resurrect event was sometimes written with blank strings
 
-**Version 33**
+### Version 33
 
-**Changes for Odyssey up to update 11 (March 2022)**
+**Changes for Odyssey up to update 11** (March 2022)
 
 - new flags in Status flags to distinguish between telepresence and physical crew
 - the following events have a new bool value Telepresence: ChangeCrewRole EndCrewSession CrewMemberJoins CrewMemberQuits CrewLaunchFighter CrewMemberRoleChange JoinACrew QuitACrew KickCrewMember
 - LaunchSRV, DockSRV and SRVDestroyed events now add a new value "SRVType" (from Oct 2021 update)
 - when scanning one body of a binary pair, you will now get an event detailing the orbital parameters of their BaryCentre (from Sep 2021 update)
 
-**Version 32**
+### Version 32
 
-**Changes up to Odyssey Update 5 (July 2021)**
+**Changes up to Odyssey Update 5** (July 2021)
 
 - The "LoadGame" event now includes the language, gameversion, and Build number
 - Include module class and modifications in suit loadout
@@ -103,9 +103,9 @@ A short example of a player journal file (_**out of date, some events may have a
 - Added names for military and exobiolost ranks in appendix
 - Corrected details of the contents of the NavRoute file
 
-**Version 31**
+### Version 31
 
-**Changes for Odyssey release (May 2021)**
+**Changes for Odyssey release** (May 2021)
 
 - Omit "MissionID":18446744073709551615 in inventory data when it is not mission-related
 - Ensure the Touchdown/Liftoff events are logged when recalling/dismissing your empty ship
@@ -119,21 +119,21 @@ A short example of a player journal file (_**out of date, some events may have a
 - Fix station type when docking at FleetCarrier
 - Fix bug with incorrect LoadoutID in CreateSuitLoadout event
 
-**Version 30**
+### Version 30
 
 **Changes for Odyssey Alpha 4**
 
 - See sections 12, 14
 
-**Version 29**
+### Version 29
 
 **Changes for "Odyssey"**
 
 - See section 12
 
-**Version 28**
+### Version 28
 
-**Changes for v3.7 beta 2 (May 2020)**
+**Changes for v3.7 beta 2** (May 2020)
 
 new events added:
 
@@ -156,53 +156,93 @@ bugs fixed:
 - RefuelAll, RepairAll - fix null strings
 - Docked - fix bug where docking at a FC doesn't sometimes pick up nearby station name
 
-**Version 27**
+### Version 27
 
-**Changes for v3.7 beta 1 (April 2020)**
+**Changes for v3.7 beta 1** (April 2020)
 
 - Added events relating to Fleet Carriers (§11)
 - New CargoTransfer event (§13.52)
 - Change to Repair event (§8.38)
 - Added some station services (see 'Docked' §4.2)
 
-**Version 26 - Changes for v3.5 (September 2019)**
+### Version 26
 
-**Version 25 - Changes for v3.4 (April 2019)**
+**Changes for v3.5** (September 2019)
 
-**Version 24**
+### Version 25
 
-**Version 22 – in v3.3 (beta 4)**
+**Changes for v3.4** (April 2019)
 
-**Version 21 – for v3.3 (beta 2)**
+### Version 24
 
-**Version 20 – for v3.3 (beta 1)** _(released 30th Oct 2018)_
+### Version 22
 
-**Version 19 – for v3.3** _(preview released 20th Sept 2018)_
+**Changes for v3.3 (beta 4)**
 
-**Version 18 – for v3.0.4** (27th March 2018)
+### Version 21
 
-**Version 17 – for v3.0.3** (19th March 2018)
+**Changes for v3.3 (beta 2)**
 
-**Version 16 – for v3.0.2** (5th March 2018)
+### Version 20
 
-**Version 15 – for v3.0 – beta3** (6th Feb 2018)
+**Changes for v3.3 (beta 1)** _(released 30th Oct 2018)_
 
-**Version 14 – for v3.0 – beta1** (25/Jan/2018)
+### Version 19
 
-**Version 13 - In 2.4 Open beta** _(24th Aug 2017)_
+**Changes for v3.3** _(preview released 20th Sept 2018)_
 
-**Version 12 - In 2.4 beta1** _(17th Aug 2017)_
+### Version 18
 
-**Version 11** _published 26/Jun/2017_
+**Changes for v3.0.4** (27th March 2018)
 
-**Version 10** _published 29/Mar/2017 (for v2.3 beta 5)_
+### Version 17
 
-**Version 9** _published 20/Feb/2017 (for v2.3 beta)_
+**Changes for v3.0.3** (19th March 2018)
 
-**Version 8** _published 10/Jan/2017 (for v2.2.03)_
+### Version 16
 
-**Version 7** _published 15/Nov/2016 (for release 2.2.02)_
+**Changes for v3.0.2** (5th March 2018)
 
-**Version 6** _published 26/Oct/2016 (for 2.2 public release)_
+### Version 15
 
-**Version 1** was published 20/July/2016
+**Changes for v3.0 – beta3** (6th Feb 2018)
+
+### Version 14
+
+**Changes for v3.0 – beta1** (25/Jan/2018)
+
+### Version 13
+
+**Changes for 2.4 Open beta** _(24th Aug 2017)_
+
+### Version 12
+
+**Changes for 2.4 beta1** _(17th Aug 2017)_
+
+### Version 11
+
+_published 26/Jun/2017_
+
+### Version 10
+
+_published 29/Mar/2017 (for v2.3 beta 5)_
+
+### Version 9
+
+_published 20/Feb/2017 (for v2.3 beta)_
+
+### Version 8
+
+_published 10/Jan/2017 (for v2.2.03)_
+
+### Version 7
+
+_published 15/Nov/2016 (for release 2.2.02)_
+
+### Version 6
+
+_published 26/Oct/2016 (for 2.2 public release)_
+
+### Version 1
+
+published 20/July/2016
