@@ -416,15 +416,25 @@ When written: at startup
 
 This line contains the information displayed in the statistics panel on the right side of the cockpit
 
-Parameters:
+Parameters (int unless specified):
 
 - Bank_Account
-    - Current_Wealth Spent_On_Ships
-    - Spent_On_Outfitting Spent_On_Repairs
+    - Current_Wealth
+    - Spent_On_Ships
+    - Spent_On_Outfitting
+    - Spent_On_Repairs
     - Spent_On_Fuel
     - Spent_On_Ammo_Consumables
     - Insurance_Claims
     - Spent_On_Insurance
+    - Owned_Ship_Count
+    - Spent_On_Suits
+    - Spent_On_Weapons
+    - Spent_On_Suit_Consumables
+    - Suits_Owned
+    - Weapons_Owned
+    - Spent_On_Premium_Stock
+    - Premium_Stock_Bought
 - Combat
     - Bounties_Claimed
     - Bounty_Hunting_Profit
@@ -434,12 +444,49 @@ Parameters:
     - Assassination_Profits
     - Highest_Single_Reward
     - Skimmers_Killed
+    - OnFoot_Combat_Bonds
+    - OnFoot_Combat_Bonds_Profits
+    - OnFoot_Vehicles_Destroyed
+    - OnFoot_Ships_Destroyed
+    - Dropships_Taken
+    - Dropships_Booked
+    - Dropships_Cancelled
+    - ConflictZone_High
+    - ConflictZone_Medium
+    - ConflictZone_Low
+    - ConflictZone_Total
+    - ConflictZone_High_Wins
+    - ConflictZone_Medium_Wins
+    - ConflictZone_Low_Wins
+    - ConflictZone_Total_Wins
+    - Settlement_Defended
+    - Settlement_Conquered
+    - OnFoot_Skimmers_Killed
+    - OnFoot_Scavs_Killed
 - Crime
+    - Notoriety
     - Fines
     - Total_Fines
     - Bounties_Received
     - Total_Bounties
     - Highest_Bounty
+    - Malware_Uploaded
+    - Settlements_State_Shutdown
+    - Production_Sabotage
+    - Production_Theft
+    - Total_Murders
+    - Citizens_Murdered
+    - Omnipol_Murdered
+    - Guards_Murdered
+    - Data_Stolen
+    - Goods_Stolen
+    - Sample_Stolen
+    - Total_Stolen
+    - Turrets_Destroyed
+    - Turrets_Overloaded
+    - Turrets_Total
+    - Value_Stolen_StateChange
+    - Profiles_Cloned
 - Smuggling
     - Black_Markets_Traded_With
     - Black_Markets_Profits
@@ -450,25 +497,36 @@ Parameters:
     - Markets_Traded_With
     - Market_Profits
     - Resources_Traded
-    - Average_Profit
+    - Average_Profit (float)
     - Highest_Single_Transaction
+    - Data_Sold
+    - Goods_Sold
+    - Assets_Sold
 - Mining
     - Mining_Profits
     - Quantity_Mined
     - Materials_Collected
 - Exploration
     - Systems_Visited
-    - Fuel_Scooped
-    - Fuel_Purchased
     - Exploration_Profits
     - Planets_Scanned_To_Level_2
     - Planets_Scanned_To_Level_3
+    - Efficient_Scans
     - Highest_Payout
     - Total_Hyperspace_Distance
     - Total_Hyperspace_Jumps
-    - Greatest_Distance_From_Start
+    - Greatest_Distance_From_Start (float)
     - Time_Played
+    - OnFoot_Distance_Travelled
+    - Shuttle_Journeys
+    - Shuttle_Distance_Travelled (float)
+    - Spent_On_Shuttles
+    - First_Footfalls
+    - Planet_Footfalls
+    - Settlements_Visited
 - Passengers
+    - Passengers_Missions_Accepted
+    - Passengers_Missions_Disgruntled
     - Passengers_Missions_Bulk
     - Passengers_Missions_VIP
     - Passengers_Missions_Delivered
@@ -477,8 +535,24 @@ Parameters:
     - SearchRescue_Traded
     - SearchRescue_Profit
     - SearchRescue_Count
+    - Salvage_Legal_POI
+    - Salvage_Legal_Settlements
+    - Salvage_Illegal_POI
+    - Salvage_Illegal_Settlements
+    - Maglocks_Opened
+    - Panels_Opened
+    - Settlements_State_FireOut
+    - Settlements_State_Reboot
+- TG_ENCOUNTERS: Thargoid encounters
+    - TG_ENCOUNTER_WAKES: Thargoid wakes scanned
+    - TG_ENCOUNTER_KILLED: Thargoids killed
+    - TG_SCOUT_COUNT: Thargoid scouts killed
+    - TG_ENCOUNTER_IMPRINT: Thargoid structures
+    - TG_ENCOUNTER_TOTAL: Total Thargoid encounters
+    - TG_ENCOUNTER_TOTAL_LAST_SYSTEM (string): Last seen in system
+    - TG_ENCOUNTER_TOTAL_LAST_TIMESTAMP (string): Last seen timestamp eg. 3308-09-15 06:54
+    - TG_ENCOUNTER_TOTAL_LAST_SHIP (string): Last ship involved eg. "Anaconda"
 - Crafting
-    - Spent_On_Crafting
     - Count_Of_Used_Engineers
     - Recipes_Generated
     - Recipes_Generated_Rank_1
@@ -486,13 +560,14 @@ Parameters:
     - Recipes_Generated_Rank_3
     - Recipes_Generated_Rank_4
     - Recipes_Generated_Rank_5
-    - Recipes_Applied
-    - Recipes_Applied_Rank_1
-    - Recipes_Applied_Rank_2
-    - Recipes_Applied_Rank_3
-    - Recipes_Applied_Rank_4
-    - Recipes_Applied_Rank_5
-    - Recipes_Applied_On_Previously_Modified_Modules
+    - Suit_Mods_Applied
+    - Weapon_Mods_Applied
+    - Suits_Upgraded
+    - Weapons_Upgraded
+    - Suits_Upgraded_Full
+    - Weapons_Upgraded_Full
+    - Suit_Mods_Applied_Full
+    - Weapon_Mods_Applied_Full
 - Crew
     - NpcCrew_TotalWages
     - NpcCrew_Hired
@@ -504,6 +579,55 @@ Parameters:
     - Multicrew_Fighter_Time_Total
     - Multicrew_Credits_Total
     - Multicrew_Fines_Total
+- Material_Trader_Stats
+    - Trades_Completed
+    - Materials_Traded
+    - Encoded_Materials_Traded
+    - Raw_Materials_Traded
+    - Grade_1_Materials_Traded
+    - Grade_2_Materials_Traded
+    - Grade_3_Materials_Traded
+    - Grade_4_Materials_Traded
+    - Grade_5_Materials_Traded
+    - Assets_Traded_In
+    - Assets_Traded_Out
+- CQC
+    - CQC_Credits_Earned
+    - CQC_Time_Played
+    - CQC_KD (float)
+    - CQC_Kills
+    - CQC_WL
+- FLEETCARRIER
+    - FLEETCARRIER_EXPORT_TOTAL
+    - FLEETCARRIER_IMPORT_TOTAL
+    - FLEETCARRIER_TRADEPROFIT_TOTAL
+    - FLEETCARRIER_TRADESPEND_TOTAL
+    - FLEETCARRIER_STOLENPROFIT_TOTAL
+    - FLEETCARRIER_STOLENSPEND_TOTAL
+    - FLEETCARRIER_DISTANCE_TRAVELLED (float)
+    - FLEETCARRIER_TOTAL_JUMPS
+    - FLEETCARRIER_SHIPYARD_SOLD
+    - FLEETCARRIER_SHIPYARD_PROFIT
+    - FLEETCARRIER_OUTFITTING_SOLD
+    - FLEETCARRIER_OUTFITTING_PROFIT
+    - FLEETCARRIER_REARM_TOTAL
+    - FLEETCARRIER_REFUEL_TOTAL
+    - FLEETCARRIER_REFUEL_PROFIT
+    - FLEETCARRIER_REPAIRS_TOTAL
+    - FLEETCARRIER_VOUCHERS_REDEEMED
+    - FLEETCARRIER_VOUCHERS_PROFIT
+- Exobiology
+    - Organic_Genus_Encountered
+    - Organic_Species_Encountered
+    - Organic_Variant_Encountered
+    - Organic_Data_Profits
+    - Organic_Data
+    - First_Logged_Profits
+    - First_Logged
+    - Organic_Systems
+    - Organic_Planets
+    - Organic_Genus
+    - Organic_Species
 
 Note times are in seconds
 
