@@ -6,7 +6,7 @@ This is similar to FSDJump and Location, but it is written if the player is onli
 
 Example:
 
-```
+```json
 {
     "timestamp": "2020-03-25T15:55:56Z",
     "event": "CarrierJump",
@@ -85,7 +85,7 @@ Player has bought a fleet carrier
 - Variant: string
 - Callsign: string
 
-```
+```json
 {
     "timestamp": "2020-03-11T15:31:46Z",
     "event": "CarrierBuy",
@@ -118,7 +118,7 @@ When owner opens carrier management
 - ShipPacks [{ PackTheme, packTier },...]
 - ModulePacks [{PackTheme, packTier },...]
 
-```
+```json
 {
     "timestamp": "2020-03-27T09:42:04Z",
     "event": "CarrierStats",
@@ -235,7 +235,7 @@ At the time the player requests the jump, not the jump itself
 - BodyID
 - DepartureTime
 
-```
+```json
 {
     "timestamp": "2020-04-20T09:30:58Z",
     "event": "CarrierJumpRequest",
@@ -256,7 +256,7 @@ At the time the player requests decommission
 - ScrapRefund: number
 - Scraptime: timestamp
 
-```
+```json
 {
     "timestamp": "2020-03-11T15:12:26Z",
     "event": "CarrierDecommission",
@@ -270,7 +270,7 @@ At the time the player requests decommission
 
 - CarrierID: marketid
 
-```
+```json
 {
     "timestamp": "2020-03-11T15:12:38Z",
     "event": "CarrierCancelDecommission",
@@ -287,7 +287,7 @@ Player transfers credits to/from carrier
 - PlayerBalance: (after transfer)
 - CarrierBalance: (after transfer)
 
-```
+```json
 {
     "timestamp": "2020-03-24T15:34:46Z",
     "event": "CarrierBankTransfer",
@@ -306,7 +306,7 @@ Any player giving fuel to the carrier
 - Amount: tons
 - Total: total amount of fuel after donation
 
-```
+```json
 {
     "timestamp": "2020-03-19T09:17:29Z",
     "event": "CarrierDepositFuel",
@@ -325,7 +325,7 @@ Changes to crew
 - CrewRole: string
 - CrewName: string
 
-```
+```json
 {
     "timestamp": "2020-03-17T12:38:54Z",
     "event": "CarrierCrewServices",
@@ -347,7 +347,7 @@ Change to tax rate or reserve
 - AvailableBalance: number
 - ReservePercent: number
 
-```
+```json
 {
     "timestamp": "2020-03-26T10:36:32Z",
     "event": "CarrierFinance",
@@ -370,7 +370,7 @@ CarrierShipPack/CarrierModulePack
 - PackTier: name
 - Cost/Refund: int
 
-```
+```json
 {
     "timestamp": "2020-03-16T09:25:39Z",
     "event": "CarrierShipPack",
@@ -398,7 +398,7 @@ The carrier owner has requested the carrier buys or sells goods (or cancels such
 - or CancelTrade: true
 - Price: int
 
-```
+```json
 {
     "timestamp": "2020-03-16T14:52:36Z",
     "event": "CarrierTradeOrder",
@@ -419,7 +419,7 @@ The carrier owner has changed the docking permission criteria
 - DockingAccess: all/none/friends/squadron/squadronfriends
 - AllowNotorious: bool
 
-```
+```json
 {
     "timestamp": "2020-03-11T15:07:25Z",
     "event": "CarrierDockingPermission",

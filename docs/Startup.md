@@ -21,7 +21,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-06-26T08:21:17Z",
     "event": "Cargo",
@@ -59,7 +59,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "ClearSavedGame",
@@ -136,7 +136,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-02-10T14:25:51Z",
     "event": "Materials",
@@ -202,7 +202,7 @@ Each object contains:
 - PassengerMission: bool
 - Expires: time left in seconds
 
-```
+```json
 {
     "timestamp": "2017-10-02T10:37:58Z",
     "event": "Missions",
@@ -231,7 +231,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "NewCommander",
@@ -269,7 +269,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-02-10T14:25:51Z",
     "event": "LoadGame",
@@ -315,7 +315,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-01-31T10:53:04Z",
     "event": "Powerplay",
@@ -342,7 +342,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "Progress",
@@ -370,7 +370,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "Rank",
@@ -509,7 +509,7 @@ Note times are in seconds
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-09-25T15:18:31Z",
     "event": "Statistics",

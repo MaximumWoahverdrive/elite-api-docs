@@ -14,7 +14,7 @@ If the AFMU runs out of ammo, the module may not be fully repaired.
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-08-14T15:41:50Z",
     "event": "AfmuRepairs",
@@ -56,7 +56,7 @@ Parameters: none
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "CockpitBreached"
@@ -80,7 +80,7 @@ Optional parameters (depending on crime)
 
 Examples:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "CommitCrime",
@@ -91,7 +91,7 @@ Examples:
 }
 ```
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "CommitCrime",
@@ -149,7 +149,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-02-22T14:56:54Z",
     "event": "CrewMemberRoleChange",
@@ -206,7 +206,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "DockFighter"
@@ -251,7 +251,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "FuelScoop",
@@ -326,7 +326,7 @@ Parameters:
 - ID
 - PlayerControlled: whether player is controlling the fighter from launch
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "LaunchFighter",
@@ -355,7 +355,7 @@ Parameters: None
 
 Example of ModulesInfo file:
 
-```
+```json
 { "timestamp":"2018-01-10T14:35:08Z", "event":"ModuleInfo", "Modules":[
 { "Slot":"MainEngines", "Item":"int_engine_size3_class5", "Power":3.720000, "Priority":0 },
 { "Slot":"MediumHardpoint1", "Item":"hpt_beamlaser_turret_medium", "Power":0.930000, "Priority":0 },
@@ -425,7 +425,7 @@ Parameters: one of the following
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "Promotion",
@@ -463,7 +463,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "RebootRepair",
@@ -527,7 +527,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-02-13T12:30:09Z",
     "event": "Scanned",
@@ -552,7 +552,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "SendText",
@@ -578,7 +578,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "Synthesis",
@@ -613,7 +613,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "USSDrop",
@@ -632,7 +632,7 @@ Parameters:
 
 Examples:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "VehicleSwitch",
@@ -640,7 +640,7 @@ Examples:
 }
 ```
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "VehicleSwitch",
@@ -658,7 +658,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "WingAdd",
@@ -684,7 +684,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "WingJoin",
@@ -702,7 +702,7 @@ Parameters: none
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "WingLeave"
@@ -715,7 +715,7 @@ When transferring cargo between ship and fleet carrier, or between ship and SRV
 
 - Transfers: [ {Type, Count, Direction}, ... ]
 
-```
+```json
 {
     "timestamp": "2020-03-12T12:49:54Z",
     "event": "CargoTransfer",
@@ -734,7 +734,7 @@ When transferring cargo between ship and fleet carrier, or between ship and SRV
 }
 ```
 
-```
+```json
 {
     "timestamp": "2020-03-12T13:34:22Z",
     "event": "CargoTransfer",
@@ -756,7 +756,7 @@ When dropping out of supercruise at a targeted destination.
 - Threat: threat level
 - MarketID: (Optional)The market id of the destination if dropping at a market
 
-```
+```json
 {
     "timestamp":"2020-03-12T12:49:54Z",
     "event":"SupercruiseDestinationDrop",

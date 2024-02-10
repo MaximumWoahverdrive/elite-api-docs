@@ -19,7 +19,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "BuyTradeData",
@@ -40,7 +40,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "CollectCargo",
@@ -66,7 +66,7 @@ If the cargo is related to powerplay delivery _from outlying systems back to the
 
 Examples:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "EjectCargo",
@@ -76,7 +76,7 @@ Examples:
 }
 ```
 
-```
+```json
 {
     "timestamp": "2016-09-21T14:18:23Z",
     "event": "EjectCargo",
@@ -101,7 +101,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "MarketBuy",
@@ -130,7 +130,7 @@ Parameters:
 
 Examples:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "MarketSell",
@@ -142,7 +142,7 @@ Examples:
 }
 ```
 
-```
+```json
 {
     "event": "MarketSell",
     "Type": "mineraloil",
@@ -165,7 +165,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "MiningRefined",

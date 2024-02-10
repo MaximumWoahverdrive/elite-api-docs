@@ -108,7 +108,7 @@ Bit|Value|Hex|Meaning
 
 Examples:
 
-```
+```json
 {
     "timestamp": "2017-12-07T10:31:37Z",
     "event": "Status",
@@ -127,7 +127,7 @@ Examples:
 }
 ```
 
-```
+```json
 {
     "timestamp": "2017-12-07T12:03:14Z",
     "event": "Status",

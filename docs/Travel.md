@@ -11,7 +11,7 @@ Parameters:
 - Body
 - BodyID
 
-```
+```json
 {
     "timestamp": "2017-09-27T15:21:05Z",
     "event": "ApproachBody",
@@ -53,7 +53,7 @@ The 'anonymous docking' protocol comes into effect if you're either Wanted (ie h
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-03-07T12:22:25Z",
     "event": "Docked",
@@ -235,7 +235,7 @@ Happiness values are: (Elated, Happy, Discontented, Unhappy, Despondent)
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-10-29T10:05:21Z",
     "event": "FSDJump",
@@ -377,7 +377,7 @@ Example:
 
 Example Conflict data:
 
-```
+```json
 "Conflicts": [
     {
         "WarType": "war",
@@ -431,7 +431,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-07-22T10:53:19Z",
     "event": "Liftoff",
@@ -529,7 +529,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "SupercruiseEntry",
@@ -550,7 +550,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "SupercruiseExit",
@@ -580,7 +580,7 @@ The NearestDestination is included if within 50km of a location listed in the na
 
 Example:
 
-```
+```json
 {
     "timestamp": "2019-05-13T13:20:18Z",
     "event": "Touchdown",
@@ -603,7 +603,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "Undocked",
@@ -625,7 +625,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2020-04-27T08:02:52Z",
     "event": "Route",
@@ -647,7 +647,7 @@ No parameters
 
 Example:
 
-```
+```json
 {
     "timestamp": "2022-06-17T16:04:02Z",
     "event": "NavRouteClear"

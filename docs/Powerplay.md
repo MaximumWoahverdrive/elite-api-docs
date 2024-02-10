@@ -12,7 +12,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "PowerplayCollect",
@@ -33,7 +33,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "PowerplayDefect",
@@ -54,7 +54,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "PowerplayDeliver",
@@ -83,7 +83,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "PowerplayJoin",
@@ -101,7 +101,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "PowerplayLeave",

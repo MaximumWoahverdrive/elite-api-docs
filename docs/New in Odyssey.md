@@ -51,7 +51,7 @@ Parameters:
 - DestinationLocation: station name
 - Retreat: bool (inticates if requested for exit from combat zone)
 
-```
+```json
 {
     "timestamp": "2020-10-05T11:17:50Z",
     "event": "BookTaxi",
@@ -97,7 +97,7 @@ Category can be one of:
 - Data
 - Consumable
 
-```
+```json
 {
     "timestamp": "2020-10-07T14:01:08Z",
     "event": "BuyMicroResource",
@@ -120,7 +120,7 @@ Parameters:
 - SuitID
 - SuitMods
 
-```
+```json
 {
     "timestamp": "2020-10-07T09:10:55Z",
     "event": "BuySuit",
@@ -142,7 +142,7 @@ Parameters:
 - Class
 - WeaponMods
 
-```
+```json
 {
     "timestamp": "2020-10-07T09:11:49Z",
     "event": "BuyWeapon",
@@ -166,7 +166,7 @@ Parameters:
 
 - Refund: credits
 
-```
+```json
 {
     "timestamp": "2020-10-05T11:17:34Z",
     "event": "CancelTaxi",
@@ -204,7 +204,7 @@ Parameters:
     - Class
     - WeaponMods
 
-```
+```json
 {
     "timestamp": "2020-10-07T09:23:59Z",
     "event": "CreateSuitLoadout",
@@ -242,7 +242,7 @@ Parameters:
 - StationType
 - MarketID
 
-```
+```json
 {
     "timestamp": "2020-10-12T09:09:55Z",
     "event": "Disembark",
@@ -296,7 +296,7 @@ Parameters:
 - StationType
 - MarketID
 
-```
+```json
 {
     "timestamp": "2020-10-12T09:06:17Z",
     "event": "Embark",
@@ -330,7 +330,7 @@ The full list is included in the file **FCMaterials.json**
 
 Example of FCMaterials.json:
 
-```
+```json
 { "timestamp":"2022-03-24T11:37:28Z", "event":"FCMaterials", "MarketID":3700020480, "CarrierName":"ralph's carrier", "CarrierID":"VHT-51W", "Items":[
 { "id":128961556, "Name":"$californium_name;", "Name_Localised":"Californium", "Price":74000, "Stock":0, "Demand":1 },
 { "id":128961524, "Name":"$aerogel_name;", "Name_Localised":"Aerogel", "Price":500, "Stock":26, "Demand":0 },
@@ -398,7 +398,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp":"2022-12-07T14:27:55Z",
     "event":"ScanOrganic", 
@@ -427,7 +427,7 @@ Parameters:
 - Price
 - MarketID
 
-```
+```json
 {
     "timestamp": "2020-10-07T14:08:28Z",
     "event": "SellMicroResources",
@@ -457,7 +457,7 @@ Parameters:
     - Value
     - Bonus
 
-```
+```json
 {
     "timestamp": "2022-12-07T14:44:28Z",
     "event": "SellOrganicData",
@@ -488,7 +488,7 @@ Parameters:
 - SuitID
 - SuitMods
 
-```
+```json
 {
     "timestamp": "2020-10-05T14:34:04Z",
     "event": "SellSuit",
@@ -564,7 +564,7 @@ Parameters:
     - Count
     - Direction
 
-```
+```json
 {
     "timestamp": "2021-04-14T15:07:54Z",
     "event": "TransferMicroResources",
@@ -602,7 +602,7 @@ Parameters:
 - Count: number received
 - MarketID
 
-```
+```json
 {
     "timestamp": "2020-10-07T14:55:09Z",
     "event": "TradeMicroResources",
@@ -631,7 +631,7 @@ Parameters:
 - Cost
 - Resources
 
-```
+```json
 {
     "timestamp": "2022-08-19T16:41:33Z",
     "event": "UpgradeSuit",
@@ -686,7 +686,7 @@ Parameters:
 - Cost
 - Resources
 
-```
+```json
 {
     "timestamp": "2022-08-19T16:58:18Z",
     "event": "UpgradeWeapon",

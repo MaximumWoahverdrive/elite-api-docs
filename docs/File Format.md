@@ -35,7 +35,7 @@ The Heading record has a Json object with the following values:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-07-22T10:20:01Z",
     "event": "fileheader",

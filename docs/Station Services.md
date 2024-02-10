@@ -10,7 +10,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "BuyAmmo",
@@ -31,7 +31,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "BuyDrones",
@@ -65,7 +65,7 @@ The Progress value actually represents pending progress for goods in transit: (I
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-03-07T15:47:03Z",
     "event": "CargoDepot",
@@ -115,7 +115,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-08-14T13:20:28Z",
     "event": "CommunityGoal",
@@ -184,7 +184,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-08-09T08:45:31Z",
     "event": "CrewAssign",
@@ -204,7 +204,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-08-09T08:46:11Z",
     "event": "CrewFire",
@@ -226,7 +226,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-08-09T08:46:29Z",
     "event": "CrewHire",
@@ -258,7 +258,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-05-24T10:41:51Z",
     "event": "EngineerContribution",
@@ -300,7 +300,7 @@ When applying an experimental effect, the _ApplyExperimentalEffect_ property wil
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-03-04T07:08:27Z",
     "event": "EngineerCraft",
@@ -370,7 +370,7 @@ Parameters (update for one engineer)
 
 Example (update)
 
-```
+```json
 {
     "timestamp": "2018-01-16T09:34:36Z",
     "event": "EngineerProgress",
@@ -383,7 +383,7 @@ Example (update)
 
 Example (startup):
 
-```
+```json
 {
     "timestamp": "2018-05-04T13:58:22Z",
     "event": "EngineerProgress",
@@ -525,7 +525,7 @@ The separate file also contains:
 
 Example: in the journal:
 
-```
+```json
 {
     "timestamp": "2017-10-05T10:11:38Z",
     "event": "Outfitting",
@@ -537,7 +537,7 @@ Example: in the journal:
 
 Separate file:
 
-```
+```json
 { "timestamp":"2017-10-05T10:10:34Z", "event":"Market", "MarketID":128678535, "StationName":"Black Hide", "StarSystem":"Wyrd", "Items":[
     { "id":128049152, "Name":"$platinum_name;", "Name_Localised":"Platinum", "Category":"$MARKET_category_metals;", "Category_Localised":"Metals", "BuyPrice":0, "SellPrice":42220, "MeanPrice":19756, "StockBracket":0, "DemandBracket":3, "Stock":0, "Demand":9182, "Consumer":true, "Producer":false, "Rare":false },
     { "id":128049153, "Name":"$palladium_name;", "Name_Localised":"Palladium", "Category":"$MARKET_category_metals;", "Category_Localised":"Metals", "BuyPrice":0, "SellPrice":13999, "MeanPrice":13244, "StockBracket":0, "DemandBracket":3, "Stock":0, "Demand":123183, "Consumer":true, "Producer":false, "Rare":false },
@@ -582,7 +582,7 @@ Parameters:
 
 Example: (note categories simplified)
 
-```
+```json
 {
     "timestamp": "2018-02-21T15:23:49Z",
     "event": "MaterialTrade",
@@ -614,7 +614,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "MissionAbandoned",
@@ -661,7 +661,7 @@ Optional Parameters (depending on mission type)
 
 Examples:
 
-```
+```json
 {
     "timestamp": "2018-02-28T12:06:37Z",
     "event": "MissionAccepted",
@@ -722,7 +722,7 @@ _Reputation_ and _Influence_ are a set of + indicators (eg "+++")
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-12-19T21:41:09Z",
     "event": "MissionCompleted",
@@ -793,7 +793,7 @@ Parameters
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-08-01T09:04:07Z",
     "event": "MissionRedirected",
@@ -829,7 +829,7 @@ If replacing an existing module:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "ModuleBuy",
@@ -876,7 +876,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "ModuleSell",
@@ -921,7 +921,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-01-31T10:55:15Z",
     "event": "ModuleStore",
@@ -954,7 +954,7 @@ Parameters:
 
 Examples:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "ModuleSwap",
@@ -967,7 +967,7 @@ Examples:
 }
 ```
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "ModuleSwap",
@@ -1002,7 +1002,7 @@ The separate file also contains
 
 Example: (in journal)
 
-```
+```json
 {
     "timestamp": "2017-10-05T10:11:38Z",
     "event": "Outfitting",
@@ -1014,7 +1014,7 @@ Example: (in journal)
 
 (In separate file)
 
-```
+```json
 { "timestamp":"2017-10-05T10:11:38Z", "event":"Outfitting", "MarketID":128678535, "StationName":"Black Hide", "StarSystem":"Wyrd", "Horizons":true, "Items":[
     { "id":128049382, "Name":"hpt_pulselaser_fixed_medium", "BuyPrice":16731 },
     { "id":128049383, "Name":"hpt_pulselaser_fixed_large", "BuyPrice":66924 },
@@ -1039,7 +1039,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-03-19T10:25:10Z",
     "event": "PayBounties",
@@ -1065,7 +1065,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-03-19T10:24:21Z",
     "event": "PayFines",
@@ -1101,7 +1101,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "RedeemVoucher",
@@ -1130,7 +1130,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "RefuelAll",
@@ -1150,7 +1150,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "RefuelPartial",
@@ -1170,7 +1170,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "Repair",
@@ -1181,7 +1181,7 @@ Example:
 
 Note when repairing on a FleetCarrier, you can now get a list of the modules repaired:
 
-```
+```json
 {
     "timestamp": "2020-03-31T13:39:42Z",
     "event": "Repair",
@@ -1217,7 +1217,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "RestockVehicle",
@@ -1264,7 +1264,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "SellDrones",
@@ -1288,7 +1288,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-07-20T08:56:39Z",
     "event": "SellShipOnRebuy",
@@ -1312,7 +1312,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-01-24T10:42:38Z",
     "event": "SetUserShipName",
@@ -1343,7 +1343,7 @@ The full price list is written to a separate file, in the same folder as the jou
 
 Example: in the Journal:
 
-```
+```json
 {
     "timestamp": "2017-10-04T10:01:38Z",
     "event": "Shipyard",
@@ -1355,7 +1355,7 @@ Example: in the Journal:
 
 In the separate shipyard.json file:
 
-```
+```json
 { "timestamp":"2017-10-04T10:01:38Z", "event":"Shipyard", "MarketID": 128122104, "StationName":"Seven Holm", "StarSystem":"Tamor", "Horizons":true, "AllowCobraMkIV":true, "PriceList":[
     { "id":128049249, "ShipType":"sidewinder", "ShipPrice":24336 },
     { "id":128049255, "ShipType":"eagle", "ShipPrice":34071 },
@@ -1384,7 +1384,7 @@ Note: the new ship's ShipID will be logged in a separate event after the purchas
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-07-21T14:36:38Z",
     "event": "ShipyardBuy",
@@ -1406,7 +1406,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-07-21T14:36:38Z",
     "event": "ShipyardNew",
@@ -1429,7 +1429,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-07-21T15:12:19Z",
     "event": "ShipyardSell",
@@ -1457,7 +1457,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-07-21T15:19:49Z",
     "event": "ShipyardTransfer",
@@ -1485,7 +1485,7 @@ Parameters:
 
 Example
 
-```
+```json
 {
     "timestamp": "2016-07-21T14:36:06Z",
     "event": "ShipyardSwap",
@@ -1520,7 +1520,7 @@ Parameters:
 
 The InTransit value only appears (with value true) if the module is being transferred. In this case, the system, market, transfer cost and transfer time are not written.
 
-```
+```json
 { "timestamp":"2018-01-31T10:55:16Z", "event":"StoredModules", "MarketID":128676487, "StationName":"Farseer Inc", "StarSystem":"Deciat", "Items":[
 { "Name":"$int_engine_size3_class5_name;", "Name_Localised":"Thrusters", "StorageSlot":57, "StarSystem":"Deciat", "MarketID":128676487, "TransferCost":0, "TransferTime":0, "BuyPrice":495215, "Hot":false, "EngineerModifications":"Engine_Dirty", "Level":1, "Quality":0.000000 },
 { "Name":"$int_hyperdrive_size6_class5_name;", "Name_Localised":"FSD", "StorageSlot":59, "StarSystem":"Shinrarta Dezhra", "MarketID":128666762, "TransferCost":79680, "TransferTime":1317, "BuyPrice":12620035, "Hot":false, "EngineerModifications":"FSD_LongRange", "Level":5, "Quality":0.000000 } ] }
@@ -1559,7 +1559,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2017-10-04T10:07:21Z",
     "event": "StoredShips",
@@ -1609,7 +1609,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-03-02T11:28:44Z",
     "event": "TechnologyBroker",
@@ -1666,7 +1666,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp":"2022-11-18T16:19:48Z",
     "event":"ClearImpound", 

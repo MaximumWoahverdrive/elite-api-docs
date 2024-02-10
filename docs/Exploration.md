@@ -27,7 +27,7 @@ The "NearestDestination" is added if within 50km of a location listed in the nav
 
 Example:
 
-```
+```json
 {
     "timestamp": "2019-05-13T13:28:51Z",
     "event": "CodexEntry",
@@ -144,7 +144,7 @@ _Entries in the list above marked with an asterisk are only included for a detai
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-02-02T10:43:05Z",
     "event": "Scan",
@@ -261,7 +261,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2022-03-17T18:20:53Z",
     "event": "FSSBodySignals",
@@ -315,7 +315,7 @@ Parameters:
 
 Examples:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "MaterialCollected",
@@ -325,7 +325,7 @@ Examples:
 }
 ```
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "MaterialCollected",
@@ -347,7 +347,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "MaterialDiscarded",
@@ -369,7 +369,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "MaterialDiscovered",
@@ -394,7 +394,7 @@ Parameters:
 
 Example
 
-```
+```json
 {
     "timestamp": "2018-11-14T10:35:35Z",
     "event": "MultiSellExplorationData",
@@ -434,7 +434,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "BuyExplorationData",
@@ -459,7 +459,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-10-05T15:06:12Z",
     "event": "SAAScanComplete",
@@ -487,7 +487,7 @@ Parameters:
 
 Examples:
 
-```
+```json
 {
     "timestamp": "2019-04-17T13:38:18Z",
     "event": "SAASignalsFound",
@@ -508,7 +508,7 @@ Examples:
 }
 ```
 
-```
+```json
 {
     "timestamp": "2019-04-17T13:40:39Z",
     "event": "SAASignalsFound",
@@ -525,7 +525,7 @@ Examples:
 }
 ```
 
-```
+```json
 {
     "timestamp": "2022-07-01T09:14:32Z",
     "event": "SAASignalsFound",
@@ -581,7 +581,7 @@ Parameters:
 
 Example
 
-```
+```json
 {
     "timestamp": "2021-07-27T13:52:20Z",
     "event": "ScanBaryCentre",
@@ -612,7 +612,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "SellExplorationData",
@@ -652,7 +652,7 @@ The latitude, longitude, altitude and heading will be included if on a planet or
 
 Example:
 
-```
+```json
 {
     "timestamp": "2018-01-17T09:48:26Z",
     "event": "Screenshot",

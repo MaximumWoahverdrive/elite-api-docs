@@ -21,7 +21,7 @@ When the bounty is for a skimmer, it's slightly different:
 
 Examples:
 
-```
+```json
 {
     "timestamp": "2018-04-17T11:11:02Z",
     "event": "Bounty",
@@ -37,7 +37,7 @@ Examples:
 }
 ```
 
-```
+```json
 {
     "timestamp": "2018-05-20T21:19:58Z",
     "event": "Bounty",
@@ -70,7 +70,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "Died",
@@ -90,7 +90,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "Died",
@@ -121,7 +121,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "EscapeInterdiction",
@@ -142,7 +142,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "FactionKillBond",
@@ -198,7 +198,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "interdicted",
@@ -224,7 +224,7 @@ Parameters:
 
 Example:
 
-```
+```json
 {
     "timestamp": "2016-06-10T14:32:03Z",
     "event": "interdiction",
@@ -254,7 +254,7 @@ Parameters:
 
 Examples:
 
-```
+```json
 {
     "timestamp": "2016-07-25T14:45:48Z",
     "event": "ShieldState",
@@ -262,7 +262,7 @@ Examples:
 }
 ```
 
-```
+```json
 {
     "timestamp": "2016-07-25T14:46:36Z",
     "event": "ShieldState",
