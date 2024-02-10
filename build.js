@@ -15,7 +15,6 @@ function parseList(list, level = 0) {
             s += parseList(item, level + 1)
         } else {
             for (let itemChild of item.children) {
-                if (itemChild.tag == 'p') s += '\t'.repeat(level) + '- ' + itemChild.text + ' \n'
                 if (itemChild.tag == 'p') s += '    '.repeat(level) + '- ' + itemChild.text + ' \n'
                 if (itemChild.tag == 'ul') s += parseList(itemChild, level + 1)
             }
