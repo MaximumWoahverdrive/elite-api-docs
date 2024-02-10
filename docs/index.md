@@ -193,16 +193,16 @@ bugs fixed:
 
 **Version 12 - In 2.4 beta1** _(17th Aug 2017)_
 
-**Version 11**_published 26/Jun/2017_
+**Version 11** _published 26/Jun/2017_
 
-**Version 10**_published 29/Mar/2017 (for v2.3 beta 5)_
+**Version 10** _published 29/Mar/2017 (for v2.3 beta 5)_
 
-**Version 9**_published 20/Feb/2017 (for v2.3 beta)_
+**Version 9** _published 20/Feb/2017 (for v2.3 beta)_
 
-**Version 8**_published 10/Jan/2017 (for v2.2.03)_
+**Version 8** _published 10/Jan/2017 (for v2.2.03)_
 
-**Version 7**_published 15/Nov/2016 (for release 2.2.02)_
+**Version 7** _published 15/Nov/2016 (for release 2.2.02)_
 
-**Version 6**_published 26/Oct/2016 (for 2.2 public release)_
+**Version 6** _published 26/Oct/2016 (for 2.2 public release)_
 
 **Version 1** was published 20/July/2016
