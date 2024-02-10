@@ -105,9 +105,9 @@ Parameters(Planet/Moon)
 - Landable: true (if landable)
 - Materials: JSON array with objects with material names and percentage occurrence
 - Composition: structure containing info on solid composition
-  - Ice
-  - Rock
-  - Metal  
+    - Ice
+    - Rock
+    - Metal  
 - Rings: [ array of info ] – if rings present
 - ReserveLevel: (Pristine/Major/Common/Low/Depleted) – if rings present
 
@@ -256,8 +256,8 @@ Parameters:
 - BodyID
 - SystemAddress
 - Signals: Array
-  - Type
-  - Count
+    - Type
+    - Count
 
 Example:
 
@@ -386,8 +386,8 @@ When written: when selling exploration data in Cartographics, a page at a time
 Parameters:
 
 - Discovered: (array of records, as follows)
-  - SystemName
-  - NumBodies
+    - SystemName
+    - NumBodies
 - BaseValue
 - Bonus
 - TotalEarnings
@@ -480,10 +480,10 @@ Parameters:
 - BodyName
 - BodyID
 - Signals: (array)
-  - Type
-  - Count
+    - Type
+    - Count
 - Genuses: (array)
-  - Genus
+    - Genus
 
 Examples:
 

@@ -91,27 +91,27 @@ This event contains the current status of all community goals the player is curr
 Parameters:
 
 - CurrentGoals: an array with an entry for each CG, containing:
-  - CGID: a unique ID number for this CG
-  - Title: the description of the CG
-  - SystemName
-  - MarketName
-  - Expiry: time and date
-  - IsComplete: Boolean
-  - CurrentTotal
-  - PlayerContribution
-  - NumContributors
-  - PlayerPercentileBand
-  - TopTier:  
-    - Name: string
-    - Bonus: string
+    - CGID: a unique ID number for this CG
+    - Title: the description of the CG
+    - SystemName
+    - MarketName
+    - Expiry: time and date
+    - IsComplete: Boolean
+    - CurrentTotal
+    - PlayerContribution
+    - NumContributors
+    - PlayerPercentileBand
+    - TopTier:  
+        - Name: string
+        - Bonus: string
 
 - If the community goal is constructed with a fixed-size top rank (ie max reward for top 10 players)
-  - TopRankSize: (integer)
-  - PlayerInTopRank: (Boolean)
+    - TopRankSize: (integer)
+    - PlayerInTopRank: (Boolean)
 
 - If the community goal has reached the first success tier:
-  - TierReached
-  - Bonus
+    - TierReached
+    - Bonus
 
 Example:
 
@@ -286,13 +286,13 @@ Parameters:
 - ApplyExperimentalEffect: (when applying a new effect)
 - Ingredients: JSON array of objects with names and quantities of materials required
 - Modifiers: JSON array of modification data
-  - Label: string – (see §15.11 below)
-  - Value: float
-  - OriginalValue: float
-  - LessIsGood: bool
+    - Label: string – (see §15.11 below)
+    - Value: float
+    - OriginalValue: float
+    - LessIsGood: bool
 - Some modifications have string values:
-  - Label: string
-  - ValueStr: string
+    - Label: string
+    - ValueStr: string
 
 The new "quality" value represents the quality or progress of the blueprint. The quality should increase from 0 to 1 as the blueprint is refined through further crafting, and once it reaches a certain value, the player will have the option to upgrade the blueprint to the next level of recipe.
 
@@ -354,11 +354,11 @@ Also a summary of progress for all engineers at startup
 Parameters (summary at startup)
 
 - Engineers: array
-  - Engineer: name
-  - EngineerID
-  - Rank: rank reached (when unlocked)
-  - Progress: progress stage (Invited/Acquainted/Unlocked/Barred)
-  - RankProgress: percentage towards next rank
+    - Engineer: name
+    - EngineerID
+    - Rank: rank reached (when unlocked)
+    - Progress: progress stage (Invited/Acquainted/Unlocked/Barred)
+    - RankProgress: percentage towards next rank
 
 Parameters (update for one engineer)
 
@@ -509,19 +509,19 @@ Parameters:
 The separate file also contains:
 
 - Items: array of objects
-  - id
-  - Name
-  - Category
-  - BuyPrice
-  - SellPrice
-  - MeanPrice
-  - StockBracket
-  - DemandBracket
-  - Stock
-  - Demand
-  - Consumer: bool
-  - Producer: bool
-  - Rare: bool
+    - id
+    - Name
+    - Category
+    - BuyPrice
+    - SellPrice
+    - MeanPrice
+    - StockBracket
+    - DemandBracket
+    - Stock
+    - Demand
+    - Consumer: bool
+    - Producer: bool
+    - Rare: bool
 
 Example: in the journal:
 
@@ -556,12 +556,12 @@ Parameters:
 - Ship
 - ShipId
 - Items: Array of records
-  - Slot
-  - Name
-  - Hot
-  - EngineerModifications (only present if modified)
-  - Level
-  - Quality
+    - Slot
+    - Name
+    - Hot
+    - EngineerModifications (only present if modified)
+    - Level
+    - Quality
 
 ### MaterialTrade
 
@@ -572,13 +572,13 @@ Parameters:
 - MarketID
 - TraderType
 - Paid
-  - Material
-  - Category
-  - Quantity
+    - Material
+    - Category
+    - Quantity
 - Received
-  - Material
-  - Category
-  - Quantity
+    - Material
+    - Category
+    - Quantity
 
 Example: (note categories simplified)
 
@@ -710,11 +710,11 @@ Optional parameters (depending on mission type)
 - CommodityReward:[] (names and counts of any commodity rewards)
 - MaterialsReward:[] ( name, category and count)
 - FactionEffects: array of records
-  - Faction
-  - Effects: array of Effect, Effect_Localised and Trend value pairs
-  - Influence: array of SystemAddress, Trend and Influence values
-  - Reputation
-  - ReputationTrend
+    - Faction
+    - Effects: array of Effect, Effect_Localised and Trend value pairs
+    - Influence: array of SystemAddress, Trend and Influence values
+    - Reputation
+    - ReputationTrend
 
 _TrendValue_ can be UpGood, UpBad, DownGood, or DownBad
 
@@ -996,9 +996,9 @@ The separate file also contains
 
 - Horizons: bool
 - Items: array of objects
-  - id
-  - Name
-  - BuyPrice
+    - id
+    - Name
+    - BuyPrice
 
 Example: (in journal)
 
@@ -1338,8 +1338,8 @@ The full price list is written to a separate file, in the same folder as the jou
 - Horizons: bool
 - AllowCobraMkIV: bool
 - Pricelist: array of objects
-  - ShipType
-  - ShipPrice
+    - ShipType
+    - ShipPrice
 
 Example: in the Journal:
 
@@ -1504,17 +1504,17 @@ Parameters:
 
 - MarketID: current market
 - Items: (array of objects)
-  - Name
-  - StarSystem
-  - MarketID: where the module is stored
-  - StorageSlot
-  - TransferCost
-  - TransferTime
-  - Hot
-  - EngineerModifications: (recipe name)
-  - Level
-  - Quality
-  - InTransit:bool
+    - Name
+    - StarSystem
+    - MarketID: where the module is stored
+    - StorageSlot
+    - TransferCost
+    - TransferTime
+    - Hot
+    - EngineerModifications: (recipe name)
+    - Level
+    - Quality
+    - InTransit:bool
 
 "EngineerModifications", "Level" and "Quality" only appear for an engineered module
 
@@ -1536,26 +1536,26 @@ Parameters:
 - StationName
 - StarSystem
 - ShipsHere: (array of objects)
-  - ShipID
-  - ShipType
-  - Name (if named)
-  - Value
-  - Hot
+    - ShipID
+    - ShipType
+    - Name (if named)
+    - Value
+    - Hot
 - ShipsRemote: (array of objects)
-  - ShipID
-  - ShipType
-  - Name (if named)
-  - Value
-  - Hot
+    - ShipID
+    - ShipType
+    - Name (if named)
+    - Value
+    - Hot
 
 - If the ship is in transit:
 - InTransit: true
 
 - If the ship is not in transit:
-  - StarSystem
-  - ShipMarketID
-  - TransferPrice
-  - TransferType
+    - StarSystem
+    - ShipMarketID
+    - TransferPrice
+    - TransferType
 
 Example:
 
@@ -1600,12 +1600,12 @@ Parameters:
 - MarketID
 - ItemsUnlocked: the name(s) of the new item unlocked (available in Outfitting)
 - Commodities:
-  - Name: name of item
-  - Count: number of items used
+    - Name: name of item
+    - Count: number of items used
 - Materials:
-  - Name
-  - Count
-  - Category
+    - Name
+    - Count
+    - Category
 
 Example:
 

@@ -52,20 +52,20 @@ Example:
 
 Each event record is a json object.
 
-The object has a "timestamp" value with the time in ISO 8601 format, an "event":"_eventname_" key-value pair identifying the type of event, followed by other key-value pairs providing additional information.
+The object has a `"timestamp"` value with the time in ISO 8601 format, an `"event":"_eventname_"` key-value pair identifying the type of event, followed by other key-value pairs providing additional information.
 
 The rest of this document describes each type of event that might be written into the journal, and the data values for each event.
 
 ### Localisation
 
-Some values written into the log use internal symbol IDs, as used by the game to lookup localised text strings. These have the form "$symbolname;"
+Some values written into the log use internal symbol IDs, as used by the game to lookup localised text strings. These have the form `"$symbolname;"`
 
 When such values are written into the log, the iocalised version of the string will also be written _(UTF8 encoded),_ as a separate key-value pair, with "_Localised" appended to the key name.
 
 _**Examples throughout this document have not been updated with this extra localised format **_
 
-"Government":"$government_PrisonColony;", "Government_Localised":"Colonie pénitentiaire"
+`"Government":"$government_PrisonColony;", "Government_Localised":"Colonie pénitentiaire"`
 
-In addition, for v3.0, all commodity names and material names will also be localised, eg if we had "Material ":"hyperspacetrajectories", we will get the result "Material_Localised":"Eccentric Hyperspace Trajectories"
+In addition, for v3.0, all commodity names and material names will also be localised, eg if we had `"Material ":"hyperspacetrajectories"`, we will get the result `"Material_Localised":"Eccentric Hyperspace Trajectories"`
 
-However the localised value will be omitted if it is exactly the same as the original, ie avoid:  { "Name":"iron", "Name_Localised":"Iron", "Count":2 }
+However the localised value will be omitted if it is exactly the same as the original, ie avoid:  `{ "Name":"iron", "Name_Localised":"Iron", "Count":2 }`
