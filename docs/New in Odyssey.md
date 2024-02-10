@@ -11,14 +11,12 @@ Parameters:
 - Consumables: [ ]
 - Data: [ ]
 
-
 Each list has objects containing:
 
 - Name
 - OwnerID
 - MissionID (if relevant)
 - Count
-
 
 ### BackpackChange
 
@@ -36,7 +34,6 @@ Where each item contains:
 - Count
 - Type
 
-
 ### BookDropship
 
 This event is logged when signing up to fight at a recruitment desk
@@ -53,7 +50,6 @@ Parameters:
 - DestinationSystem: starsystem name
 - DestinationLocation: station name
 - Retreat: bool (inticates if requested for exit from combat zone)
-
 
 ```
 {
@@ -79,7 +75,6 @@ Parameters:
 - Price
 - MarketID
 
-
 New format (eg at Fleet Carrier bartender)
 
 Parameters:
@@ -91,7 +86,6 @@ Parameters:
     - Name
     - Category
     - Count
-
 
 Category can be one of:
 
@@ -126,7 +120,6 @@ Parameters:
 - SuitID
 - SuitMods
 
-
 ```
 {
     "timestamp": "2020-10-07T09:10:55Z",
@@ -148,7 +141,6 @@ Parameters:
 - SuitModuleID
 - Class
 - WeaponMods
-
 
 ```
 {
@@ -174,7 +166,6 @@ Parameters:
 
 - Refund: credits
 
-
 ```
 {
     "timestamp": "2020-10-05T11:17:34Z",
@@ -195,7 +186,6 @@ Parameters:
 - Count
 - Stolen: bool
 
-
 ### CreateSuitLoadout
 
 This event is logged when the player creates a new suit loadout
@@ -214,7 +204,6 @@ Parameters:
     - Class
     - WeaponMods
 
-
 ```
 {
     "timestamp": "2020-10-07T09:23:59Z",
@@ -232,7 +221,6 @@ Parameters:
 - SuitName
 - LoadoutID
 - LoadoutName
-
 
 ### Disembark
 
@@ -253,7 +241,6 @@ Parameters:
 - StationName (if at a station)
 - StationType
 - MarketID
-
 
 ```
 {
@@ -276,7 +263,6 @@ Parameters:
 - MissionID (if relevant)
 - Count
 
-
 ### DropShipDeploy
 
 When exiting a shuttle dropship at a conflict zone
@@ -289,7 +275,6 @@ Parameters:
 - BodyID
 - OnStation: bool
 - OnPlanet: bool
-
 
 ### Embark
 
@@ -310,7 +295,6 @@ Parameters:
 - StationName (if at a station)
 - StationType
 - MarketID
-
 
 ```
 {
@@ -335,7 +319,6 @@ Parameters:
 - CarrierName
 - CarrierID
 
-
 The full list is included in the file **FCMaterials.json**
 
 - Items: array of objects
@@ -344,7 +327,6 @@ The full list is included in the file **FCMaterials.json**
     - Price
     - Stock
     - Demand
-
 
 Example of FCMaterials.json:
 
@@ -369,14 +351,12 @@ Parameters:
 - SuitName
 - SlotName
 
-
 - LoadoutID
 - LoadoutName
 - ModuleName: new weapon or other itsm added to loadout
 - SuitModuleID
 - Class
 - WeaponMods
-
 
 ### LoadoutRemoveModule
 
@@ -394,7 +374,6 @@ Parameters:
 - Class
 - WeaponMods
 
-
 ### RenameSuitLoadout
 
 Parameters:
@@ -403,7 +382,6 @@ Parameters:
 - SuitName
 - LoadoutID
 - Loadoutname
-
 
 ### ScanOrganic
 
@@ -417,7 +395,6 @@ Parameters:
 - Variant
 - SystemAddress
 - Body
-
 
 Example:
 
@@ -450,7 +427,6 @@ Parameters:
 - Price
 - MarketID
 
-
 ```
 {
     "timestamp": "2020-10-07T14:08:28Z",
@@ -480,7 +456,6 @@ Parameters:
     - Variant
     - Value
     - Bonus
-
 
 ```
 {
@@ -513,7 +488,6 @@ Parameters:
 - SuitID
 - SuitMods
 
-
 ```
 {
     "timestamp": "2020-10-05T14:34:04Z",
@@ -536,7 +510,6 @@ Parameters:
 - Class
 - WeaponMods
 
-
 ### ShipLocker
 
 Lists the contents of the ship locker, eg at startup
@@ -554,14 +527,12 @@ Parameters:
 - Consumables: [ ]
 - Data: [ ]
 
-
 Each list has objects containing:
 
 - Name
 - OwnerID
 - MissionID (if relevant)
 - Count
-
 
 ### SwitchSuitLoadout
 
@@ -581,7 +552,6 @@ Parameters:
     - Class
     - WeaponMods
 
-
 ### TransferMicroResources
 
 Written when transferreing items between backpack and ship locker
@@ -593,7 +563,6 @@ Parameters:
     - Category
     - Count
     - Direction
-
 
 ```
 {
@@ -633,7 +602,6 @@ Parameters:
 - Count: number received
 - MarketID
 
-
 ```
 {
     "timestamp": "2020-10-07T14:55:09Z",
@@ -662,7 +630,6 @@ Parameters:
 - Class
 - Cost
 - Resources
-
 
 ```
 {
@@ -718,7 +685,6 @@ Parameters:
 - Class
 - Cost
 - Resources
-
 
 ```
 {

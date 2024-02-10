@@ -10,7 +10,6 @@ The new Player Journal provides a stream of information about gameplay events wh
 
 A short example of a player journal file (_**out of date, some events may have additional data**_):
 
-
 ```
 {"timestamp":"2016-06-10T14:31:00Z", "event":"FileHeader", "part":1, "gameversion":"2.2", "build":"r113684 " },
 {"timestamp":"2016-06-10T14:32:03Z", "event":"LoadGame", "Commander":"HRC1", "Ship":"SideWinder", "ShipID":1, "GameMode":"Open", "Credits":600120, "Loan":0  }
@@ -49,7 +48,6 @@ A short example of a player journal file (_**out of date, some events may have a
 - Added organic variant to the “ScanOrganic” and “SellOrganicData” events
 - Fixed the “FactionKillBond” event sometimes not getting written
 
-
 **Version 36**
 
 **Changes for Odyssey up to update14 (November 2022)**
@@ -58,7 +56,6 @@ A short example of a player journal file (_**out of date, some events may have a
 - Added a new flag to Status.json to indicate if a charging fsd is charging a hyperspace jump
 - Extended the UpgradeSuit/UpgradeWeapon events to include the resources used for the upgrade
 - Added "DepartureTime" to the "CarrierJumpRequest" event
-
 
 **Version 35**
 
@@ -71,7 +68,6 @@ A short example of a player journal file (_**out of date, some events may have a
 - Extended the SAASignalsFound event to include the genuses on the scanned planet
 - Fixed the "PayFines" event being written instead of "PayBounties" when paying off a bounty
 
-
 **Version 34**
 
 **Changes for Odyssey up to update12 (May 2022)**
@@ -83,7 +79,6 @@ A short example of a player journal file (_**out of date, some events may have a
 - FSSBodySignals: extra info during a scan (actually from Update 6 last year)
 - Bugfix: Resurrect event was sometimes written with blank strings
 
-
 **Version 33**
 
 **Changes for Odyssey up to update 11 (March 2022)**
@@ -92,7 +87,6 @@ A short example of a player journal file (_**out of date, some events may have a
 - the following events have a new bool value Telepresence: ChangeCrewRole EndCrewSession CrewMemberJoins CrewMemberQuits CrewLaunchFighter CrewMemberRoleChange JoinACrew QuitACrew KickCrewMember
 - LaunchSRV, DockSRV and SRVDestroyed events now add a new value "SRVType" (from Oct 2021 update)
 - when scanning one body of a binary pair, you will now get an event detailing the orbital parameters of their BaryCentre (from Sep 2021 update)
-
 
 **Version 32**
 
@@ -108,7 +102,6 @@ A short example of a player journal file (_**out of date, some events may have a
 - Fixed bug re ADS mode in Status flags
 - Added names for military and exobiolost ranks in appendix
 - Corrected details of the contents of the NavRoute file
-
 
 **Version 31**
 
@@ -126,20 +119,17 @@ A short example of a player journal file (_**out of date, some events may have a
 - Fix station type when docking at FleetCarrier
 - Fix bug with incorrect LoadoutID in CreateSuitLoadout event
 
-
 **Version 30**
 
 **Changes for Odyssey Alpha 4**
 
 - See sections 12, 14
 
-
 **Version 29**
 
 **Changes for "Odyssey"**
 
 - See section 12
-
 
 **Version 28**
 
@@ -151,13 +141,11 @@ new events added:
 - CarrierNameChanged (with callsign, name, carrierid)
 - new NavRoute.json file
 
-
 events with new data:
 
 - CarrierJumpRequest - added Body (name) and BodyID
 - Bounty - include localised Target
 - FSDTarget - include StarClass
-
 
 bugs fixed:
 
@@ -168,7 +156,6 @@ bugs fixed:
 - RefuelAll, RepairAll - fix null strings
 - Docked - fix bug where docking at a FC doesn't sometimes pick up nearby station name
 
-
 **Version 27**
 
 **Changes for v3.7 beta 1 (April 2020)**
@@ -177,7 +164,6 @@ bugs fixed:
 - New CargoTransfer event (§13.52)
 - Change to Repair event (§8.38)
 - Added some station services (see 'Docked' §4.2)
-
 
 **Version 26 - Changes for v3.5 (September 2019)**
 

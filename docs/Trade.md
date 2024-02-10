@@ -8,7 +8,6 @@ Parameters:
 
 - Body: name of nearest body
 
-
 ### BuyTradeData
 
 When Written: when buying trade data in the galaxy map
@@ -17,7 +16,6 @@ Parameters:
 
 - System: star system requested
 - Cost: cost of data
-
 
 Example:
 
@@ -39,7 +37,6 @@ Parameters:
 - Type: cargo type
 - Stolen: whether stolen goods
 - MissionID; (if relevant)
-
 
 Example:
 
@@ -63,11 +60,9 @@ Parameters:
 - MissionID: (if relevant)
 - Abandoned: whether 'abandoned'
 
-
 If the cargo is related to powerplay delivery _from outlying systems back to the centre_:
 
 - PowerplayOrigin: starsystem name
-
 
 Examples:
 ```
@@ -103,7 +98,6 @@ Parameters:
 - BuyPrice: cost per unit
 - TotalCost: total cost
 
-
 Example:
 
 ```
@@ -132,7 +126,6 @@ Parameters:
 - IllegalGoods: (not always present) whether goods are illegal here
 - StolenGoods: (not always present) whether goods were stolen
 - BlackMarket: (not always present) whether selling in a black market
-
 
 Examples:
 
@@ -168,7 +161,6 @@ When Written: when mining fragments are converted unto a unit of cargo by refine
 Parameters:
 
 - Type: cargo type
-
 
 Example:
 

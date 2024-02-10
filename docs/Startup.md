@@ -19,7 +19,6 @@ Parameters:
     - Stolen
     - MissionID (if relevant)
 
-
 Example:
 
 ```
@@ -58,7 +57,6 @@ Parameters:
 - Name: commander name
 - FID: player id
 
-
 Example:
 
 ```
@@ -81,7 +79,6 @@ Parameters:
 - Name: commander name
 - FID: player id
 
-
 ### Loadout
 
 When written: at startup, when loading from main menu, or when switching ships, or after changing the ship in Outfitting, or when docking SRV back in mothership
@@ -101,7 +98,6 @@ Parameters:
 - MaxJumpRange: (based on zero cargo, and just enough fuel for 1 jump)
 - Rebuy
 - Hot: (if wanted at startup – may not always be present)
-
 
 - Modules: array of installed items, each with:
     - Slot: slot name
@@ -126,7 +122,6 @@ Parameters:
             - OriginalValue
             - LessIsGood: bool
 
-
 _(For a passenger cabin, AmmoInClip holds the number of places in the cabin)_
 
 ### Materials
@@ -138,7 +133,6 @@ Parameters:
 - Raw: array of raw materials (each with name and count)
 - Manufactured: array of manufactured items
 - Encoded: array of scanned data
-
 
 Example:
 
@@ -201,14 +195,12 @@ Parameters:
 - Failed: (array of objects)
 - Complete: (array of objects)
 
-
 Each object contains:
 
 - MissionID
 - Name
 - PassengerMission: bool
 - Expires: time left in seconds
-
 
 ```
 {
@@ -236,7 +228,6 @@ Parameters:
 - Name: (new) commander name
 - FID: player id
 - Package: selected starter package
-
 
 Example:
 
@@ -276,7 +267,6 @@ Parameters:
 - gameversion
 - build
 
-
 Example:
 
 ```
@@ -311,7 +301,6 @@ Parameters:
     - Wanted (bool)
     - Count
 
-
 ### Powerplay
 
 When written: at startup, if player has pledged to a power
@@ -323,7 +312,6 @@ Parameters:
 - Merits
 - Votes
 - TimePledged (time in seconds)
-
 
 Example:
 
@@ -351,7 +339,6 @@ Parameters:
 - Empire: "
 - Federation: "
 - CQC: "
-
 
 Example:
 
@@ -381,7 +368,6 @@ Parameters:
 - Federation: military rank
 - CQC: rank on scale 0-8
 
-
 Example:
 
 ```
@@ -409,7 +395,6 @@ Parameters:
 - Federation
 - Independent
 - Alliance
-
 
 Note thresholds:
 
@@ -519,7 +504,6 @@ Parameters:
     - Multicrew_Fighter_Time_Total
     - Multicrew_Credits_Total
     - Multicrew_Fines_Total
-
 
 Note times are in seconds
 

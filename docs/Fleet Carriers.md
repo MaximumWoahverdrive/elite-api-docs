@@ -85,7 +85,6 @@ Player has bought a fleet carrier
 - Variant: string
 - Callsign: string
 
-
 ```
 {
     "timestamp": "2020-03-11T15:31:46Z",
@@ -118,7 +117,6 @@ When owner opens carrier management
 - Crew [{ CrewRole, Activated, Enabled, CrewName },...]
 - ShipPacks [{ PackTheme, packTier },...]
 - ModulePacks [{PackTheme, packTier },...]
-
 
 ```
 {
@@ -237,7 +235,6 @@ At the time the player requests the jump, not the jump itself
 - BodyID
 - DepartureTime
 
-
 ```
 {
     "timestamp": "2020-04-20T09:30:58Z",
@@ -259,7 +256,6 @@ At the time the player requests decommission
 - ScrapRefund: number
 - Scraptime: timestamp
 
-
 ```
 {
     "timestamp": "2020-03-11T15:12:26Z",
@@ -273,7 +269,6 @@ At the time the player requests decommission
 ### CarrierCancelDecommission
 
 - CarrierID: marketid
-
 
 ```
 {
@@ -291,7 +286,6 @@ Player transfers credits to/from carrier
 - Deposit, or Withdraw
 - PlayerBalance: (after transfer)
 - CarrierBalance: (after transfer)
-
 
 ```
 {
@@ -312,7 +306,6 @@ Any player giving fuel to the carrier
 - Amount: tons
 - Total: total amount of fuel after donation
 
-
 ```
 {
     "timestamp": "2020-03-19T09:17:29Z",
@@ -331,7 +324,6 @@ Changes to crew
 - Operation: (activate/deactivate/pause/resume/replace)
 - CrewRole: string
 - CrewName: string
-
 
 ```
 {
@@ -355,7 +347,6 @@ Change to tax rate or reserve
 - AvailableBalance: number
 - ReservePercent: number
 
-
 ```
 {
     "timestamp": "2020-03-26T10:36:32Z",
@@ -378,7 +369,6 @@ CarrierShipPack/CarrierModulePack
 - PackTheme: name
 - PackTier: name
 - Cost/Refund: int
-
 
 ```
 {
@@ -408,7 +398,6 @@ The carrier owner has requested the carrier buys or sells goods (or cancels such
 - or CancelTrade: true
 - Price: int
 
-
 ```
 {
     "timestamp": "2020-03-16T14:52:36Z",
@@ -430,7 +419,6 @@ The carrier owner has changed the docking permission criteria
 - DockingAccess: all/none/friends/squadron/squadronfriends
 - AllowNotorious: bool
 
-
 ```
 {
     "timestamp": "2020-03-11T15:07:25Z",
@@ -448,7 +436,6 @@ This is logged when a carrier's name is changed
 - CarrierID
 - Callsign
 - Name
-
 
 ### CarrierJumpCancelled
 

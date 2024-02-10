@@ -12,14 +12,12 @@ Parameters:
 - TotalReward
 - SharedWithOthers: if credit for the kill is shared with other players, this has the number of other players involved
 
-
 When the bounty is for a skimmer, it's slightly different:
 
 - Faction: faction paying bounty
 - Target: type of target
 - Reward: amount
 - VictimFaction
-
 
 Examples:
 
@@ -60,7 +58,6 @@ Parameters:
 - AwardingFaction
 - VictimFaction
 
-
 ### Died
 
 When written: player was killed
@@ -70,7 +67,6 @@ Parameters:
 - KillerName
 - KillerShip
 - KillerRank
-
 
 Example:
 
@@ -91,7 +87,6 @@ When written: player was killed by a wing
 Parameters:
 
 - Killers: a JSON array of objects containing player name, ship, and rank
-
 
 Example:
 
@@ -124,7 +119,6 @@ Parameters:
 - IsPlayer: whether player or npc
 - IsThargoid: whether thargoid or not
 
-
 Example:
 
 ```
@@ -145,7 +139,6 @@ Parameters:
 - Reward
 - AwardingFaction
 - VictimFaction
-
 
 Example:
 
@@ -173,7 +166,6 @@ Parameters:
 
 - ID
 
-
 ### HeatWarning
 
 When written: when heat exceeds 100%
@@ -190,7 +182,6 @@ Parameters:
 - PlayerPilot: bool – true if player is piloting the ship/fighter taking damage
 - Fighter: bool – true for ship-launched fighter
 
-
 ### Interdicted
 
 When written: player was interdicted by player or npc
@@ -204,7 +195,6 @@ Parameters:
 - CombatRank: if player
 - Faction: if npc
 - Power: if npc working for a power
-
 
 Example:
 
@@ -232,7 +222,6 @@ Parameters:
 - Faction: if an npc
 - Power: if npc working for power
 
-
 Example:
 
 ```
@@ -255,7 +244,6 @@ Parameters:
 - Victim: name of victim
 - CombatRank: victim's rank in range 0..8
 
-
 ### ShieldState
 
 When written: when shields are disabled in combat, or recharged
@@ -263,7 +251,6 @@ When written: when shields are disabled in combat, or recharged
 Parameters:
 
 - ShieldsUp 0 when disabled, 1 when restored
-
 
 Examples:
 
@@ -293,24 +280,20 @@ Parameters:
 
 - TargetLocked: bool (ie false when losing target)
 
-
 If target locked:
 
 - Ship: name
 - ScanStage: number
-
 
 If Scan stage &gt;= 1
 
 - PilotName: name
 - PilotRank: rank name
 
-
 If scan stage &gt;= 2
 
 - ShieldHealth
 - HullHealth
-
 
 If scan stage &gt;= 3
 
@@ -320,7 +303,6 @@ If scan stage &gt;= 3
 - SubSystem
 - SubSystemHealth
 - Power [*]
-
 
 [*] when targetting another ship, if the player is aligned in powerplay, and the target is also aligned to a power, include the info
 
@@ -332,7 +314,6 @@ Parameters:
 
 - ID
 - SRVType
-
 
 ### UnderAttack
 

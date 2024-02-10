@@ -26,7 +26,6 @@ Parameters:
     - Body
     - Name
 
-
 LegalState: one of:
 
 - "Clean"
@@ -44,7 +43,6 @@ Additional values when on foot:
 - Temperature (kelvin)
 - SelectedWeapon: name
 - Gravity: (relative to 1G)
-
 
 Flags:
 

@@ -21,7 +21,6 @@ Parameters:
 - NewTraitsDiscovered: bool
 - Traits: [ array of strings ]
 
-
 The IsNewEntry and NewTraitsDiscovered fields are optional depending on the results of the scan, and the Traits field is only available for entries that have unlocked traits.
 
 The "NearestDestination" is added if within 50km of a location listed in the navigation panel
@@ -59,7 +58,6 @@ Parameters:
 - SystemAddress
 - Bodies: number of new bodies discovered
 
-
 ### Scan
 
 When Written: basic or detailed discovery scan of a star, planet or moon
@@ -87,7 +85,6 @@ Parameters(star)
 - WasDiscovered: bool
 - WasMapped: bool
 
-
 Parameters(Planet/Moon)
 
 - ScanType
@@ -114,12 +111,10 @@ Parameters(Planet/Moon)
 - Rings: [ array of info ] – if rings present
 - ReserveLevel: (Pristine/Major/Common/Low/Depleted) – if rings present
 
-
 If rotating:
 
 - RotationPeriod (seconds)
 - Axial tilt
-
 
 Orbital Parameters for any Star/Planet/Moon (except main star of single-star system)
 
@@ -129,7 +124,6 @@ Orbital Parameters for any Star/Planet/Moon (except main star of single-star sys
 - Periapsis
 - OrbitalPeriod
 
-
 Rings properties*
 
 - Name
@@ -137,7 +131,6 @@ Rings properties*
 - MassMT – ie in megatons
 - InnerRad
 - OuterRad
-
 
 Note that a basic scan (ie without having a Detailed Surface Scanner installed) will now save a reduced amount of information.
 
@@ -253,7 +246,6 @@ Parameters:
 - SystemAddress
 - Count
 
-
 ### FSSBodySignals
 
 This event is written when completing a "Full Spectrum Scan" of a starsystem, to list the number of SAA signals found in the system (as shown in-game in the top-right panel)
@@ -266,7 +258,6 @@ Parameters:
 - Signals: Array
     - Type
     - Count
-
 
 Example:
 
@@ -297,7 +288,6 @@ Parameters:
 - BodyCount: number of stellar bodies in system
 - NonBodyCount: Number of non-body signals found
 
-
 ### FSSSignalDiscovered
 
 When written: when zooming in on a signal using the FSS scanner
@@ -313,7 +303,6 @@ Parameters:
 - USSType: (if a USS) – same types as in USSDrop event
 - IsStation: true (if it is a station)
 
-
 ### MaterialCollected
 
 When Written: whenever materials are collected
@@ -323,7 +312,6 @@ Parameters:
 - Category: type of material (Raw/Encoded/Manufactured)
 - Name: name of material
 - Count: number of units collected
-
 
 Examples:
 
@@ -357,7 +345,6 @@ Parameters:
 - Name
 - Count
 
-
 Example:
 
 ```
@@ -379,7 +366,6 @@ Parameters:
 - Category
 - Name
 - DiscoveryNumber
-
 
 Example:
 
@@ -405,7 +391,6 @@ Parameters:
 - BaseValue
 - Bonus
 - TotalEarnings
-
 
 Example
 
@@ -438,7 +423,6 @@ Parameters:
 - NumBodies
 - SystemAddress
 
-
 ### BuyExplorationData  
 
 When Written: when buying system data via the galaxy map
@@ -447,7 +431,6 @@ Parameters:
 
 - System
 - Cost
-
 
 Example:
 
@@ -473,7 +456,6 @@ Parameters:
 - ~~Mappers: (array of names)~~
 - ProbesUsed: (int)
 - EfficiencyTarget: (int)
-
 
 Example:
 
@@ -502,7 +484,6 @@ Parameters:
     - Count
 - Genuses: (array)
     - Genus
-
 
 Examples:
 
@@ -598,7 +579,6 @@ Parameters:
 - AscendingNode
 - MeanAnomaly
 
-
 Example
 
 ```
@@ -629,7 +609,6 @@ Parameters:
 - BaseValue: value of systems
 - Bonus: bonus for first discoveries
 - TotalEarnings: total credits received (including for example the 200% bonus if rank 5 with Li Yong Rui)
-
 
 Example:
 
@@ -668,7 +647,6 @@ Parameters:
 - Longitude
 - Altitude
 - Heading
-
 
 The latitude, longitude, altitude and heading will be included if on a planet or in low-altitude flight
 

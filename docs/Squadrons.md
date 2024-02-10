@@ -113,7 +113,6 @@ Parameters:
 - SquadronName
 - CurrentRank
 
-
 ### WonATrophyForSquadron
 
 ```

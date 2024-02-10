@@ -573,7 +573,6 @@ These are the named attributes on modules, but not all are modifiable via engine
 - DSS_AngleMult
 - DSS_RateMult
 
-
 The following module attributes have enum values, written as a string, all others are float
 
 WeaponMode should be one of:

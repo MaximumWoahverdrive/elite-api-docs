@@ -10,7 +10,6 @@ Parameters:
 - FullyRepaired: (bool)
 - Health; (float 0.0..1.0)
 
-
 If the AFMU runs out of ammo, the module may not be fully repaired.
 
 Example:
@@ -40,7 +39,6 @@ Parameters:
 - BodyID
 - BodyName
 
-
 ### ChangeCrewRole
 
 When written: when in a crew on someone else's ship, player switched crew role
@@ -49,7 +47,6 @@ Parameters:
 
 - Role: name of selected role (Idle, FireCon, FighterCon)
 - Telepresence: (bool) (only from Odyssey build)
-
 
 ### CockpitBreached
 
@@ -75,13 +72,11 @@ Parameters:
 - CrimeType – see §15.6
 - Faction
 
-
 Optional parameters (depending on crime)
 
 - Victim
 - Fine
 - Bounty
-
 
 Examples:
 
@@ -114,7 +109,6 @@ Parameters:
 
 - Part: next part number
 
-
 ### CrewLaunchFighter
 
 When written: when in multicrew, in Helm player's log, when a crew member launches a fighter
@@ -125,7 +119,6 @@ Parameters:
 - ID
 - Telepresence: (bool) (only from Odyssey build)
 
-
 ### CrewMemberJoins
 
 When written: When another player joins your ship's crew
@@ -134,7 +127,6 @@ Parameters:
 
 - Crew: player's commander name
 - Telepresence: (bool) (only from Odyssey build)
-
 
 ### CrewMemberQuits
 
@@ -145,7 +137,6 @@ Parameters:
 - Crew: player's commander name
 - Telepresence: (bool) (only from Odyssey build)
 
-
 ### CrewMemberRoleChange
 
 When written: in Multicrew, Helm's log, when another crew player changes role
@@ -155,7 +146,6 @@ Parameters:
 - Crew: player name
 - Role: selected role
 - Telepresence: (bool) (only from Odyssey build)
-
 
 Example:
 
@@ -178,7 +168,6 @@ Parameters:
 - CrimeType
 - Fine _or _Bounty
 
-
 ### DatalinkScan
 
 When written: when scanning a data link
@@ -186,7 +175,6 @@ When written: when scanning a data link
 Parameters:
 
 - Message: message from data link
-
 
 ### DatalinkVoucher
 
@@ -198,7 +186,6 @@ Parameters:
 - VictimFaction
 - PayeeFaction
 
-
 ### DataScanned
 
 When written: when scanning some types of data links
@@ -206,7 +193,6 @@ When written: when scanning some types of data links
 Parameters:
 
 - Type
-
 
 Type will typically be one of "DataLink", "DataPoint", "ListeningPost", "AbandonedDataLog", "WreckedShip", etc
 
@@ -217,7 +203,6 @@ When written: when docking a fighter back with the mothership
 Parameters:
 
 - ID
-
 
 Example:
 
@@ -237,7 +222,6 @@ Parameters:
 - ID
 - SRVType
 
-
 ### EndCrewSession
 
 When written: when the captain in multicrew disbands the crew
@@ -246,7 +230,6 @@ Parameters:
 
 - OnCrime: (bool) true if crew disbanded as a result of a crime in a lawful session
 - Telepresence: (bool) (only from Odyssey build)
-
 
 ### FighterRebuilt
 
@@ -257,7 +240,6 @@ Parameters:
 - Loadout
 - ID
 
-
 ### FuelScoop
 
 When written: when scooping fuel from a star
@@ -266,7 +248,6 @@ Parameters:
 
 - Scooped: tons fuel scooped
 - Total: total fuel level after scooping
-
 
 Example:
 
@@ -290,7 +271,6 @@ Parameters:
 - Status: one of the following: _Requested, Declined, Added, Lost, Offline, Online_
 - Name: the friend's commander name
 
-
 ### JetConeBoost
 
 When written: when enough material has been collected from a solar jet code (at a white dwarf or neutron star) for a jump boost
@@ -298,7 +278,6 @@ When written: when enough material has been collected from a solar jet code (at 
 Parameters:
 
 - BoostValue
-
 
 ### JetConeDamage
 
@@ -308,7 +287,6 @@ Parameters:
 
 - Module: the name of the module that has taken some damage
 
-
 ### JoinACrew
 
 When written: When you join another player ship's crew
@@ -317,7 +295,6 @@ Parameters:
 
 - Captain: Helm player's commander name
 - Telepresence: (bool) (only from Odyssey build)
-
 
 ### KickCrewMember
 
@@ -329,7 +306,6 @@ Parameters:
 - OnCrime: (bool) true if player is automatically kicked for committing a crime in a lawful session
 - Telepresence: (bool) (only from Odyssey build)
 
-
 ### LaunchDrone
 
 When written: when using any type of drone/limpet
@@ -337,7 +313,6 @@ When written: when using any type of drone/limpet
 Parameters:
 
 - Type: one of:
-
 
 "Hatchbreaker", "FuelTransfer", "Collection", "Prospector", "Repair", "Research", "Decontamination"
 
@@ -350,7 +325,6 @@ Parameters:
 - Loadout
 - ID
 - PlayerControlled: whether player is controlling the fighter from launch
-
 
 ```
 {
@@ -370,7 +344,6 @@ Parameters:
 - Loadout
 - ID
 - SRVType
-
 
 ### ModuleInfo
 
@@ -413,7 +386,6 @@ Parameters:
 
 - MusicTrack: (name)
 
-
 Possible track names are: NoTrack, MainMenu, CQCMenu, SystemMap, GalaxyMap, GalacticPowers CQC, DestinationFromHyperspace, DestinationFromSupercruise, Supercruise, Combat_Unknown Unknown_Encounter, CapitalShip, CombatLargeDogFight, Combat_Dogfight, Combat_SRV Unknown_Settlement, DockingComputer, Starport, Unknown_Exploration, Exploration
 
 Note: Other music track names may be used in future
@@ -428,7 +400,6 @@ Parameters:
 - NpcCrewName
 - Amount
 
-
 ### NpcCrewRank
 
 This is written when a crew member's combat rank increases
@@ -438,7 +409,6 @@ Parameters:
 - NpcCrewId
 - NpcCrewName
 - RankCombat
-
 
 ### Promotion
 
@@ -452,7 +422,6 @@ Parameters: one of the following
 - CQC: new rank
 - Federation:
 - Empire:
-
 
 Example:
 
@@ -475,7 +444,6 @@ Parameters:
 - MotherlodeMaterial: name (if it's a motherlode)
 - Remaining: percentage
 
-
 ### QuitACrew
 
 When written: When you leave another player ship's crew
@@ -485,7 +453,6 @@ Parameters:
 - Captain: Helm player's commander name
 - Telepresence: (bool) (only from Odyssey build)
 
-
 ### RebootRepair
 
 When written: when the 'reboot repair' function is used
@@ -493,7 +460,6 @@ When written: when the 'reboot repair' function is used
 Parameters:
 
 - Modules: JSON array of names of modules repaired
-
 
 Example:
 
@@ -518,7 +484,6 @@ Parameters:
 - Message
 - Channel: (wing/local/voicechat/friend/player/npc/squadron/starsystem)
 
-
 ### RepairDrone
 
 When written: when the player's ship has been repaired by a repair drone
@@ -528,7 +493,6 @@ Parameters:
 - HullRepaired
 - CockpitRepaired
 - CorrosionRepaired
-
 
 Each of these is a number indicating the amount of damage that has been repaired
 
@@ -541,7 +505,6 @@ Parameters:
 - FuelMain
 - FuelReservoir
 
-
 ### Resurrect
 
 When written: when the player restarts after death
@@ -552,7 +515,6 @@ Parameters:
 - Cost: the price paid
 - Bankrupt: whether the commander declared bankruptcy
 
-
 ### Scanned
 
 When written: when the player's ship has been scanned
@@ -562,7 +524,6 @@ When written: when the player's ship has been scanned
 Parameters:
 
 - ScanType: Cargo, Crime, Cabin, Data or Unknown
-
 
 Example:
 
@@ -589,7 +550,6 @@ Parameters:
 - To: may be player name, or channel name
 - Message
 
-
 Example:
 
 ```
@@ -615,7 +575,6 @@ Parameters:
 
 - Name: synthesis blueprint
 - Materials: JSON array with objects listing materials used and quantities
-
 
 Example:
 
@@ -652,7 +611,6 @@ Parameters:
 - USSType: description of USS
 - USSThreat: threat level
 
-
 Example:
 
 ```
@@ -671,7 +629,6 @@ When written: when switching control between the main ship and a fighter
 Parameters:
 
 - To: ( Mothership/Fighter)
-
 
 Examples:
 
@@ -699,7 +656,6 @@ Parameters:
 
 - Name
 
-
 Example:
 
 ```
@@ -718,7 +674,6 @@ Parameters:
 
 - Name: the commander name of the player inviting to the wing
 
-
 ### WingJoin
 
 When written: this player has joined a wing
@@ -726,7 +681,6 @@ When written: this player has joined a wing
 Parameters:
 
 - Others: JSON array of other player names already in wing
-
 
 Example:
 
@@ -760,7 +714,6 @@ Example:
 When transferring cargo between ship and fleet carrier, or between ship and SRV
 
 - Transfers: [ {Type, Count, Direction}, ... ]
-
 
 ```
 {
@@ -802,7 +755,6 @@ When dropping out of supercruise at a targeted destination.
 - Type: The type fo destination being dropped into
 - Threat: threat level
 - MarketID: (Optional)The market id of the destination if dropping at a market
-
 
 ```
 {

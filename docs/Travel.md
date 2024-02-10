@@ -11,7 +11,6 @@ Parameters:
 - Body
 - BodyID
 
-
 ```
 {
     "timestamp": "2017-09-27T15:21:05Z",
@@ -123,7 +122,6 @@ Parameters:
 - StationType
 - MarketID
 
-
 ### DockingDenied
 
 When written: when the station denies a docking request
@@ -134,7 +132,6 @@ Parameters:
 - StationType
 - MarketID
 - Reason: reason for denial
-
 
 Reasons include: NoSpace, TooLarge, Hostile, Offences, Distance, ActiveFighter, NoReason
 
@@ -148,7 +145,6 @@ Parameters:
 - StationType
 - MarketID
 - LandingPad: pad number
-
 
 ### DockingRequested
 
@@ -164,7 +160,6 @@ Parameters:
     - Medium
     - Large
 
-
 ### DockingTimeout
 
 When written: when a docking request has timed out
@@ -174,7 +169,6 @@ Parameters:
 - StationName: name of station
 - StationType
 - MarketID
-
 
 ### FSDJump
 
@@ -219,7 +213,6 @@ Parameters:
     - Faction1: { Name, Stake, WonDays }
     - Faction2: { Name, Stake, WonDays }
 
-
 If the player is pledged to a Power in Powerplay, and the star system is involved in powerplay,
 
 - Powers: a json array with the names of any powers contesting the system, or the name of the controlling power
@@ -235,7 +228,6 @@ If starting in a system affected by the thargoid war:
     - WarProgress:0-1 values
     - RemainingPorts
     - EstimatedRemainingTime
-
 
 Example:
 
@@ -409,7 +401,6 @@ Parameters:
 - RemainingJumpsInRoute
 - StarClass
 
-
 ### LeaveBody
 
 When written: when flying away from a planet, and distance increases above the 'Orbital Cruise' altitude
@@ -420,7 +411,6 @@ Parameters:
 - SystemAddress
 - Body
 - BodyID
-
 
 ### Liftoff
 
@@ -438,7 +428,6 @@ Parameters:
 - OnPlanet: bool
 - NearestDestination
 - PlayerControlled: (bool) false if ship dismissed when player is in SRV, true if player is taking off
-
 
 Example:
 
@@ -483,12 +472,10 @@ Parameters:
 - Factions: an array with info on local minor factions (similar to FSDJump)
 - Conflicts: an array with info on local conflicts (similar to FSDJump)
 
-
 If the player is pledged to a Power in Powerplay, and the star system is involved in powerplay,
 
 - Powers: a json array with the names of any powers contesting the system, or the name of the controlling power
 - PowerplayState: the system state – one of ("InPrepareRadius", "Prepared", "Exploited", "Contested", "Controlled", "Turmoil", "HomeSystem")
-
 
 The faction data includes happiness info, and can include multiple active states
 
@@ -513,14 +500,12 @@ If starting in a system affected by the thargoid war:
     - RemainingPorts
     - EstimatedRemainingTime
 
-
 New in Odyssey:
 
 - Taxi: bool
 - Multicrew: bool
 - InSRV: bool
 - OnFoot: bool
-
 
 ### StartJump
 
@@ -534,7 +519,6 @@ Parameters:
 - SystemAddress
 - StarClass: star type (only for a hyperspace jump)
 
-
 ### SupercruiseEntry
 
 When written: entering supercruise from normal space
@@ -542,7 +526,6 @@ When written: entering supercruise from normal space
 Parameters:
 
 - Starsystem
-
 
 Example:
 
@@ -564,7 +547,6 @@ Parameters:
 - Body
 - BodyID
 - BodyType
-
 
 Example:
 
@@ -594,7 +576,6 @@ Parameters:
 - NearestDestination
 - PlayerControlled: (bool) false if ship was recalled from SRV, true if player is landing
 
-
 The NearestDestination is included if within 50km of a location listed in the nav panel
 
 Example:
@@ -620,7 +601,6 @@ Parameters:
 - StationName: name of station
 - MarketID
 
-
 Example:
 
 ```
@@ -642,7 +622,6 @@ Parameters:
     - SystemAddress: (number)
     - Starpos: [ x, y, z ]
     - StarClass
-
 
 Example:
 

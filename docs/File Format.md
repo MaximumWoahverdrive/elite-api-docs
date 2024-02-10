@@ -33,7 +33,6 @@ The Heading record has a Json object with the following values:
 - gameversion: which version of the game produced the log (will indicate if beta)
 - build: game build number
 
-
 Example:
 
 ```

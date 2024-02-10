@@ -8,7 +8,6 @@ Parameters:
 
 - Cost
 
-
 Example:
 
 ```
@@ -29,7 +28,6 @@ Parameters:
 - Count
 - BuyPrice
 - TotalCost
-
 
 Example:
 
@@ -60,7 +58,6 @@ Parameters:
 - ItemsDelivered(int)
 - TotalItemsToDeliver(int)
 - Progress:(float)
-
 
 The CargoType and Count are included when you collect or deliver gods, they are not included for a wing update.
 
@@ -108,18 +105,15 @@ Parameters:
         - Name: string
         - Bonus: string
 
-
 - If the community goal is constructed with a fixed-size top rank (ie max reward for top 10 players)
 
     - TopRankSize: (integer)
     - PlayerInTopRank: (Boolean)
 
-
 - If the community goal has reached the first success tier:
 
     - TierReached
     - Bonus
-
 
 Example:
 
@@ -158,7 +152,6 @@ Parameters:
 - Name
 - System
 
-
 ### CommunityGoalJoin
 
 When Written: when signing up to a community goal
@@ -167,10 +160,8 @@ Parameters:
 
 - CGID
 
-
 - Name
 - System
-
 
 ### CommunityGoalReward  
 
@@ -183,7 +174,6 @@ Parameters:
 - System
 - Reward
 
-
 ### CrewAssign
 
 When written: when changing the task assignment of a member of crew
@@ -193,7 +183,6 @@ Parameters:
 - Name
 - CrewID
 - Role
-
 
 Example:
 
@@ -214,7 +203,6 @@ Parameters:
 
 - Name
 - CrewID
-
 
 Example:
 
@@ -237,7 +225,6 @@ Parameters:
 - Faction
 - Cost
 - Combat Rank
-
 
 Example:
 
@@ -270,7 +257,6 @@ Parameters:
 - Faction (for bond or bounty)
 - Quantity: amount offered this time
 - TotalQuantity: total amount now donated
-
 
 Example:
 
@@ -309,7 +295,6 @@ Parameters:
 - Some modifications have string values:
     - Label: string
     - ValueStr: string
-
 
 The new "quality" value represents the quality or progress of the blueprint. The quality should increase from 0 to 1 as the blueprint is refined through further crafting, and once it reaches a certain value, the player will have the option to upgrade the blueprint to the next level of recipe.
 
@@ -377,7 +362,6 @@ Parameters (summary at startup)
     - Progress: progress stage (Invited/Acquainted/Unlocked/Barred)
     - RankProgress: percentage towards next rank
 
-
 Parameters (update for one engineer)
 
 - Engineer: name
@@ -385,7 +369,6 @@ Parameters (update for one engineer)
 - Rank: rank reached (when unlocked)
 - Progress: progress stage (Invited/Acquainted/Unlocked/Barred)
 - RankProgress: percentage towards next rank
-
 
 Example (update)
 
@@ -513,7 +496,6 @@ Parameters:
 - ShipId
 - TransferTime: (in seconds)
 
-
 ### Market
 
 When written: when accessing the commodity market in a station
@@ -525,7 +507,6 @@ Parameters:
 - MarketID
 - StationName
 - StarSystem
-
 
 The separate file also contains:
 
@@ -543,7 +524,6 @@ The separate file also contains:
     - Consumer: bool
     - Producer: bool
     - Rare: bool
-
 
 Example: in the journal:
 
@@ -585,7 +565,6 @@ Parameters:
     - Level
     - Quality
 
-
 ### MaterialTrade
 
 When written: when exchanging materials at the Material trader contact
@@ -602,7 +581,6 @@ Parameters:
     - Material
     - Category
     - Quantity
-
 
 Example: (note categories simplified)
 
@@ -636,7 +614,6 @@ Parameters:
 - MissionID
 - Fine: (if relevant)
 
-
 Example:
 
 ```
@@ -663,7 +640,6 @@ Parameters:
 - Reward: expected cash reward
 - Wing: bool
 
-
 Optional Parameters (depending on mission type)
 
 - Commodity: commodity type
@@ -684,7 +660,6 @@ Optional Parameters (depending on mission type)
 - PassengerVIPs: bool
 - PassengerWanted: bool
 - PassengerType: eg Tourist, Soldier, Explorer,...
-
 
 Examples:
 
@@ -720,7 +695,6 @@ Parameters:
 - Faction: faction name
 - MissionID
 
-
 Optional parameters (depending on mission type)
 
 - Commodity
@@ -743,7 +717,6 @@ Optional parameters (depending on mission type)
     - Influence: array of SystemAddress, Trend and Influence values
     - Reputation
     - ReputationTrend
-
 
 _TrendValue_ can be UpGood, UpBad, DownGood, or DownBad
 
@@ -807,7 +780,6 @@ Parameters:
 - MissionID
 - Fine: (if relevant)
 
-
 ### MissionRedirected
 
 When written: when a mission is updated with a new destination
@@ -820,7 +792,6 @@ Parameters
 - OldDestinationStation
 - NewDestinationSystem
 - OldDestinationSystem
-
 
 Example:
 
@@ -849,17 +820,14 @@ Parameters:
 - Ship: the players ship
 - ShipID
 
-
 If existing module is stored:
 
 - StoredItem: item being stored
-
 
 If replacing an existing module:
 
 - SellItem: item being sold
 - SellPrice: sale price
-
 
 Example:
 
@@ -895,7 +863,6 @@ Parameters:
 - SwapOutItem (if slot was not empty)
 - Cost
 
-
 ### ModuleSell
 
 When Written: when selling a module in outfitting
@@ -908,7 +875,6 @@ Parameters:
 - SellPrice
 - Ship
 - ShipID
-
 
 Example:
 
@@ -937,7 +903,6 @@ Parameters:
 - Ship
 - ShipId
 
-
 ### ModuleStore
 
 When written: when storing a module in Outfitting
@@ -955,7 +920,6 @@ Parameters:
 - Quality
 - ReplacementItem (if a core module)
 - Cost (if any)
-
 
 Example:
 
@@ -989,7 +953,6 @@ Parameters:
 - ToItem
 - Ship
 - ShipID
-
 
 Examples:
 
@@ -1031,7 +994,6 @@ Parameters:
 - StationName
 - StarSystem
 
-
 The separate file also contains
 
 - Horizons: bool
@@ -1039,7 +1001,6 @@ The separate file also contains
     - id
     - Name
     - BuyPrice
-
 
 Example: (in journal)
 
@@ -1078,7 +1039,6 @@ Parameters:
 - Faction
 - ShipID
 
-
 Example:
 
 ```
@@ -1105,7 +1065,6 @@ Parameters:
 - Faction: (if paying off an individual faction's fines)
 - ShipID
 
-
 Example:
 
 ```
@@ -1130,7 +1089,6 @@ Parameters:
 - Amount (total amount paid, including any broker fee)
 - BrokerPercentage (present if paid through a broker)
 
-
 ### RedeemVoucher
 
 When Written: when claiming payment for combat bounties and bonds
@@ -1142,7 +1100,6 @@ Parameters:
 - Faction: name of faction _(for types other than Bounty)_
 - BrokerPercentage (if redeemed through a broker)
 - Factions: array of faction/amount pairs _(for Type=Bounty)_
-
 
 Example:
 
@@ -1173,7 +1130,6 @@ Parameters:
 - Cost: cost of fuel
 - Amount: tons of fuel purchased
 
-
 Example:
 
 ```
@@ -1194,7 +1150,6 @@ Parameters:
 - Cost: cost of fuel
 - Amount: tons of fuel purchased
 
-
 Example:
 
 ```
@@ -1214,7 +1169,6 @@ Parameters:
 
 - Item: all, wear, hull, paint, or name of module
 - Cost: cost of repair
-
 
 Example:
 
@@ -1252,7 +1206,6 @@ Parameters:
 
 - Cost
 
-
 ### RestockVehicle
 
 When Written: when purchasing an SRV or Fighter
@@ -1263,7 +1216,6 @@ Parameters:
 - Loadout: variant
 - Cost: purchase cost
 - Count: number of vehicles purchased
-
 
 Example:
 
@@ -1290,7 +1242,6 @@ Parameters:
 - Count
 -  
 
-
 ### SearchAndRescue
 
 When written: when delivering items to a Search and Rescue contact
@@ -1302,7 +1253,6 @@ Parameters:
 - Count
 - Reward
 
-
 ### SellDrones
 
 When Written: when selling unwanted drones back to the market
@@ -1313,7 +1263,6 @@ Parameters:
 - Count
 - SellPrice
 - TotalSale
-
 
 Example:
 
@@ -1339,7 +1288,6 @@ Parameters:
 - SellShipId
 - ShipPrice
 
-
 Example:
 
 ```
@@ -1364,7 +1312,6 @@ Parameters:
 - UserShipName: selected name
 - UserShipId: selected ship id
 
-
 Example:
 
 ```
@@ -1388,7 +1335,6 @@ Parameters:
 - StationName
 - StarSystem
 
-
 The full price list is written to a separate file, in the same folder as the journal, _**Shipyard.json**_
 
 - Horizons: bool
@@ -1396,7 +1342,6 @@ The full price list is written to a separate file, in the same folder as the jou
 - Pricelist: array of objects
     - ShipType
     - ShipPrice
-
 
 Example: in the Journal:
 
@@ -1436,7 +1381,6 @@ Parameters:
 - SellShipID
 - SellPrice: (if selling current ship) ship sale price
 
-
 Note: the new ship's ShipID will be logged in a separate event after the purchase
 
 Example:
@@ -1461,7 +1405,6 @@ Parameters:
 - ShipType
 - NewShipID
 
-
 Example:
 
 ```
@@ -1484,7 +1427,6 @@ Parameters:
 - SellShipID
 - ShipPrice: sale price
 - System: (if ship is in another system) name of system
-
 
 Example:
 
@@ -1514,7 +1456,6 @@ Parameters:
 - TransferPrice: cost of transfer
 - TransferTime: time taken in seconds
 
-
 Example:
 
 ```
@@ -1542,7 +1483,6 @@ Parameters:
 - StoreShipID
 - SellOldShip: (if selling old ship) type of ship being sold
 - SellShipID
-
 
 Example
 
@@ -1577,7 +1517,6 @@ Parameters:
     - Quality
     - InTransit:bool
 
-
 "EngineerModifications", "Level" and "Quality" only appear for an engineered module
 
 The InTransit value only appears (with value true) if the module is being transferred. In this case, the system, market, transfer cost and transfer time are not written.
@@ -1610,11 +1549,9 @@ Parameters:
     - Value
     - Hot
 
-
 - If the ship is in transit:
 
 - InTransit: true
-
 
 - If the ship is not in transit:
 
@@ -1622,7 +1559,6 @@ Parameters:
     - ShipMarketID
     - TransferPrice
     - TransferType
-
 
 Example:
 
@@ -1673,7 +1609,6 @@ Parameters:
     - Name
     - Count
     - Category
-
 
 Example:
 
@@ -1731,7 +1666,6 @@ Parameters:
 - ShipID
 - ShipMarketID: The market the ship is stored at
 - MarketID: Your current market
-
 
 Example:
 

@@ -10,7 +10,6 @@ Parameters:
 - Type: type of commodity
 - Count: number of units
 
-
 Example:
 
 ```
@@ -31,7 +30,6 @@ Parameters:
 
 - FromPower
 - ToPower
-
 
 Example:
 
@@ -54,7 +52,6 @@ Parameters:
 - Type
 - Count
 
-
 Example:
 
 ```
@@ -76,7 +73,6 @@ Parameters:
 - Power
 - Cost
 
-
 ### PowerplayJoin
 
 When written: when joining up with a power
@@ -84,7 +80,6 @@ When written: when joining up with a power
 Parameters:
 
 - Power
-
 
 Example:
 
@@ -103,7 +98,6 @@ When written: when leaving a power
 Parameters:
 
 - Power
-
 
 Example:
 
@@ -124,7 +118,6 @@ Parameters:
 - Power
 - Amount
 
-
 ### PowerplayVote
 
 When written: when voting for a system expansion
@@ -134,7 +127,6 @@ Parameters:
 - Power
 - Votes
 - System
-
 
 ### PowerplayVoucher
 
