@@ -33,8 +33,8 @@ Parameters:
 - StarSystem: name of system
 - CockpitBreach:true (only if landing with breached cockpit)
 - StationFaction: station's controlling faction
-    - Name
-    - FactionState
+  - Name
+  - FactionState
 - StationAllegiance
 - StationEconomy : (station's primary economy)
 - StationEconomies: (array of name and proportion values)
@@ -44,9 +44,9 @@ Parameters:
 - Wanted: (only if docking when wanted locally)
 - ActiveFine: true (if any fine is active)
 - LandingPads:
-    - Small
-    - Medium
-    - Large
+  - Small
+  - Medium
+  - Large
 - StationState
 
 The 'anonymous docking' protocol comes into effect if you're either Wanted (ie have a local bounty) or have an ActiveFine
@@ -156,9 +156,9 @@ Parameters:
 - StationType
 - MarketID
 - LandingPads:
-    - Small
-    - Medium
-    - Large
+  - Small
+  - Medium
+  - Large
 
 ### DockingTimeout
 
@@ -185,8 +185,8 @@ Parameters:
 - FuelLevel
 - BoostUsed: whether FSD boost was used
 - SystemFaction: system controlling faction
-    - Name
-    - FactionState
+  - Name
+  - FactionState
 - SystemAllegiance
 - SystemEconomy
 - SystemSecondEconomy
@@ -195,23 +195,23 @@ Parameters:
 - Population
 - Wanted
 - Factions: an array of info for the local minor factions
-    - Name
-    - FactionState
-    - Government
-    - Influence
-    - Happiness
-    - MyReputation
-    - PendingStates: array (if any) with State name and Trend value
-    - RecovingStates: array (if any)with State name and Trend value
-    - ActiveStates: array with State names (Note active states do not have a Trend value)
-    - SquadronFaction:true (if player is in squadron aligned to this faction)
-    - HappiestSystem:true (if player squadron faction, and this is happiest system)
-    - HomeSystem:true(if player squadron faction, and this is home system)
+  - Name
+  - FactionState
+  - Government
+  - Influence
+  - Happiness
+  - MyReputation
+  - PendingStates: array (if any) with State name and Trend value
+  - RecovingStates: array (if any)with State name and Trend value
+  - ActiveStates: array with State names (Note active states do not have a Trend value)
+  - SquadronFaction:true (if player is in squadron aligned to this faction)
+  - HappiestSystem:true (if player squadron faction, and this is happiest system)
+  - HomeSystem:true(if player squadron faction, and this is home system)
 - Conflicts: an array of info about local conflicts (if any)
-    - WarType
-    - Status
-    - Faction1: { Name, Stake, WonDays }
-    - Faction2: { Name, Stake, WonDays }
+  - WarType
+  - Status
+  - Faction1: { Name, Stake, WonDays }
+  - Faction2: { Name, Stake, WonDays }
 
 If the player is pledged to a Power in Powerplay, and the star system is involved in powerplay,
 
@@ -221,13 +221,13 @@ If the player is pledged to a Power in Powerplay, and the star system is involve
 If starting in a system affected by the thargoid war:
 
 - ThargoidWar
-    - CurrentState
-    - NextStateSuccess
-    - NextStateFailure
-    - SuccessStateReached
-    - WarProgress:0-1 values
-    - RemainingPorts
-    - EstimatedRemainingTime
+  - CurrentState
+  - NextStateSuccess
+  - NextStateFailure
+  - SuccessStateReached
+  - WarProgress:0-1 values
+  - RemainingPorts
+  - EstimatedRemainingTime
 
 Example:
 
@@ -461,8 +461,8 @@ Parameters:
 - StationType: (if docked)
 - MarketID: (if docked)
 - SystemFaction: star system controlling faction
-    - Name
-    - FactionState
+  - Name
+  - FactionState
 - SystemAllegiance
 - SystemEconomy
 - SystemSecondEconomy
@@ -482,8 +482,8 @@ The faction data includes happiness info, and can include multiple active states
 If starting docked in a station, also include:
 
 - StationFaction
-    - Name
-    - FactionState
+  - Name
+  - FactionState
 - StationGovernment
 - StationAllegiance
 - StationServices
@@ -492,13 +492,13 @@ If starting docked in a station, also include:
 If starting in a system affected by the thargoid war:
 
 - ThargoidWar
-    - CurrentState
-    - NextStateSuccess
-    - NextStateFailure
-    - SuccessStateReached
-    - WarProgress:0-1 values
-    - RemainingPorts
-    - EstimatedRemainingTime
+  - CurrentState
+  - NextStateSuccess
+  - NextStateFailure
+  - SuccessStateReached
+  - WarProgress:0-1 values
+  - RemainingPorts
+  - EstimatedRemainingTime
 
 New in Odyssey:
 
@@ -618,10 +618,10 @@ When plotting a multi-star route, the file "NavRoute.json" is written in the sam
 Parameters:
 
 - Route
-    - StarSystem: (name)
-    - SystemAddress: (number)
-    - Starpos: [ x, y, z ]
-    - StarClass
+  - StarSystem: (name)
+  - SystemAddress: (number)
+  - Starpos: [ x, y, z ]
+  - StarClass
 
 Example:
 

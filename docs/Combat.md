@@ -189,7 +189,7 @@ When written: player was interdicted by player or npc
 Parameters:
 
 - Submitted: true or false
--  Interdictor: interdicting pilot name
+- Interdictor: interdicting pilot name
 - IsPlayer: whether player or npc
 - IsThargoid: whether thargoid or not
 - CombatRank: if player

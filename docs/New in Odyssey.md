@@ -83,9 +83,9 @@ Parameters:
 - Price
 - MarketID
 - MicroResources: array of objects
-    - Name
-    - Category
-    - Count
+  - Name
+  - Category
+  - Count
 
 Category can be one of:
 
@@ -198,11 +198,11 @@ Parameters:
 - LoadoutID
 - LoadoutName
 - Modules: [ ]
-    - SlotName
-    - ModuleName
-    - SuitModuleID
-    - Class
-    - WeaponMods
+  - SlotName
+  - ModuleName
+  - SuitModuleID
+  - Class
+  - WeaponMods
 
 ```
 {
@@ -322,11 +322,11 @@ Parameters:
 The full list is included in the file **FCMaterials.json**
 
 - Items: array of objects
-    - Id
-    - Name
-    - Price
-    - Stock
-    - Demand
+  - Id
+  - Name
+  - Price
+  - Stock
+  - Demand
 
 Example of FCMaterials.json:
 
@@ -421,9 +421,9 @@ This event is logged when a player sells Microresources for cash
 Parameters:
 
 - MicroResources: array of objects
-    - Name
-    - Category
-    - Count
+  - Name
+  - Category
+  - Count
 - Price
 - MarketID
 
@@ -451,11 +451,11 @@ Parameters:
 
 - MarketID
 - BioData: Array
-    - Genus
-    - Species
-    - Variant
-    - Value
-    - Bonus
+  - Genus
+  - Species
+  - Variant
+  - Value
+  - Bonus
 
 ```
 {
@@ -546,11 +546,11 @@ Parameters:
 - LoadoutID
 - LoadoutName
 - Modules: array of objects
-    - SlotName
-    - SuitModuleID
-    - ModuleName
-    - Class
-    - WeaponMods
+  - SlotName
+  - SuitModuleID
+  - ModuleName
+  - Class
+  - WeaponMods
 
 ### TransferMicroResources
 
@@ -559,10 +559,10 @@ Written when transferreing items between backpack and ship locker
 Parameters:
 
 - Transfers: array of objects
-    - Name
-    - Category
-    - Count
-    - Direction
+  - Name
+  - Category
+  - Count
+  - Direction
 
 ```
 {
@@ -594,9 +594,9 @@ This event is logged when the player exchanges owned microresources to receive s
 Parameters:
 
 - Offered: array of objects
-    - Name
-    - Category
-    - Count
+  - Name
+  - Category
+  - Count
 - Received: name of resource received
 - Category
 - Count: number received

@@ -22,9 +22,9 @@ Parameters:
 - PlanetRadius
 - Balance
 - Destination:
-    - System
-    - Body
-    - Name
+  - System
+  - Body
+  - Name
 
 LegalState: one of:
 
