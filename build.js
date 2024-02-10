@@ -133,16 +133,16 @@ for (let section of docs) {
     if (title == 'Index') continue
     let content = '## ' + title
     content += '\n\n'
-    for (let paragraph of section.paragraphs) {
-        // for (let text of paragraph.text) {
-            // if (typeof text.t[0] != 'string') console.log(text.t)
-        // }
-        // paragraph.text = paragraph.text.map(e => {
-            // let t = e.t[0].text
-            // return t
-        // })
-        // paragraph.text = paragraph.text.map(e => e)
-    }
+    /*for (let paragraph of section.paragraphs) {
+        for (let text of paragraph.text) {
+            if (typeof text.t[0] != 'string') console.log(text.t)
+        }
+        paragraph.text = paragraph.text.map(e => {
+            let t = e.t[0].text
+            return t
+        })
+        paragraph.text = paragraph.text.map(e => e)
+    }*/
     content += section.paragraphs.map(e => e.text).join('\n\n')
     if (title == 'Introduction') title = 'index'
     fs.writeFileSync(path.resolve('docs', `${title.replace(/"/g, '')}.md`), content)
