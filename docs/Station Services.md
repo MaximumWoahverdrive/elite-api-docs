@@ -1354,6 +1354,7 @@ Example: in the Journal:
 ```
 
 In the separate shipyard.json file:
+
 ```
 { "timestamp":"2017-10-04T10:01:38Z", "event":"Shipyard", "MarketID": 128122104, "StationName":"Seven Holm", "StarSystem":"Tamor", "Horizons":true, "AllowCobraMkIV":true, "PriceList":[
     { "id":128049249, "ShipType":"sidewinder", "ShipPrice":24336 },
