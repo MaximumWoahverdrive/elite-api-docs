@@ -54,91 +54,91 @@ A short example of a player journal file (_**out of date, some events may have a
 
 **Changes for Odyssey up to update14 (November 2022)**
 
-- Updated the "MissionCompleted" documentation to include the optional params "DestinationSystem", "DestinationStation" and "DestinationSettlement". No functional change, these params where already present. 
-- Added a new flag to Status.json to indicate if a charging fsd is charging a hyperspace jump 
-- Extended the UpgradeSuit/UpgradeWeapon events to include the resources used for the upgrade 
-- Added "DepartureTime" to the "CarrierJumpRequest" event 
+- Updated the "MissionCompleted" documentation to include the optional params "DestinationSystem", "DestinationStation" and "DestinationSettlement". No functional change, these params where already present.
+- Added a new flag to Status.json to indicate if a charging fsd is charging a hyperspace jump
+- Extended the UpgradeSuit/UpgradeWeapon events to include the resources used for the upgrade
+- Added "DepartureTime" to the "CarrierJumpRequest" event
 
 
 **Version 35**
 
 **Changes for Odyssey up to update13 (July 2022)**
 
-- A negotiated mission now writes event "MissionAccepted" only when the mission is accepted, not when the negotiation happens. 
-- Handing in a mission to a mission giver while on foot will now write the "MissionCompleted" event   
-- Accepting an on foot mission will now report the destination system and destination settlement. "DestinationSettlement" added as a new optional parameter for the "MissionAccepted" event 
-- The route in NavRoute.json is now cleared when the route is cleared. New journal event "NavRouteClear" 
-- Extended the SAASignalsFound event to include the genuses on the scanned planet 
-- Fixed the "PayFines" event being written instead of "PayBounties" when paying off a bounty 
+- A negotiated mission now writes event "MissionAccepted" only when the mission is accepted, not when the negotiation happens.
+- Handing in a mission to a mission giver while on foot will now write the "MissionCompleted" event
+- Accepting an on foot mission will now report the destination system and destination settlement. "DestinationSettlement" added as a new optional parameter for the "MissionAccepted" event
+- The route in NavRoute.json is now cleared when the route is cleared. New journal event "NavRouteClear"
+- Extended the SAASignalsFound event to include the genuses on the scanned planet
+- Fixed the "PayFines" event being written instead of "PayBounties" when paying off a bounty
 
 
 **Version 34**
 
 **Changes for Odyssey up to update12 (May 2022)**
 
-- BookTaxi: add "retreat" flag 
-- CodexEntry: add BodyID 
-- BuyMicroResources: multi-buy format added 
-- FCMaterials – fleet carrier materials pricelist 
-- FSSBodySignals: extra info during a scan (actually from Update 6 last year) 
-- Bugfix: Resurrect event was sometimes written with blank strings 
+- BookTaxi: add "retreat" flag
+- CodexEntry: add BodyID
+- BuyMicroResources: multi-buy format added
+- FCMaterials – fleet carrier materials pricelist
+- FSSBodySignals: extra info during a scan (actually from Update 6 last year)
+- Bugfix: Resurrect event was sometimes written with blank strings
 
 
 **Version 33**
 
 **Changes for Odyssey up to update 11 (March 2022)**
 
-- new flags in Status flags to distinguish between telepresence and physical crew 
-- the following events have a new bool value Telepresence: ChangeCrewRole EndCrewSession CrewMemberJoins CrewMemberQuits CrewLaunchFighter CrewMemberRoleChange JoinACrew QuitACrew KickCrewMember 
-- LaunchSRV, DockSRV and SRVDestroyed events now add a new value "SRVType" (from Oct 2021 update) 
-- when scanning one body of a binary pair, you will now get an event detailing the orbital parameters of their BaryCentre (from Sep 2021 update) 
+- new flags in Status flags to distinguish between telepresence and physical crew
+- the following events have a new bool value Telepresence: ChangeCrewRole EndCrewSession CrewMemberJoins CrewMemberQuits CrewLaunchFighter CrewMemberRoleChange JoinACrew QuitACrew KickCrewMember
+- LaunchSRV, DockSRV and SRVDestroyed events now add a new value "SRVType" (from Oct 2021 update)
+- when scanning one body of a binary pair, you will now get an event detailing the orbital parameters of their BaryCentre (from Sep 2021 update)
 
 
 **Version 32**
 
 **Changes up to Odyssey Update 5 (July 2021)**
 
-- The "LoadGame" event now includes the language, gameversion, and Build number 
-- Include module class and modifications in suit loadout 
-- Changes to the way the ShipLocker contents are listed 
-- Updated description of CommunityGoal event 
-- Include info on landing pads in DockingRequested and Docked 
-- Added balance and travel destination in Status.json 
-- Fixed bug creating invalid ShipLocker.json 
-- Fixed bug re ADS mode in Status flags 
-- Added names for military and exobiolost ranks in appendix 
-- Corrected details of the contents of the NavRoute file 
+- The "LoadGame" event now includes the language, gameversion, and Build number
+- Include module class and modifications in suit loadout
+- Changes to the way the ShipLocker contents are listed
+- Updated description of CommunityGoal event
+- Include info on landing pads in DockingRequested and Docked
+- Added balance and travel destination in Status.json
+- Fixed bug creating invalid ShipLocker.json
+- Fixed bug re ADS mode in Status flags
+- Added names for military and exobiolost ranks in appendix
+- Corrected details of the contents of the NavRoute file
 
 
 **Version 31**
 
 **Changes for Odyssey release (May 2021)**
 
-- Omit "MissionID":18446744073709551615 in inventory data when it is not mission-related 
-- Ensure the Touchdown/Liftoff events are logged when recalling/dismissing your empty ship 
-- Improve data written to journal on Touchdown/Takeoff, (with Lat/Lon) when recalling/dismissing unoccupied ship 
-- Add flags in status.json for 'glide mode', and for hangar, social space, etc 
-- Properly register strings to avoid blank event name for "RedeemVoucher" 
-- Get station name and station type for planetary surface stations 
-- Provide a new common method for determining Latitude &amp; Longitude, used for CodexEntry, ApproachSettlement, Touchdown, Liftoff – fixes data that was sometimes missing 
-- Improved tracking of backpack contents – new Backpack and BackpackChange events 
-- SuitLoadout on starting on-foot, or when disembarking: 
-- Fix station type when docking at FleetCarrier 
-- Fix bug with incorrect LoadoutID in CreateSuitLoadout event 
+- Omit "MissionID":18446744073709551615 in inventory data when it is not mission-related
+- Ensure the Touchdown/Liftoff events are logged when recalling/dismissing your empty ship
+- Improve data written to journal on Touchdown/Takeoff, (with Lat/Lon) when recalling/dismissing unoccupied ship
+- Add flags in status.json for 'glide mode', and for hangar, social space, etc
+- Properly register strings to avoid blank event name for "RedeemVoucher"
+- Get station name and station type for planetary surface stations
+- Provide a new common method for determining Latitude &amp; Longitude, used for CodexEntry, ApproachSettlement, Touchdown, Liftoff – fixes data that was sometimes missing
+- Improved tracking of backpack contents – new Backpack and BackpackChange events
+- SuitLoadout on starting on-foot, or when disembarking:
+- Fix station type when docking at FleetCarrier
+- Fix bug with incorrect LoadoutID in CreateSuitLoadout event
 
 
 **Version 30**
 
 **Changes for Odyssey Alpha 4**
 
-- See sections 12, 14 
+- See sections 12, 14
 
 
 **Version 29**
 
 **Changes for "Odyssey"**
 
-- See section 12 
+- See section 12
 
 
 **Version 28**
@@ -147,36 +147,36 @@ A short example of a player journal file (_**out of date, some events may have a
 
 new events added:
 
-- CarrierJumpCancelled 
-- CarrierNameChanged (with callsign, name, carrierid) 
-- new NavRoute.json file 
+- CarrierJumpCancelled
+- CarrierNameChanged (with callsign, name, carrierid)
+- new NavRoute.json file
 
 
 events with new data:
 
-- CarrierJumpRequest - added Body (name) and BodyID 
-- Bounty - include localised Target   
-- FSDTarget - include StarClass 
+- CarrierJumpRequest - added Body (name) and BodyID
+- Bounty - include localised Target
+- FSDTarget - include StarClass
 
 
 bugs fixed:
 
-- CarrierStats  - don't write a ReservePercent value when in debt 
-- Status.json - flags fixed in SRV, and Lat/Lon in station 
-- Loadout - fix cases where loadout data was mix of SLF and mothership 
-- EngineerProgress - now written when state updates 
-- RefuelAll, RepairAll - fix null strings 
-- Docked - fix bug where docking at a FC doesn't sometimes pick up nearby station name 
+- CarrierStats  - don't write a ReservePercent value when in debt
+- Status.json - flags fixed in SRV, and Lat/Lon in station
+- Loadout - fix cases where loadout data was mix of SLF and mothership
+- EngineerProgress - now written when state updates
+- RefuelAll, RepairAll - fix null strings
+- Docked - fix bug where docking at a FC doesn't sometimes pick up nearby station name
 
 
 **Version 27**
 
 **Changes for v3.7 beta 1 (April 2020)**
 
-- Added events relating to Fleet Carriers (§11) 
-- New CargoTransfer event (§13.52) 
-- Change to Repair event (§8.38) 
-- Added some station services (see 'Docked' §4.2) 
+- Added events relating to Fleet Carriers (§11)
+- New CargoTransfer event (§13.52)
+- Change to Repair event (§8.38)
+- Added some station services (see 'Docked' §4.2)
 
 
 **Version 26 - Changes for v3.5 (September 2019)**

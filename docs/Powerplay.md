@@ -6,9 +6,9 @@ When written: when collecting powerplay commodities for delivery
 
 Parameters:
 
-- Power: name of power 
-- Type: type of commodity 
-- Count: number of units 
+- Power: name of power
+- Type: type of commodity
+- Count: number of units
 
 
 Example:
@@ -29,8 +29,8 @@ When written: when a player defects from one power to another
 
 Parameters:
 
-- FromPower 
-- ToPower 
+- FromPower
+- ToPower
 
 
 Example:
@@ -50,9 +50,9 @@ When written: when delivering powerplay commodities
 
 Parameters:
 
-- Power 
-- Type 
-- Count 
+- Power
+- Type
+- Count
 
 
 Example:
@@ -73,8 +73,8 @@ When written: when paying to fast-track allocation of commodities
 
 Parameters:
 
-- Power 
-- Cost 
+- Power
+- Cost
 
 
 ### PowerplayJoin
@@ -83,7 +83,7 @@ When written: when joining up with a power
 
 Parameters:
 
-- Power 
+- Power
 
 
 Example:
@@ -102,7 +102,7 @@ When written: when leaving a power
 
 Parameters:
 
-- Power 
+- Power
 
 
 Example:
@@ -121,8 +121,8 @@ When written: when receiving salary payment from a power
 
 Parameters:
 
-- Power 
-- Amount 
+- Power
+- Amount
 
 
 ### PowerplayVote
@@ -131,9 +131,9 @@ When written: when voting for a system expansion
 
 Parameters:
 
-- Power 
-- Votes 
-- System 
+- Power
+- Votes
+- System
 
 
 ### PowerplayVoucher
@@ -142,5 +142,5 @@ When written: when receiving payment for powerplay combat
 
 Parameters:
 
-- Power 
-- Systems:[name,name] 
+- Power
+- Systems:[name,name]

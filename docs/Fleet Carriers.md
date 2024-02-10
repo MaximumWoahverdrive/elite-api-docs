@@ -78,12 +78,12 @@ Example:
 
 Player has bought a fleet carrier
 
-- BoughtAtmarket: marketid 
-- CarrierID : marketid 
-- Location: starsystem name 
-- Price: number 
-- Variant: string 
-- Callsign: string 
+- BoughtAtmarket: marketid
+- CarrierID : marketid
+- Location: starsystem name
+- Price: number
+- Variant: string
+- Callsign: string
 
 
 ```
@@ -104,20 +104,20 @@ Player has bought a fleet carrier
 
 When owner opens carrier management
 
-- CarrierID: marketid 
-- Callsign: string 
-- Name: string 
-- DockingAccess: all/none/friends/squadron/squadronfriends 
-- AllowNotorious: bool 
-- FuelLevel: int 
-- JumpRangeCurr: float 
-- JumpRangeMax: float 
-- PendingDecommission: bool 
-- SpaceUsage { TotalCapacity, Crew, Cargo, CargoSpaceReserved, ShipPacks, ModulePacks, FreeSpace} 
-- Finance { CarrierBalance, ReserveBalance, AvailableBalance, ReservePercent, TaxRate } 
-- Crew [{ CrewRole, Activated, Enabled, CrewName },...] 
-- ShipPacks [{ PackTheme, packTier },...] 
-- ModulePacks [{PackTheme, packTier },...] 
+- CarrierID: marketid
+- Callsign: string
+- Name: string
+- DockingAccess: all/none/friends/squadron/squadronfriends
+- AllowNotorious: bool
+- FuelLevel: int
+- JumpRangeCurr: float
+- JumpRangeMax: float
+- PendingDecommission: bool
+- SpaceUsage { TotalCapacity, Crew, Cargo, CargoSpaceReserved, ShipPacks, ModulePacks, FreeSpace}
+- Finance { CarrierBalance, ReserveBalance, AvailableBalance, ReservePercent, TaxRate }
+- Crew [{ CrewRole, Activated, Enabled, CrewName },...]
+- ShipPacks [{ PackTheme, packTier },...]
+- ModulePacks [{PackTheme, packTier },...]
 
 
 ```
@@ -230,12 +230,12 @@ When owner opens carrier management
 
 At the time the player requests the jump, not the jump itself
 
-- CarrierID: marketid 
-- SystemName: starsystem name 
-- SystemID: systemaddress 
-- Body: (name) 
-- BodyID 
-- DepartureTime 
+- CarrierID: marketid
+- SystemName: starsystem name
+- SystemID: systemaddress
+- Body: (name)
+- BodyID
+- DepartureTime
 
 
 ```
@@ -255,9 +255,9 @@ At the time the player requests the jump, not the jump itself
 
 At the time the player requests decommission
 
-- CarrierID: marketid 
-- ScrapRefund: number 
-- Scraptime: timestamp 
+- CarrierID: marketid
+- ScrapRefund: number
+- Scraptime: timestamp
 
 
 ```
@@ -272,7 +272,7 @@ At the time the player requests decommission
 
 ### CarrierCancelDecommission
 
-- CarrierID: marketid 
+- CarrierID: marketid
 
 
 ```
@@ -287,10 +287,10 @@ At the time the player requests decommission
 
 Player transfers credits to/from carrier
 
-- CarrierID: marketid 
-- Deposit, or Withdraw 
-- PlayerBalance: (after transfer) 
-- CarrierBalance: (after transfer) 
+- CarrierID: marketid
+- Deposit, or Withdraw
+- PlayerBalance: (after transfer)
+- CarrierBalance: (after transfer)
 
 
 ```
@@ -308,9 +308,9 @@ Player transfers credits to/from carrier
 
 Any player giving fuel to the carrier
 
-- CarrierID: marketid 
-- Amount: tons 
-- Total: total amount of fuel after donation 
+- CarrierID: marketid
+- Amount: tons
+- Total: total amount of fuel after donation
 
 
 ```
@@ -327,10 +327,10 @@ Any player giving fuel to the carrier
 
 Changes to crew
 
-- CarrierID: marketid 
-- Operation: (activate/deactivate/pause/resume/replace) 
-- CrewRole: string 
-- CrewName: string 
+- CarrierID: marketid
+- Operation: (activate/deactivate/pause/resume/replace)
+- CrewRole: string
+- CrewName: string
 
 
 ```
@@ -348,12 +348,12 @@ Changes to crew
 
 Change to tax rate or reserve
 
-- CarrierID: marketid 
-- TaxRate: number 
-- CarrierBalance: number 
-- ReserveBalance: number 
-- AvailableBalance: number 
-- ReservePercent: number 
+- CarrierID: marketid
+- TaxRate: number
+- CarrierBalance: number
+- ReserveBalance: number
+- AvailableBalance: number
+- ReservePercent: number
 
 
 ```
@@ -373,11 +373,11 @@ Change to tax rate or reserve
 
 CarrierShipPack/CarrierModulePack
 
-- CarrierID: marketid 
-- Operation: buypack/sellpack/restockpack 
-- PackTheme: name 
-- PackTier: name 
-- Cost/Refund: int 
+- CarrierID: marketid
+- Operation: buypack/sellpack/restockpack
+- PackTheme: name
+- PackTier: name
+- Cost/Refund: int
 
 
 ```
@@ -400,13 +400,13 @@ Same format as CarrierShipPack
 
 The carrier owner has requested the carrier buys or sells goods (or cancels such an order)
 
-- CarrierID: marketid 
-- BlackMarket: bool 
-- Commodity: name 
-- PurchaseOrder: quantity 
-- or SaleOrder: quantity (current stock) 
-- or CancelTrade: true 
-- Price: int 
+- CarrierID: marketid
+- BlackMarket: bool
+- Commodity: name
+- PurchaseOrder: quantity
+- or SaleOrder: quantity (current stock)
+- or CancelTrade: true
+- Price: int
 
 
 ```
@@ -426,9 +426,9 @@ The carrier owner has requested the carrier buys or sells goods (or cancels such
 
 The carrier owner has changed the docking permission criteria
 
-- CarrierID: marketid 
-- DockingAccess: all/none/friends/squadron/squadronfriends 
-- AllowNotorious: bool 
+- CarrierID: marketid
+- DockingAccess: all/none/friends/squadron/squadronfriends
+- AllowNotorious: bool
 
 
 ```
@@ -445,13 +445,13 @@ The carrier owner has changed the docking permission criteria
 
 This is logged when a carrier's name is changed
 
-- CarrierID 
-- Callsign 
-- Name 
+- CarrierID
+- Callsign
+- Name
 
 
 ### CarrierJumpCancelled
 
 This is logged when a jump is cancelled
 
-- CarrierID 
+- CarrierID

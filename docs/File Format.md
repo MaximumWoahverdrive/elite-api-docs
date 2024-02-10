@@ -26,12 +26,12 @@ In addition to the incremental player journal file, the following files are writ
 
 The Heading record has a Json object with the following values:
 
-- timestamp: the time in GMT, ISO 8601 
-- part: the file part number 
-- odyssey: bool 
-- language: the language code 
-- gameversion: which version of the game produced the log (will indicate if beta) 
-- build: game build number   
+- timestamp: the time in GMT, ISO 8601
+- part: the file part number
+- odyssey: bool
+- language: the language code
+- gameversion: which version of the game produced the log (will indicate if beta)
+- build: game build number
 
 
 Example:

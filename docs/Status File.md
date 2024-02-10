@@ -6,25 +6,25 @@ This has a similar format to a line in the journal, but the whole file is replac
 
 Parameters:
 
-- Flags: multiple flags encoded as bits in an integer (see below) 
-- Flags2: more flags, mainly for when on foot 
-- Pips: an array of 3 integers representing energy distribution (in half-pips) 
-- Firegroup: the currently selected firegroup number 
-- GuiFocus: the selected GUI screen 
-- Fuel: { FuelMain, FuelReservoir} – both mass in tons 
-- Cargo: mass in tons 
-- LegalState 
-- Latitude (if on or near a planet) 
-- Altitude 
-- Longitude 
-- Heading 
-- BodyName 
-- PlanetRadius 
-- Balance 
-- Destination: 
-    - System 
-    - Body 
-    - Name 
+- Flags: multiple flags encoded as bits in an integer (see below)
+- Flags2: more flags, mainly for when on foot
+- Pips: an array of 3 integers representing energy distribution (in half-pips)
+- Firegroup: the currently selected firegroup number
+- GuiFocus: the selected GUI screen
+- Fuel: { FuelMain, FuelReservoir} – both mass in tons
+- Cargo: mass in tons
+- LegalState
+- Latitude (if on or near a planet)
+- Altitude
+- Longitude
+- Heading
+- BodyName
+- PlanetRadius
+- Balance
+- Destination:
+    - System
+    - Body
+    - Name
 
 
 LegalState: one of:
@@ -39,11 +39,11 @@ LegalState: one of:
 
 Additional values when on foot:
 
-- Oxygen: (0.0 .. 1.0) 
-- Health: (0.0 .. 1.0) 
-- Temperature (kelvin) 
-- SelectedWeapon: name 
-- Gravity: (relative to 1G) 
+- Oxygen: (0.0 .. 1.0)
+- Health: (0.0 .. 1.0)
+- Temperature (kelvin)
+- SelectedWeapon: name
+- Gravity: (relative to 1G)
 
 
 Flags:

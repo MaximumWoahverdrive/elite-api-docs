@@ -110,8 +110,8 @@ Written at game startup, to identify the player's squadron
 
 Parameters:
 
-- SquadronName 
-- CurrentRank 
+- SquadronName
+- CurrentRank
 
 
 ### WonATrophyForSquadron

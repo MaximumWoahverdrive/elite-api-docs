@@ -6,9 +6,9 @@ When written: when repairing modules using the Auto Field Maintenance Unit (AFMU
 
 Parameters:
 
-- Module: module name 
-- FullyRepaired: (bool) 
-- Health; (float 0.0..1.0) 
+- Module: module name
+- FullyRepaired: (bool)
+- Health; (float 0.0..1.0)
 
 
 If the AFMU runs out of ammo, the module may not be fully repaired.
@@ -32,13 +32,13 @@ When written: when approaching a planetary settlement
 
 Parameters:
 
-- Name 
-- MarketID 
-- Latitude 
-- Longitude 
-- SystemAddress 
-- BodyID 
-- BodyName 
+- Name
+- MarketID
+- Latitude
+- Longitude
+- SystemAddress
+- BodyID
+- BodyName
 
 
 ### ChangeCrewRole
@@ -47,8 +47,8 @@ When written: when in a crew on someone else's ship, player switched crew role
 
 Parameters:
 
-- Role: name of selected role (Idle, FireCon, FighterCon) 
-- Telepresence: (bool) (only from Odyssey build) 
+- Role: name of selected role (Idle, FireCon, FighterCon)
+- Telepresence: (bool) (only from Odyssey build)
 
 
 ### CockpitBreached
@@ -72,15 +72,15 @@ When written: when a crime is recorded against the player
 
 Parameters:
 
-- CrimeType – see §15.6 
-- Faction 
+- CrimeType – see §15.6
+- Faction
 
 
 Optional parameters (depending on crime)
 
-- Victim 
-- Fine 
-- Bounty 
+- Victim
+- Fine
+- Bounty
 
 
 Examples:
@@ -112,7 +112,7 @@ When written: if the journal file grows to 500k lines, we write this event, clos
 
 Parameters:
 
-- Part: next part number 
+- Part: next part number
 
 
 ### CrewLaunchFighter
@@ -121,9 +121,9 @@ When written: when in multicrew, in Helm player's log, when a crew member launch
 
 Parameters:
 
-- Crew: name of crew member launching in fighter 
-- ID 
-- Telepresence: (bool) (only from Odyssey build) 
+- Crew: name of crew member launching in fighter
+- ID
+- Telepresence: (bool) (only from Odyssey build)
 
 
 ### CrewMemberJoins
@@ -132,8 +132,8 @@ When written: When another player joins your ship's crew
 
 Parameters:
 
-- Crew: player's commander name 
-- Telepresence: (bool) (only from Odyssey build) 
+- Crew: player's commander name
+- Telepresence: (bool) (only from Odyssey build)
 
 
 ### CrewMemberQuits
@@ -142,8 +142,8 @@ When written: When another player leaves your ship's crew
 
 Parameters:
 
-- Crew: player's commander name 
-- Telepresence: (bool) (only from Odyssey build) 
+- Crew: player's commander name
+- Telepresence: (bool) (only from Odyssey build)
 
 
 ### CrewMemberRoleChange
@@ -152,9 +152,9 @@ When written: in Multicrew, Helm's log, when another crew player changes role
 
 Parameters:
 
-- Crew: player name 
-- Role: selected role 
-- Telepresence: (bool) (only from Odyssey build) 
+- Crew: player name
+- Role: selected role
+- Telepresence: (bool) (only from Odyssey build)
 
 
 Example:
@@ -174,9 +174,9 @@ When written: when another player commits a crime against the current player
 
 Parameters:
 
-- Offender 
-- CrimeType 
-- Fine _or _Bounty 
+- Offender
+- CrimeType
+- Fine _or _Bounty
 
 
 ### DatalinkScan
@@ -185,7 +185,7 @@ When written: when scanning a data link
 
 Parameters:
 
-- Message: message from data link 
+- Message: message from data link
 
 
 ### DatalinkVoucher
@@ -194,9 +194,9 @@ When written: when scanning a datalink generates a reward
 
 Parameters:
 
-- Reward: value in credits 
-- VictimFaction 
-- PayeeFaction 
+- Reward: value in credits
+- VictimFaction
+- PayeeFaction
 
 
 ### DataScanned
@@ -205,7 +205,7 @@ When written: when scanning some types of data links
 
 Parameters:
 
-- Type 
+- Type
 
 
 Type will typically be one of "DataLink", "DataPoint", "ListeningPost", "AbandonedDataLog", "WreckedShip", etc
@@ -216,7 +216,7 @@ When written: when docking a fighter back with the mothership
 
 Parameters:
 
-- ID 
+- ID
 
 
 Example:
@@ -234,8 +234,8 @@ When written: when docking an SRV with the ship
 
 Parameters:
 
-- ID 
-- SRVType 
+- ID
+- SRVType
 
 
 ### EndCrewSession
@@ -244,8 +244,8 @@ When written: when the captain in multicrew disbands the crew
 
 Parameters:
 
-- OnCrime: (bool) true if crew disbanded as a result of a crime in a lawful session 
-- Telepresence: (bool) (only from Odyssey build) 
+- OnCrime: (bool) true if crew disbanded as a result of a crime in a lawful session
+- Telepresence: (bool) (only from Odyssey build)
 
 
 ### FighterRebuilt
@@ -254,8 +254,8 @@ When written: when a ship's fighter is rebuilt in the hangar
 
 Parameters:
 
-- Loadout 
-- ID 
+- Loadout
+- ID
 
 
 ### FuelScoop
@@ -264,8 +264,8 @@ When written: when scooping fuel from a star
 
 Parameters:
 
-- Scooped: tons fuel scooped 
-- Total: total fuel level after scooping 
+- Scooped: tons fuel scooped
+- Total: total fuel level after scooping
 
 
 Example:
@@ -287,8 +287,8 @@ Also written at startup for friends who are already online (new in v2.4)
 
 Parameters:
 
-- Status: one of the following: _Requested, Declined, Added, Lost, Offline, Online_ 
-- Name: the friend's commander name 
+- Status: one of the following: _Requested, Declined, Added, Lost, Offline, Online_
+- Name: the friend's commander name
 
 
 ### JetConeBoost
@@ -297,7 +297,7 @@ When written: when enough material has been collected from a solar jet code (at 
 
 Parameters:
 
-- BoostValue 
+- BoostValue
 
 
 ### JetConeDamage
@@ -306,7 +306,7 @@ When written: when passing through the jet code from a white dwarf or neutron st
 
 Parameters:
 
-- Module: the name of the module that has taken some damage 
+- Module: the name of the module that has taken some damage
 
 
 ### JoinACrew
@@ -315,8 +315,8 @@ When written: When you join another player ship's crew
 
 Parameters:
 
-- Captain: Helm player's commander name 
-- Telepresence: (bool) (only from Odyssey build) 
+- Captain: Helm player's commander name
+- Telepresence: (bool) (only from Odyssey build)
 
 
 ### KickCrewMember
@@ -325,9 +325,9 @@ When written: When you force another player to leave your ship's crew
 
 Parameters:
 
-- Crew: player's commander name 
-- OnCrime: (bool) true if player is automatically kicked for committing a crime in a lawful session 
-- Telepresence: (bool) (only from Odyssey build) 
+- Crew: player's commander name
+- OnCrime: (bool) true if player is automatically kicked for committing a crime in a lawful session
+- Telepresence: (bool) (only from Odyssey build)
 
 
 ### LaunchDrone
@@ -336,7 +336,7 @@ When written: when using any type of drone/limpet
 
 Parameters:
 
-- Type: one of:   
+- Type: one of:
 
 
 "Hatchbreaker", "FuelTransfer", "Collection", "Prospector", "Repair", "Research", "Decontamination"
@@ -347,9 +347,9 @@ When written: when launching a fighter
 
 Parameters:
 
-- Loadout 
-- ID 
-- PlayerControlled: whether player is controlling the fighter from launch 
+- Loadout
+- ID
+- PlayerControlled: whether player is controlling the fighter from launch
 
 
 ```
@@ -367,9 +367,9 @@ When written: deploying the SRV from a ship onto planet surface
 
 Parameters:
 
-- Loadout 
-- ID 
-- SRVType 
+- Loadout
+- ID
+- SRVType
 
 
 ### ModuleInfo
@@ -411,7 +411,7 @@ When written: when the game music 'mood' changes
 
 Parameters:
 
-- MusicTrack: (name) 
+- MusicTrack: (name)
 
 
 Possible track names are: NoTrack, MainMenu, CQCMenu, SystemMap, GalaxyMap, GalacticPowers CQC, DestinationFromHyperspace, DestinationFromSupercruise, Supercruise, Combat_Unknown Unknown_Encounter, CapitalShip, CombatLargeDogFight, Combat_Dogfight, Combat_SRV Unknown_Settlement, DockingComputer, Starport, Unknown_Exploration, Exploration
@@ -424,9 +424,9 @@ This is written when crew receive wages
 
 Parameters:
 
-- NpcCrewId 
-- NpcCrewName 
-- Amount 
+- NpcCrewId
+- NpcCrewName
+- Amount
 
 
 ### NpcCrewRank
@@ -435,9 +435,9 @@ This is written when a crew member's combat rank increases
 
 Parameters:
 
-- NpcCrewId 
-- NpcCrewName 
-- RankCombat 
+- NpcCrewId
+- NpcCrewName
+- RankCombat
 
 
 ### Promotion
@@ -446,12 +446,12 @@ When written: when the player's rank increases
 
 Parameters: one of the following
 
-- Combat: new rank 
-- Trade: new rank 
-- Explore: new rank 
-- CQC: new rank 
-- Federation: 
-- Empire: 
+- Combat: new rank
+- Trade: new rank
+- Explore: new rank
+- CQC: new rank
+- Federation:
+- Empire:
 
 
 Example:
@@ -470,10 +470,10 @@ When using a prospecting drone
 
 Parameters:
 
-- Materials: (array of Name and Proportion) 
-- Content: (a string representing High/Medium/Low) 
-- MotherlodeMaterial: name (if it's a motherlode) 
-- Remaining: percentage 
+- Materials: (array of Name and Proportion)
+- Content: (a string representing High/Medium/Low)
+- MotherlodeMaterial: name (if it's a motherlode)
+- Remaining: percentage
 
 
 ### QuitACrew
@@ -482,8 +482,8 @@ When written: When you leave another player ship's crew
 
 Parameters:
 
-- Captain: Helm player's commander name 
-- Telepresence: (bool) (only from Odyssey build) 
+- Captain: Helm player's commander name
+- Telepresence: (bool) (only from Odyssey build)
 
 
 ### RebootRepair
@@ -492,7 +492,7 @@ When written: when the 'reboot repair' function is used
 
 Parameters:
 
-- Modules: JSON array of names of modules repaired 
+- Modules: JSON array of names of modules repaired
 
 
 Example:
@@ -514,9 +514,9 @@ When written: when a text message is received from another player or npc
 
 Parameters:
 
-- From 
-- Message 
-- Channel: (wing/local/voicechat/friend/player/npc/squadron/starsystem) 
+- From
+- Message
+- Channel: (wing/local/voicechat/friend/player/npc/squadron/starsystem)
 
 
 ### RepairDrone
@@ -525,9 +525,9 @@ When written: when the player's ship has been repaired by a repair drone
 
 Parameters:
 
-- HullRepaired 
-- CockpitRepaired 
-- CorrosionRepaired 
+- HullRepaired
+- CockpitRepaired
+- CorrosionRepaired
 
 
 Each of these is a number indicating the amount of damage that has been repaired
@@ -538,8 +538,8 @@ When fuel is moved from one fuel tank to another
 
 Parameters:
 
-- FuelMain 
-- FuelReservoir 
+- FuelMain
+- FuelReservoir
 
 
 ### Resurrect
@@ -548,9 +548,9 @@ When written: when the player restarts after death
 
 Parameters:
 
-- Option: the option selected on the insurance rebuy screen 
-- Cost: the price paid 
-- Bankrupt: whether the commander declared bankruptcy 
+- Option: the option selected on the insurance rebuy screen
+- Cost: the price paid
+- Bankrupt: whether the commander declared bankruptcy
 
 
 ### Scanned
@@ -561,7 +561,7 @@ When written: when the player's ship has been scanned
 
 Parameters:
 
-- ScanType: Cargo, Crime, Cabin, Data or Unknown 
+- ScanType: Cargo, Crime, Cabin, Data or Unknown
 
 
 Example:
@@ -586,8 +586,8 @@ When written: when a text message is sent to another player
 
 Parameters:
 
-- To: may be player name, or channel name 
-- Message 
+- To: may be player name, or channel name
+- Message
 
 
 Example:
@@ -613,8 +613,8 @@ When written: when synthesis is used to repair or rearm
 
 Parameters:
 
-- Name: synthesis blueprint 
-- Materials: JSON array with objects listing materials used and quantities 
+- Name: synthesis blueprint
+- Materials: JSON array with objects listing materials used and quantities
 
 
 Example:
@@ -649,8 +649,8 @@ When written: when dropping from Supercruise at a USS
 
 Parameters:
 
-- USSType: description of USS 
-- USSThreat: threat level 
+- USSType: description of USS
+- USSThreat: threat level
 
 
 Example:
@@ -670,7 +670,7 @@ When written: when switching control between the main ship and a fighter
 
 Parameters:
 
-- To: ( Mothership/Fighter) 
+- To: ( Mothership/Fighter)
 
 
 Examples:
@@ -697,7 +697,7 @@ When written: another player has joined the wing
 
 Parameters:
 
-- Name 
+- Name
 
 
 Example:
@@ -716,7 +716,7 @@ When written: when the player is invited to a wing
 
 Parameters:
 
-- Name: the commander name of the player inviting to the wing 
+- Name: the commander name of the player inviting to the wing
 
 
 ### WingJoin
@@ -725,7 +725,7 @@ When written: this player has joined a wing
 
 Parameters:
 
-- Others: JSON array of other player names already in wing 
+- Others: JSON array of other player names already in wing
 
 
 Example:
@@ -759,7 +759,7 @@ Example:
 
 When transferring cargo between ship and fleet carrier, or between ship and SRV
 
-- Transfers: [ {Type, Count, Direction}, ... ] 
+- Transfers: [ {Type, Count, Direction}, ... ]
 
 
 ```
@@ -797,7 +797,7 @@ When transferring cargo between ship and fleet carrier, or between ship and SRV
 
 ### SupercruiseDestinationDrop
 
-When dropping out of supercruise at a targeted destination. 
+When dropping out of supercruise at a targeted destination.
 
 - Type: The type fo destination being dropped into
 - Threat: threat level
